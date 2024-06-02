@@ -1,0 +1,28 @@
+.techIconsBox {
+    display: flex;
+    gap: 36px;
+    width: 444px;
+    margin-top: 38px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon {
+    width: 60px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+@media(width <= 758px) {
+    .techIconsBox {
+        display: flex;
+        gap: 39px;
+        width:100%;
+        max-width: 400px;
+        margin-top: 41px;
+    }
+    .icon {
+        width: 40px;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+    }
+}
