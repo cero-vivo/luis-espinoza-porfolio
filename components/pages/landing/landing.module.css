@@ -1,0 +1,18 @@
+.title {
+    max-width: 650px;
+    text-align: center;
+    padding-top: 41px;
+}
+.message {
+    max-width: 766px;
+    text-align: center;
+    padding-top: 20px;
+}
+@media(width <= 1096px) {
+    .title {
+        max-width: 650px;
+    }
+    .message {
+        max-width: 650px;
+    }
+}

@@ -1,0 +1,11 @@
+.paragraph {
+    color: var(--slateGray);
+    font-size: clamp(1rem, 0.9322rem + 0.3012vw, 1.125rem);
+    line-height: 27px;
+}
+.bold {
+    font-weight: 600;
+}
+.regular {
+    font-weight: 500;
+}
