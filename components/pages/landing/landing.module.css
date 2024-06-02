@@ -8,6 +8,9 @@
     text-align: center;
     padding-top: 20px;
 }
+.button {
+    margin-top: 43px;
+}
 @media(width <= 1096px) {
     .title {
         max-width: 650px;

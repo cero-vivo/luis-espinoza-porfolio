@@ -1,0 +1,43 @@
+.primary {
+    min-width: 107px;
+    height: 37px;
+    padding: 14px 21px;
+    background-color: var(--paleBlue);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.primaryText {
+    color: var(--skyBlue) !important;
+}
+
+.primary:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.primary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.primary::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.primary::after {
+    color: var(--skyBlue) !important;
+}
+.primary:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
