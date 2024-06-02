@@ -1,0 +1,14 @@
+
+.h1 {
+    font-weight: 800;
+    font-size: clamp(1.875rem, 0.6551rem + 5.4217vw, 4.125rem);
+    color: var(--navyBlue);
+}
+.h2 {
+    font-weight: 800;
+    font-size: 30px;
+}
+.h3 {
+    font-weight: 800;
+    font-size: 22px;
+}
