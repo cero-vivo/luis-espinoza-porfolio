@@ -44,7 +44,14 @@ export const en = {
                 "Innovative Solutions: Commitment to staying updated with the latest technologies and development practices to offer innovative and effective solutions."
             ]
         }
-    ]
+    ],
+    //ethos
+    "ethos_title": "Ethos",
+    "ethos_content_1": "My name is Luis Espinoza, a software developer specialized in web and mobile applications. My life has been a constant journey of seeking and creating knowledge, combining studies in Philosophy at the University of Buenos Aires (UBA) and Computer Science at the National University of General Sarmiento (UNGS), with programming courses at the National Technological University (UTN).",
+    "ethos_content_2": "I am self-taught and value continuous learning, which is why I stay updated with the latest technologies, especially in the React ecosystem, React Native, HTML, CSS, and JavaScript.",
+    "ethos_content_3": "Outside of the professional realm, I am passionate about philosophy, reading, and writing. This nourishes my creativity and offers me new perspectives. These activities enrich my approach to software development, allowing me to tackle challenges in an innovative manner.",
+    "ethos_content_4": "I value trust, effective communication, and collaboration. My strong communication skills enable me to work efficiently with teams and clients, ensuring successful projects. My commitment is to create exceptional applications that provide memorable and rewarding experiences. Reliable, dedicated to excellence, always ready to face new challenges with enthusiasm.",
+
 }
 
 export type textKeys = keyof typeof en;

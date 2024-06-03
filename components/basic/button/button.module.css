@@ -9,6 +9,7 @@
     align-items: center;
     border-color: transparent;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .primaryText {
@@ -16,23 +17,11 @@
 }
 
 .primary:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(6, 50, 95, 0.5);
 }
 .primary:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.primary::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
+    box-shadow: 0 5px 10px rgba(6, 50, 95, 0.5);
 }
 .primary::after {
     color: var(--skyBlue) !important;

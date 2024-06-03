@@ -1,0 +1,69 @@
+.title {
+    align-self: flex-start;
+}
+.contentBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 75px;
+    gap: 50px;
+}
+.photosBox {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.image {
+    width: 400px;
+    height: 290px;
+    object-fit: contain;
+}
+.paragraphsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.sectionBox {
+    display: flex;
+    flex-direction: column;
+}
+.paragraph {
+    line-height: 46px !important;
+}
+
+@media(width <=1096px) {
+    .contentBox {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 75px;
+        gap: 20px;
+    }
+    .photosBox {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+    .image {
+        width: 220px;
+        height: 268px;
+        object-fit: contain;
+    }
+    .paragraphsBox {
+        gap: 30px;
+    }
+}
+
+@media(width <=758px) {
+    .photosBox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image {
+        width: 160px;
+        height: 195px;
+        object-fit: contain;
+    }
+    .paragraph {
+        line-height: 36px !important;
+    }
+}
