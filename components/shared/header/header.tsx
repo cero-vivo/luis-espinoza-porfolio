@@ -63,8 +63,8 @@ export const Header = () => {
 	return (
 		<header className={styles.headerBox}>
 			{sections}
-			<a href={`#${Sections.HOME}`} onClick={goToHome}>
-				<img src='/images/header_photo.png' alt="header_photo" className={styles.headerPhoto}/>
+			<a href={`#${Sections.HOME}`} onClick={goToHome} className={styles.headerPhoto}>
+				<img src='/images/header_photo1.png' alt="header_photo" className={styles.headerPhoto}/>
 			</a>
 		</header>
 	)

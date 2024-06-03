@@ -14,10 +14,14 @@
     box-shadow: 1px 1px 21px 0px rgba(6, 50, 95, 0.5);
     align-items: center;
 }
-
 .option {
     text-decoration: none;
 }
+.option:hover {
+    color: var(--navyBlue);
+    transition: color .1s ease-in-out;
+}
+
 
 .activeSection {
     color: var(--navyBlue);
@@ -31,6 +35,15 @@
     aspect-ratio: 1/1;
     position: relative;
     left: 0px;
+    transition: transform .3s linear;
+}
+.headerPhoto:hover {
+    transform: scale(1.05);
+    transition: transform .1s linear;
+}
+.headerPhoto:active {
+    transform: scale(.95);
+    transition: transform .1s linear;
 }
 
 @media(width <= 758px) {
@@ -39,7 +52,7 @@
         gap: 22px;
         height: 48px;
         justify-content: center;
-        top: 100px;
+        top: 110px;
     }
     .headerPhoto {
         position: fixed;
@@ -51,5 +64,13 @@
     }
     .option {
         font-size: 14px !important;
+    }
+    .headerPhoto:hover {
+        transform: translateX(-50%) scale(1.05);
+        transition: transform .1s linear;
+    }
+    .headerPhoto:active {
+        transform: translateX(-50%) scale(.95);
+        transition: transform .1s linear;
     }
 }

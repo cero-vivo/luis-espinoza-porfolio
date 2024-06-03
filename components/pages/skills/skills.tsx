@@ -30,7 +30,7 @@ export const Skills = () => {
 		<Frame id={Sections.SKILLS}>
 			<Heading text={"skills_title"} variant='h2' classes={styles.title}/>
 			<section className={styles.contentBox}>
-				<img src='/images/skills_photo.png' alt="skills" className={styles.mainImage} loading='lazy' />
+				<img src='/images/skills_photo1.jpg' alt="skills" className={styles.mainImage} loading='lazy' />
 				<span className={styles.detailBox}>
 				{sections}
 				</span>
