@@ -55,7 +55,7 @@ export const projects: ProjectType[] = [
 			"./projects/Webfilo/9.png",
 			"./projects/Webfilo/10.png"
 		],
-		urls: []
+		urls: ["https://luisterceroiii.github.io/Web-Filosofia/"]
 	},
 	{
 		"name": "Hybeans Web",

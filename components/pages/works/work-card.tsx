@@ -7,6 +7,8 @@ import { ProjectType } from './projects-data'
 import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import { TechStack } from '@/components/shared/tech-stack/tech-stack'
 import Image from 'next/image'
+import ExternalLinkIcon from '@/components/basic/icons/external-link-icon'
+import { colors } from '@/theme/colors'
 
 interface WorkCardProps {
     work: ProjectType
@@ -36,9 +38,29 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
         }
     };
 
+    const links = work.urls.map((url) => {
+        const handleClick = () => {
+            if (url) {
+              window.open(url, "_blank", "noopener,noreferrer");
+            }
+          };
+          return <ExternalLinkIcon 
+                    color={colors.navyBlue} 
+                    width={20} 
+                    height={20} 
+                    classes={styles.externalLinkIcon} 
+                    onClick={handleClick} 
+                />
+    })
+
     return (
         <div key={work.name} className={styles.cardBox}>
-            <Heading customTx={work.name} variant='h3' />
+            <div className={styles.titleBox}>
+                <Heading customTx={work.name} variant='h3' />
+                <div className={styles.linksBox}>
+                    {links}
+                </div>
+            </div>
             <div className={styles.slideBox}>
                 <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollLeft} className={styles.leftButton}/>
                 <div className={styles.slideImagesBox} ref={worksRef}>

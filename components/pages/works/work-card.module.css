@@ -4,6 +4,20 @@
     flex-direction: column;
     gap: 33px
 }
+.titleBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.externalLinkIcon {
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.externalLinkIcon:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+    transition: all .5s ease;
+}
 .paragraph {
     line-height: 36px !important;
     text-align: center;
@@ -22,7 +36,6 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     gap: 20px;
-
 }
 .slideImage {
     width: fit-content;
@@ -47,6 +60,11 @@
 }
 .leftButton:active {
     transform: translateY(-1px);
+}
+.linksBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 @media(width <=1096px) {
     .cardBox {
