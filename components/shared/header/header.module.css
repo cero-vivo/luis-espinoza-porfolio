@@ -4,7 +4,7 @@
     background-color: var(--lightCyan);
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
     top: 50px;
     gap: 27px;
     border-radius: 16px;

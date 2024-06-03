@@ -1,7 +1,7 @@
 .title {
     max-width: 650px;
     text-align: center;
-    padding-top: 101px;
+    padding-top: 130px;
 }
 
 .message {
@@ -38,6 +38,6 @@
         height: 80px;
         object-fit: contain;
         aspect-ratio: 1/1;
-        margin-top: 67px;
+        margin-top: 115px;
     }
 }
