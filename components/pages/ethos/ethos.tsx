@@ -2,7 +2,6 @@ import React from 'react'
 import { Frame } from '@/components/basic/frame/frame'
 import { Heading } from '@/components/basic/heading/heading'
 import styles from "./ethos.module.css"
-import { en, textKeys } from '@/lenguages/en'
 import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import { Sections } from '@/types/constant'
 

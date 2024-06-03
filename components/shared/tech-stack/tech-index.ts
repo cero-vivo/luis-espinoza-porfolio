@@ -10,6 +10,13 @@ export const techIcons = {
     "postgres": "/icons/postgres.png",
     "typescript": "/icons/typescript.png",
     "zustand": "/icons/zustand.png",
+    "netlify": "/icons/netlify.png",
+    "amazon": "/icons/amazon.png",
+    "springboot": "/icons/springboot.png",
+    "java": "/icons/java.png",
+    "heroku": "/icons/heroku.png",
+    "jwt": "/icons/jwt.svg",
+    "material": "/icons/material.png"
 }
 
 export type TechIcon = keyof typeof techIcons

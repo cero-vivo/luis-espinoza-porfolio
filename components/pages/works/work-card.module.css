@@ -1,0 +1,97 @@
+.cardBox {
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px
+}
+.paragraph {
+    line-height: 36px !important;
+    text-align: center;
+}
+.slideBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideImagesBox {
+    display: flex;
+    flex-direction: row;
+    width: 690px;
+    height: 390px;
+    border-radius: 19px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.slideImage {
+    width: 690px;
+    height: auto;
+    min-height: 390px;
+    border-radius: 19px;
+    object-fit: contain;
+}
+.techStack {
+    margin: 0 auto;
+}
+.leftButton {
+    rotate: -90deg;
+    border-radius: 50%;
+}
+.rightButton {
+    rotate: 90deg;
+    border-radius: 50%;
+}
+.rightButton:active {
+    transform: translateY(-1px);
+}
+.leftButton:active {
+    transform: translateY(-1px);
+}
+@media(width <=1096px) {
+    .cardBox {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        gap: 33px
+    }
+    .slideImagesBox {
+        display: flex;
+        flex-direction: row;
+        width: 540px;
+        height: 390px;
+        border-radius: 19px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .slideImage {
+        width: 540px;
+        height: auto;
+        min-height: 390px;
+        border-radius: 19px;
+        object-fit: cover;
+    }
+}
+
+@media(width <=758px) {
+    .cardBox {
+        width: calc(100vw - 36px);
+        display: flex;
+        flex-direction: column;
+        gap: 33px
+    }
+    .slideImagesBox {
+        display: flex;
+        flex-direction: row;
+        width: calc(100vw - 36px);
+        height: 390px;
+        border-radius: 19px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .slideImage {
+        width: calc(100vw - 36px);
+        height: auto;
+        min-height: 390px;
+        border-radius: 19px;
+        object-fit: cover;
+    }
+}

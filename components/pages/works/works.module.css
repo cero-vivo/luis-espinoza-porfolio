@@ -1,0 +1,21 @@
+.title {
+    align-self: flex-start;
+}
+.worksBox {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(width <=1096px) {
+
+    .worksBox {
+        margin-top: 20px;
+    }
+}
+
+@media(width <=758px) {
+}

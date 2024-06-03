@@ -51,6 +51,8 @@ export const en = {
     "ethos_content_2": "I am self-taught and value continuous learning, which is why I stay updated with the latest technologies, especially in the React ecosystem, React Native, HTML, CSS, and JavaScript.",
     "ethos_content_3": "Outside of the professional realm, I am passionate about philosophy, reading, and writing. This nourishes my creativity and offers me new perspectives. These activities enrich my approach to software development, allowing me to tackle challenges in an innovative manner.",
     "ethos_content_4": "I value trust, effective communication, and collaboration. My strong communication skills enable me to work efficiently with teams and clients, ensuring successful projects. My commitment is to create exceptional applications that provide memorable and rewarding experiences. Reliable, dedicated to excellence, always ready to face new challenges with enthusiasm.",
+    //works
+    "works_title": "Works",
 
 }
 
