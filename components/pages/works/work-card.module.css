@@ -19,8 +19,9 @@
     width: 690px;
     height: 390px;
     border-radius: 19px;
-    overflow: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
+
 }
 .slideImage {
     width: 690px;
@@ -59,8 +60,6 @@
         width: 540px;
         height: 390px;
         border-radius: 19px;
-        overflow: hidden;
-        scroll-behavior: smooth;
     }
     .slideImage {
         width: 540px;
@@ -84,8 +83,6 @@
         width: calc(100vw - 36px);
         height: 390px;
         border-radius: 19px;
-        overflow: hidden;
-        scroll-behavior: smooth;
     }
     .slideImage {
         width: calc(100vw - 36px);
