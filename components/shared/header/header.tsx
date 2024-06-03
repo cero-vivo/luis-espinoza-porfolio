@@ -4,6 +4,7 @@ import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import { textKeys } from '@/lenguages/en'
 import React from 'react'
 import styles from "./header.module.css"
+import { Sections } from '@/types/constant'
 
 interface LinkProps {
 	sectionId: string
@@ -13,23 +14,23 @@ interface LinkProps {
 
 const links: LinkProps[] = [
 	{
-		sectionId: "skills",
+		sectionId: Sections.SKILLS,
 		text: "header_skills"
 	},
 	{
-		sectionId: "works",
+		sectionId: Sections.WORKS,
 		text: "header_works"
 	},
 	{
-		sectionId: "ethos",
+		sectionId: Sections.ETHOS,
 		text: "header_ethos"
 	},
 	{
-		sectionId: "contact",
+		sectionId: Sections.CONTACT,
 		text: "header_contact"
 	},
 	{
-		sectionId: "cv",
+		sectionId: Sections.CV,
 		text: "header_cv",
 		downloadLink: "cv/CV_Luis_Espinoza_Mobile_&_Web_Developer.pdf"
 	}
@@ -37,12 +38,14 @@ const links: LinkProps[] = [
 
 export const Header = () => {
 
-	const [section, setSection] = React.useState("landing")
+	const [section, setSection] = React.useState<Sections>(Sections.HOME)
+
+	const goToHome = () => setSection(Sections.HOME)
 
 	const sections = links.map((link) => {
 		const isSelected = section === link.sectionId
 		const onClick = () => {
-			setSection(link.sectionId)
+			setSection(link.sectionId as Sections)
 		}
 		return link.sectionId === "cv" ? 
 		(
@@ -60,7 +63,9 @@ export const Header = () => {
 	return (
 		<header className={styles.headerBox}>
 			{sections}
-			<img src='/images/header_photo.png' alt="header_photo" className={styles.headerPhoto} />
+			<a href={`#${Sections.HOME}`} onClick={goToHome}>
+				<img src='/images/header_photo.png' alt="header_photo" className={styles.headerPhoto}/>
+			</a>
 		</header>
 	)
 }

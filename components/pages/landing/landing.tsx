@@ -7,6 +7,7 @@ import { TechStack } from '@/components/shared/tech-stack/tech-stack'
 import { TechIcon } from '@/components/shared/tech-stack/tech-index'
 import { Button } from '@/components/basic/button/button'
 import { Header } from '@/components/shared/header/header'
+import { Sections } from '@/types/constant'
 
 const iconStack: TechIcon[] = [
 	"postgres",
@@ -23,7 +24,7 @@ const iconStack: TechIcon[] = [
 
 export const Landing = () => {
 	return (
-		<Frame>
+		<Frame id={Sections.HOME}>
 			<Header />
 			<img src='/images/header_photo.png' alt="header_photo" className={styles.mainImage} loading='lazy' />
 			<Heading variant={"h1"} text={"landing_title"} classes={styles.title}/>
