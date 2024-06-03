@@ -16,6 +16,6 @@ export const Paragraph: FC<ParagraphProps> = (props) => {
 	const finalText = customTx ? customTx : (text ? en[text] : "")
 
 	return (
-        <p className={`${styles.paragraph} ${variant === "bold" ? styles.bold : styles.regular} ${classes}`}>{finalText}</p>
+        <p className={`${styles.paragraph} ${variant === "bold" ? styles.bold : styles.regular} ${classes}`}>{finalText?.toString()}</p>
 	)
 }

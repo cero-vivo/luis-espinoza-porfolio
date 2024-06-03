@@ -11,15 +11,15 @@ interface HeadingProps {
 
 export const Heading: FC<HeadingProps> = (props) => {
 
-	const { variant, text=null, classes, customTx=null } = props
+	const { variant, text = null, classes, customTx = null } = props
 
 	const finalText = customTx ? customTx : (text ? en[text] : "")
 
 	return (
 		<>
-			{variant == "h1" && <h1 className={`${styles.h1} ${classes}`}>{finalText}</h1>}
-			{variant == "h2" && <h2 className={`${styles.h2} ${classes}`}>{finalText}</h2>}
-			{variant == "h3" && <h3 className={`${styles.h3} ${classes}`}>{finalText}</h3>}
+			{variant === "h1" && <h1 className={`${styles.h1} ${classes}`}>{finalText.toString()}</h1>}
+			{variant === "h2" && <h2 className={`${styles.h2} ${classes}`}>{finalText.toString()}</h2>}
+			{variant === "h3" && <h3 className={`${styles.h3} ${classes}`}>{finalText.toString()}</h3>}
 		</>
 	)
 }
