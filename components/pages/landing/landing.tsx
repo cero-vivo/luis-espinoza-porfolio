@@ -26,7 +26,6 @@ export const Landing = () => {
 	return (
 		<Frame id={Sections.HOME}>
 			<Header />
-			<img src='/images/header_photo.png' alt="header_photo" className={styles.mainImage} loading='lazy' />
 			<Heading variant={"h1"} text={"landing_title"} classes={styles.title}/>
 			<Paragraph text={"landing_message"} variant='bold' classes={styles.message}/>
 			<TechStack icons={iconStack}/>

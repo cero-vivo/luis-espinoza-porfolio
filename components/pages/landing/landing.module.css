@@ -30,7 +30,7 @@
 
 @media(width <=758px) {
     .title {
-        padding-top: 22px;
+        padding-top: 160px;
     }
     .mainImage {
         display: flex;

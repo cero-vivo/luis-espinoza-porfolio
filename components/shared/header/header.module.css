@@ -36,13 +36,19 @@
 
 @media(width <= 758px) {
     .headerBox {
-        width: 300px;
+        width: 320px;
         gap: 22px;
         height: 48px;
         justify-content: center;
+        top: 100px;
     }
     .headerPhoto {
-        display: none;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
     }
     .option {
         font-size: 14px !important;
