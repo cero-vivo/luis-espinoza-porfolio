@@ -1,21 +1,43 @@
 .title {
     max-width: 650px;
     text-align: center;
-    padding-top: 41px;
+    padding-top: 101px;
 }
+
 .message {
     max-width: 766px;
     text-align: center;
     padding-top: 20px;
 }
+
 .button {
     margin-top: 43px;
 }
-@media(width <= 1096px) {
+
+.mainImage {
+    display: none;
+}
+
+@media(width <=1096px) {
     .title {
         max-width: 650px;
     }
+
     .message {
         max-width: 650px;
+    }
+}
+
+@media(width <=758px) {
+    .title {
+        padding-top: 22px;
+    }
+    .mainImage {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+        margin-top: 67px;
     }
 }
