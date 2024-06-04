@@ -8,6 +8,7 @@ import { TechIcon } from '@/components/shared/tech-stack/tech-index'
 import { Button } from '@/components/basic/button/button'
 import { Header } from '@/components/shared/header/header'
 import { Sections } from '@/types/constant'
+import { ContactModal } from '@/components/modals/contact-modal'
 
 const iconStack: TechIcon[] = [
 	"postgres",
@@ -30,6 +31,7 @@ export const Landing = () => {
 			<Paragraph text={"landing_message"} variant='bold' classes={styles.message}/>
 			<TechStack icons={iconStack}/>
 			<Button text={"landing_button"} classes={styles.button}/>
+			<ContactModal/>
 		</Frame>
 	)
 }

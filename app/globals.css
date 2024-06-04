@@ -6,6 +6,7 @@
   --skyBlue: #22A2FF;
   --paleBlue: #DDF2FF;
   --white: #FFFFFF;
+  --overlay: rgba(6, 50, 95, 0.3); 
 }
 
 html, body, div, span, applet, object, iframe,
