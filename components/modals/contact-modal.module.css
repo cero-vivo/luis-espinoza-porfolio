@@ -5,6 +5,8 @@
     align-self: center;
     position: relative;
     border-radius: 19px;
+    width: calc(100vw - 64px);
+    height: 617px;
 }
 .image {
     width: calc(100vw - 64px);
@@ -12,10 +14,11 @@
     object-fit: cover;
     position: relative;
     border-radius: 19px;
+    position: absolute;
 }
 .imageOverlay {
     position: absolute;
-    width: 100%;
+    width: calc(100vw - 64px);
     height: 617px;
     background-color: #ddf2ff67;
     border-radius: 19px;
@@ -23,7 +26,7 @@
 .closeIcon {
     position: absolute;
     top: 20px;
-    right: 33px;
+    right: 15px;
     z-index: 101;
 }
 .closeIcon:hover {
@@ -31,13 +34,37 @@
     opacity: 0.7;
     transition: all .5s ease;
 }
+.contactIconsBox {
+    z-index: 101;
+    display: flex;
+    gap: 20px;
+}
+.contactIcon {
+    z-index: 101;
+    cursor: pointer;
+    opacity: 0.85;
+}
+.contactIcon:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    transition: all .3s ease;
+}
 @media(width <= 1096px) {
     .image {
+        width: calc(100vw - 74px);
+    }
+    .imageOverlay {
         width: calc(100vw - 74px);
     }
 }
 @media(width <= 758px) {
     .image {
         width: calc(100vw - 40px);
+    }
+    .imageOverlay {
+        width: calc(100vw - 40px);
+    }
+    .contactIconsBox {
+        flex-direction: column;
     }
 }

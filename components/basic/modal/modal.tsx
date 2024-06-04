@@ -19,7 +19,7 @@ export const Modal: FC<ModalProps> = (props) => {
 
 	return (
 		<main className={`${isOpen ? styles.overlay : styles.close} ${classes}`} onClick={onClick} >
-			<div className={` ${styles.childBox} ${isOpen ? styles.childBoxOpen : styles.childBoxClose} `}>
+			<div className={` ${isOpen ? styles.childBoxOpen : styles.childBoxClose} `}>
 				{children}
 			</div>
 		</main>

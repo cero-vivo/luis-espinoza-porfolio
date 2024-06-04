@@ -12,14 +12,13 @@
     z-index: 100;
     justify-content: center;
     opacity: 1;
+    align-items: flex-start;
 }
 .childBoxClose {
-    position: relative;
-    transform: translateY(-70%);
-    transition: transform 0.4s ease-in-out;
+    transform: translateY(-300%);
+    transition: transform 0.6s ease-in-out;
 }
 .childBoxOpen {
-    position: relative;
     transform: translateY(10%);
-    transition: transform 1s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
