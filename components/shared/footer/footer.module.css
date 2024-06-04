@@ -1,0 +1,47 @@
+.footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--navyBlue);
+    gap: 25px;
+    justify-content: center;
+}
+.contactIcon {
+    z-index: 101;
+    cursor: pointer;
+    opacity: 0.85;
+}
+.contactIcon:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    transition: all .3s ease;
+}
+.infoRow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.text {
+    color: var(--white);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.text:hover {
+    color: var(--skyBlue);
+    transition: all .3s ease;
+}
+.date {
+    color: var(--white);
+}
+
+@media(width <= 758px) {
+    .footer {
+        height: 244px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--navyBlue);
+        gap: 25px;
+        justify-content: center;
+    }
+}

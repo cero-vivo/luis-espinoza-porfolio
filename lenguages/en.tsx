@@ -53,6 +53,10 @@ export const en = {
     "ethos_content_4": "I value trust, effective communication, and collaboration. My strong communication skills enable me to work efficiently with teams and clients, ensuring successful projects. My commitment is to create exceptional applications that provide memorable and rewarding experiences. Reliable, dedicated to excellence, always ready to face new challenges with enthusiasm.",
     //works
     "works_title": "Works",
+    //footer
+    "my_email": "luis.espinoza.nav@live.com",
+    "my_phone_number": "+54 9 11 2388-1314",
+    "linkedin_label": "Linkedin"
 
 }
 

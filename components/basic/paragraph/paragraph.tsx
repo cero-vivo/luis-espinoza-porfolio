@@ -7,15 +7,18 @@ interface ParagraphProps {
     variant: "bold" | "regular"
     classes?: string
 	customTx?: string
+	onClick?: () => void
 }
 
 export const Paragraph: FC<ParagraphProps> = (props) => {
 
-	const { text, variant, classes, customTx } = props
+	const { text, variant, classes, customTx, onClick } = props
 
 	const finalText = customTx ? customTx : (text ? en[text] : "")
 
 	return (
-        <p className={`${styles.paragraph} ${variant === "bold" ? styles.bold : styles.regular} ${classes}`}>{finalText?.toString()}</p>
+        <p onClick={onClick} className={`${styles.paragraph} ${variant === "bold" ? styles.bold : styles.regular} ${classes}`}>
+				{finalText?.toString()}
+		</p>
 	)
 }
