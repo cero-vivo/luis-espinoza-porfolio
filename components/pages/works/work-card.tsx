@@ -24,7 +24,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     const scrollRight = () => {
         if (worksRef.current) {
             (worksRef.current as HTMLElement).scrollBy({
-                left: 300,
+                left: 200,
                 behavior: 'smooth'
             })
         }
@@ -32,7 +32,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     const scrollLeft = () => {
         if (worksRef.current) {
             (worksRef.current as HTMLElement).scrollBy({
-                left: -300,
+                left: -200,
                 behavior: 'smooth'
             })
         }
@@ -41,7 +41,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     const links = work.urls.map((url) => {
         const handleClick = () => {
             if (url) {
-              window.open(url, "_blank", "noopener,noreferrer");
+              window.open(url, "_blank", "noopener,noreferrer")
             }
           };
           return <ExternalLinkIcon 

@@ -50,10 +50,13 @@
 .leftButton {
     rotate: -90deg;
     border-radius: 50%;
+    cursor: pointer;
 }
 .rightButton {
     rotate: 90deg;
     border-radius: 50%;
+    cursor: pointer;
+
 }
 .rightButton:active {
     transform: translateY(-1px);
