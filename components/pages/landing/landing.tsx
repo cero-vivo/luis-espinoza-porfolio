@@ -26,12 +26,12 @@ const iconStack: TechIcon[] = [
 export const Landing = () => {
 	return (
 		<Frame id={Sections.HOME}>
+			<ContactModal/>
 			<Header />
 			<Heading variant={"h1"} text={"landing_title"} classes={styles.title}/>
 			<Paragraph text={"landing_message"} variant='bold' classes={styles.message}/>
 			<TechStack icons={iconStack}/>
 			<LetsTalkButton classes={styles.button}/>
-			<ContactModal/>
 		</Frame>
 	)
 }

@@ -1,6 +1,8 @@
 .close {
     opacity: 0;
     transition: all .5s ease-in-out;
+    position: fixed;
+    top: -100%;
 }
 .overlay {
     display: flex;
@@ -13,6 +15,7 @@
     justify-content: center;
     opacity: 1;
     align-items: flex-start;
+    top: 0%;
 }
 .childBoxClose {
     transform: translateY(-300%);
