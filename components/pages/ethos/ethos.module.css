@@ -18,6 +18,18 @@
     height: 290px;
     object-fit: contain;
 }
+.image1:hover {
+    transform: rotate(10deg);
+    transition: transform .2s ease-in-out;
+}
+.image2:hover {
+    transform: rotate(-10deg);
+    transition: transform .2s ease-in-out;
+}
+.image3:hover {
+    transform: rotate(-10deg);
+    transition: transform .2s ease-in-out;
+}
 .paragraphsBox {
     display: flex;
     flex-direction: column;

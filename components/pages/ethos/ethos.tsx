@@ -12,9 +12,9 @@ export const Ethos = () => {
 			<Heading text={"ethos_title"} variant='h2' classes={styles.title}/>
 			<section className={styles.contentBox}>
 				<div className={styles.photosBox}>
-					<img src='/images/ethos_photo1.jpeg' alt="ethos1" className={styles.image} loading='lazy' />
-					<img src='/images/ethos_photo2.jpeg' alt="ethos2" className={styles.image} loading='lazy' />
-					<img src='/images/ethos_photo3.jpeg' alt="ethos3" className={styles.image} loading='lazy' />
+					<img src='/images/ethos_photo1.jpeg' alt="ethos1" className={`${styles.image} ${styles.image1}`} loading='lazy' />
+					<img src='/images/ethos_photo2.jpeg' alt="ethos2" className={`${styles.image} ${styles.image2}`} loading='lazy' />
+					<img src='/images/ethos_photo3.jpeg' alt="ethos3" className={`${styles.image} ${styles.image3}`} loading='lazy' />
 				</div>
 				<div className={styles.paragraphsBox}>
 					<Paragraph text='ethos_content_1' variant='regular' classes={styles.paragraph} />
