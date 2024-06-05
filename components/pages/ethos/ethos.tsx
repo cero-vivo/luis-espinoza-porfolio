@@ -4,12 +4,13 @@ import { Heading } from '@/components/basic/heading/heading'
 import styles from "./ethos.module.css"
 import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import { Sections } from '@/types/constant'
+import { useTranslations } from 'next-intl'
 
 export const Ethos = () => {
-
+	const t = useTranslations("ethos")
 	return (
 		<Frame id={Sections.ETHOS}>
-			<Heading text={"ethos_title"} variant='h2' classes={styles.title}/>
+			<Heading text={t("title")} variant='h2' classes={styles.title}/>
 			<section className={styles.contentBox}>
 				<div className={styles.photosBox}>
 					<img src='/images/ethos_photo1.jpeg' alt="ethos1" className={`${styles.image} ${styles.image1}`} loading='lazy' />
@@ -17,10 +18,10 @@ export const Ethos = () => {
 					<img src='/images/ethos_photo3.jpeg' alt="ethos3" className={`${styles.image} ${styles.image3}`} loading='lazy' />
 				</div>
 				<div className={styles.paragraphsBox}>
-					<Paragraph text='ethos_content_1' variant='regular' classes={styles.paragraph} />
-					<Paragraph text='ethos_content_2' variant='regular' classes={styles.paragraph} />
-					<Paragraph text='ethos_content_3' variant='regular' classes={styles.paragraph} />
-					<Paragraph text='ethos_content_4' variant='regular' classes={styles.paragraph} />
+					<Paragraph text={t('content_1')} variant='regular' classes={styles.paragraph} />
+					<Paragraph text={t('content_2')} variant='regular' classes={styles.paragraph} />
+					<Paragraph text={t('content_3')} variant='regular' classes={styles.paragraph} />
+					<Paragraph text={t('content_4')} variant='regular' classes={styles.paragraph} />
 				</div>
 			</section>
 		</Frame>
