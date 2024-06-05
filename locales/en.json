@@ -12,41 +12,34 @@
       "cv": "CV"
     },
     "skills": {
-      "title": "Skills",
-      "sections": [
-        {
+      "title": "SKILLS",
+      "sections": {
+        "0": {
           "title": "Frontend & Mobile Development",
-          "items": [
-            "React & React Native: Extensive experience in building reusable and performance-optimized components.",
-            "HTML, CSS, JavaScript: Mastery of fundamental concepts with the ability to write clean and semantic code.",
-            "UI Programming: Utilization of tools like React, React Native, MST, and Figma to create high-quality and intuitive user interfaces.",
-            "Version Control: Knowledge of Git with the ability to work with remote repositories and manage version conflicts."
-          ]
+          "item_0": "React & React Native: Extensive experience in building reusable and performance-optimized components.",
+          "item_1": "HTML, CSS, JavaScript: Mastery of fundamental concepts with the ability to write clean and semantic code.",
+          "item_2": "UI Programming: Utilization of tools like React, React Native, MST, and Figma to create high-quality and intuitive user interfaces.",
+          "item_3": "Version Control: Knowledge of Git with the ability to work with remote repositories and manage version conflicts."
         },
-        {
+        "1": {
           "title": "Application Architecture & Design",
-          "items": [
-            "Application Architecture: Understanding of React and React Native application architecture, with the ability to design and maintain an organized and scalable folder structure.",
-            "Responsive & Accessible Design: Development and maintenance of optimized and accessible user experiences through responsive design techniques and accessibility practices.",
-            "Firebase: Proficient in managing Firebase Realtime Database, Firestore for database management, user authentication, and integration of push notifications."
-          ]
+          "item_0":"Application Architecture: Understanding of React and React Native application architecture, with the ability to design and maintain an organized and scalable folder structure.",
+          "item_1": "Responsive & Accessible Design: Development and maintenance of optimized and accessible user experiences through responsive design techniques and accessibility practices.",
+          "item_2": "Firebase: Proficient in managing Firebase Realtime Database, Firestore for database management, user authentication, and integration of push notifications."
         },
-        {
+        "2": {
           "title": "Project Management & Team Collaboration",
-          "items": [
-            "Project Management Tools: Skilled in collaborating with teams using project management tools like Jira and communication platforms like Slack.",
-            "Collaboration & Communication: Effective communication and collaboration with team members, clients, and stakeholders, fostering a collaborative work environment."
-          ]
+          "item_0": "Project Management Tools: Skilled in collaborating with teams using project management tools like Jira and communication platforms like Slack.",
+          "item_1": "Collaboration & Communication: Effective communication and collaboration with team members, clients, and stakeholders, fostering a collaborative work environment."
         },
-        {
+        "3": {
           "title": "Problem Solving & Continuous Learning",
-          "items": [
-            "Problem Analysis & Resolution: Effective analysis and resolution of problems in software development.",
-            "Quick Learning: Rapid adaptation to new technologies and tools in mobile and web application development.",
-            "Innovative Solutions: Commitment to staying updated with the latest technologies and development practices to offer innovative and effective solutions."
-          ]
+          "item_0": "Problem Analysis & Resolution: Effective analysis and resolution of problems in software development.",
+          "item_1": "Quick Learning: Rapid adaptation to new technologies and tools in mobile and web application development.",
+          "item_2": "Innovative Solutions: Commitment to staying updated with the latest technologies and development practices to offer innovative and effective solutions."
+      
         }
-      ]
+      }
     },
     "ethos": {
       "title": "Ethos",

@@ -12,41 +12,33 @@
       "cv": "CV"
     },
     "skills": {
-      "title": "Skills",
-      "sections": [
-        {
-          "title": "Desarrollo Frontend y Móvil",
-          "items": [
-            "React y React Native: Amplia experiencia en la construcción de componentes reutilizables y optimizados para el rendimiento.",
-            "HTML, CSS, JavaScript: Dominio de conceptos fundamentales con la capacidad de escribir código limpio y semántico.",
-            "Programación de UI: Uso de herramientas como React, React Native, MST y Figma para crear interfaces de usuario de alta calidad e intuitivas.",
-            "Control de versiones: Conocimiento de Git con la capacidad de trabajar con repositorios remotos y gestionar conflictos de versiones."
-          ]
+      "title": "SKILLS",
+      "sections": {
+        "0": {
+          "title": "Desarrollo Frontend & Mobile",
+          "item_0": "React & React Native: Amplia experiencia en la construcción de componentes reutilizables y optimizados para el rendimiento.",
+          "item_1": "HTML, CSS, JavaScript: Dominio de los conceptos fundamentales con la capacidad de escribir código limpio y semántico.",
+          "item_2": "Programación de Interfaces de Usuario: Utilización de herramientas como React, React Native, MST y Figma para crear interfaces de usuario de alta calidad e intuitivas.",
+          "item_3": "Control de Versiones: Conocimiento de Git con la habilidad de trabajar con repositorios remotos y gestionar conflictos de versiones."
         },
-        {
-          "title": "Arquitectura y Diseño de Aplicaciones",
-          "items": [
-            "Arquitectura de aplicaciones: Comprensión de la arquitectura de aplicaciones React y React Native, con la capacidad de diseñar y mantener una estructura de carpetas organizada y escalable.",
-            "Diseño Responsivo y Accesible: Desarrollo y mantenimiento de experiencias de usuario optimizadas y accesibles mediante técnicas de diseño responsivo y prácticas de accesibilidad.",
-            "Firebase: Competencia en la gestión de Firebase Realtime Database, Firestore para la gestión de bases de datos, autenticación de usuarios e integración de notificaciones push."
-          ]
+        "1": {
+          "title": "Arquitectura & Diseño de Aplicaciones",
+          "item_0": "Arquitectura de Aplicaciones: Comprensión de la arquitectura de aplicaciones de React y React Native, con la capacidad de diseñar y mantener una estructura de carpetas organizada y escalable.",
+          "item_1": "Diseño Responsivo & Accesible: Desarrollo y mantenimiento de experiencias de usuario optimizadas y accesibles mediante técnicas de diseño responsivo y prácticas de accesibilidad.",
+          "item_2": "Firebase: Competencia en la gestión de Firebase Realtime Database, Firestore para la gestión de bases de datos, autenticación de usuarios e integración de notificaciones push."
         },
-        {
-          "title": "Gestión de Proyectos y Colaboración en Equipo",
-          "items": [
-            "Herramientas de Gestión de Proyectos: Habilidad para colaborar con equipos usando herramientas de gestión de proyectos como Jira y plataformas de comunicación como Slack.",
-            "Colaboración y Comunicación: Comunicación y colaboración efectiva con miembros del equipo, clientes y partes interesadas, fomentando un entorno de trabajo colaborativo."
-          ]
+        "2": {
+          "title": "Gestión de Proyectos & Colaboración en Equipo",
+          "item_0": "Herramientas de Gestión de Proyectos: Habilidad para colaborar con equipos utilizando herramientas de gestión de proyectos como Jira y plataformas de comunicación como Slack.",
+          "item_1": "Colaboración & Comunicación: Comunicación y colaboración efectivas con miembros del equipo, clientes y stakeholders, fomentando un entorno de trabajo colaborativo."
         },
-        {
-          "title": "Resolución de Problemas y Aprendizaje Continuo",
-          "items": [
-            "Análisis y Resolución de Problemas: Análisis y resolución efectiva de problemas en el desarrollo de software.",
-            "Aprendizaje Rápido: Adaptación rápida a nuevas tecnologías y herramientas en el desarrollo de aplicaciones móviles y web.",
-            "Soluciones Innovadoras: Compromiso con mantenerse actualizado con las últimas tecnologías y prácticas de desarrollo para ofrecer soluciones innovadoras y efectivas."
-          ]
+        "3": {
+          "title": "Resolución de Problemas & Aprendizaje Continuo",
+          "item_0": "Análisis & Resolución de Problemas: Análisis y resolución efectivos de problemas en el desarrollo de software.",
+          "item_1": "Aprendizaje Rápido: Adaptación rápida a nuevas tecnologías y herramientas en el desarrollo de aplicaciones móviles y web.",
+          "item_2": "Soluciones Innovadoras: Compromiso con mantenerse actualizado con las últimas tecnologías y prácticas de desarrollo para ofrecer soluciones innovadoras y efectivas."
         }
-      ]
+      }
     },
     "ethos": {
       "title": "Ethos",

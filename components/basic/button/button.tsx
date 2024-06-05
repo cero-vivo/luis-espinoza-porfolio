@@ -7,7 +7,7 @@ import { Paragraph } from '../paragraph/paragraph'
 
 interface ButtonProps {
 	classes?: string
-	text: textKeys
+	text: string
 	onClick?: () => void
 }
 

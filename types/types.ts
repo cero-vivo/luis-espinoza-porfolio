@@ -2,6 +2,6 @@ import { textKeys } from "@/lenguages/en"
 
 export interface HeaderOptionType {
 	sectionId: string
-	text: textKeys,
+	text: string,
 	downloadLink?: string
 }

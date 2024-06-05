@@ -3,7 +3,7 @@
 import { Languages } from '@/types/constant'
 import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
-import React, { startTransition, useTransition } from 'react'
+import React, { useTransition } from 'react'
 import { Paragraph } from '../paragraph/paragraph'
 import styles from "./language-switcher.module.css"
 
@@ -17,12 +17,12 @@ export const LanguageSwitcher = () => {
 	const enIsSelected = localActive === Languages.EN
 	
 	const selectES = () => {
-		startTransition(() => {
+		starTransition(() => {
 			router.replace(`/${Languages.ES}`)
 		})
 	}
 	const selectEN = () => {
-		startTransition(() => {
+		starTransition(() => {
 			router.replace(`/${Languages.EN}`)
 		})
 	}
@@ -30,14 +30,14 @@ export const LanguageSwitcher = () => {
     return (
 		<span className={styles.switcherBox}>
 			<Paragraph 
-				customTx='EN' 
+				text='EN' 
 				variant='regular' 
 				classes={`${styles.text} ${enIsSelected && styles.selectedText} ${styles.option}`}
 				onClick={selectEN}
 			/>
-			<Paragraph customTx='/' variant='regular' classes={styles.text}/>
+			<Paragraph text='/' variant='regular' classes={styles.text}/>
 			<Paragraph 
-				customTx='ES' 
+				text='ES' 
 				variant='regular' 
 				classes={`${styles.text} ${esIsSelected && styles.selectedText} ${styles.option}`}
 				onClick={selectES}

@@ -27,23 +27,23 @@ export const useLandingStore = create<LandingUIState>()((set, get) => ({
 	links: [
 		{
 			sectionId: Sections.SKILLS,
-			text: "header_skills"
+			text: "skills"
 		},
 		{
 			sectionId: Sections.WORKS,
-			text: "header_works"
+			text: "works"
 		},
 		{
 			sectionId: Sections.ETHOS,
-			text: "header_ethos"
+			text: "ethos"
 		},
 		{
 			sectionId: Sections.CONTACT,
-			text: "header_contact"
+			text: "contact"
 		},
 		{
 			sectionId: Sections.CV,
-			text: "header_cv",
+			text: "cv",
 			downloadLink: "cv/CV_Luis_Espinoza_Mobile_&_Web_Developer.pdf"
 		}
 	],
