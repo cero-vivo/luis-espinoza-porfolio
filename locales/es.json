@@ -1,0 +1,67 @@
+{
+    "landing": {
+      "title": "Luis Espinoza\nSoluciones Front end",
+      "message": "Con años de experiencia y un enfoque en las mejores tecnologías del mercado, estoy listo para transformar tus ideas en proyectos reales. Especializado en React, Next.js y React Native, ofrezco servicios de desarrollo web y móvil conocidos por su calidad y eficiencia",
+      "button": "Hablemos"
+    },
+    "header": {
+      "skills": "Skills",
+      "works": "Trabajos",
+      "ethos": "Ethos",
+      "contact": "Contacto",
+      "cv": "CV"
+    },
+    "skills": {
+      "title": "Skills",
+      "sections": [
+        {
+          "title": "Desarrollo Frontend y Móvil",
+          "items": [
+            "React y React Native: Amplia experiencia en la construcción de componentes reutilizables y optimizados para el rendimiento.",
+            "HTML, CSS, JavaScript: Dominio de conceptos fundamentales con la capacidad de escribir código limpio y semántico.",
+            "Programación de UI: Uso de herramientas como React, React Native, MST y Figma para crear interfaces de usuario de alta calidad e intuitivas.",
+            "Control de versiones: Conocimiento de Git con la capacidad de trabajar con repositorios remotos y gestionar conflictos de versiones."
+          ]
+        },
+        {
+          "title": "Arquitectura y Diseño de Aplicaciones",
+          "items": [
+            "Arquitectura de aplicaciones: Comprensión de la arquitectura de aplicaciones React y React Native, con la capacidad de diseñar y mantener una estructura de carpetas organizada y escalable.",
+            "Diseño Responsivo y Accesible: Desarrollo y mantenimiento de experiencias de usuario optimizadas y accesibles mediante técnicas de diseño responsivo y prácticas de accesibilidad.",
+            "Firebase: Competencia en la gestión de Firebase Realtime Database, Firestore para la gestión de bases de datos, autenticación de usuarios e integración de notificaciones push."
+          ]
+        },
+        {
+          "title": "Gestión de Proyectos y Colaboración en Equipo",
+          "items": [
+            "Herramientas de Gestión de Proyectos: Habilidad para colaborar con equipos usando herramientas de gestión de proyectos como Jira y plataformas de comunicación como Slack.",
+            "Colaboración y Comunicación: Comunicación y colaboración efectiva con miembros del equipo, clientes y partes interesadas, fomentando un entorno de trabajo colaborativo."
+          ]
+        },
+        {
+          "title": "Resolución de Problemas y Aprendizaje Continuo",
+          "items": [
+            "Análisis y Resolución de Problemas: Análisis y resolución efectiva de problemas en el desarrollo de software.",
+            "Aprendizaje Rápido: Adaptación rápida a nuevas tecnologías y herramientas en el desarrollo de aplicaciones móviles y web.",
+            "Soluciones Innovadoras: Compromiso con mantenerse actualizado con las últimas tecnologías y prácticas de desarrollo para ofrecer soluciones innovadoras y efectivas."
+          ]
+        }
+      ]
+    },
+    "ethos": {
+      "title": "Ethos",
+      "content_1": "Mi nombre es Luis Espinoza, un desarrollador de software especializado en aplicaciones web y móviles. Mi vida ha sido un viaje constante en busca de conocimiento, combinando estudios de Filosofía en la Universidad de Buenos Aires (UBA) y Ciencias de la Computación en la Universidad Nacional de General Sarmiento (UNGS), con cursos de programación en la Universidad Tecnológica Nacional (UTN).",
+      "content_2": "Soy autodidacta y valoro el aprendizaje continuo, por eso me mantengo actualizado con las últimas tecnologías, especialmente en el ecosistema React, React Native, HTML, CSS y JavaScript.",
+      "content_3": "Fuera del ámbito profesional, me apasiona la filosofía, la lectura y la escritura. Esto nutre mi creatividad y me ofrece nuevas perspectivas. Estas actividades enriquecen mi enfoque en el desarrollo de software, permitiéndome abordar los desafíos de manera innovadora.",
+      "content_4": "Valoro la confianza, la comunicación efectiva y la colaboración. Mis fuertes habilidades de comunicación me permiten trabajar eficientemente con equipos y clientes, asegurando proyectos exitosos. Mi compromiso es crear aplicaciones excepcionales que brinden experiencias memorables y gratificantes. Fiable, dedicado a la excelencia, siempre listo para enfrentar nuevos desafíos con entusiasmo."
+    },
+    "works": {
+      "title": "Trabajos"
+    },
+    "contact": {
+      "email": "luis.espinoza.nav@live.com",
+      "phone_number": "+54 9 11 2388-1314",
+      "linkedin_label": "Linkedin"
+    }
+  }
+  
