@@ -2,7 +2,6 @@ import { TechIcon } from "@/components/shared/tech-stack/tech-index";
 
 export interface ProjectType {
 	name: string;
-	description: string;
 	icons: TechIcon[];
 	images: string[];
 	urls: string[]
@@ -11,7 +10,6 @@ export interface ProjectType {
 export const projects: ProjectType[] = [
 	{
 		"name": "Lux Ater",
-		"description": "Designed and developed Lux Ater, a philosophy and poetry blog for a writer. Utilized Next.js for the framework, CSS Modules for styling, Firebase for database and authentication, and Markdown for content formatting. The project features a clean and intuitive interface, efficient content publishing, and robust scalability and security.",
 		"icons": ["typescript", "next", "css3", "firebase", "netlify"],
 		"images": [
 			"./projects/luxater/1.png",
@@ -23,7 +21,6 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "Hybeans App",
-		"description": "Contributed to the development of various key functionalities of the application, including login, password recovery, account validation, multiple profile types, feeds, notifications, configuration menus, bookings, product sales, hiring, and tour generation using map services, and much more.",
 		"icons": ["react", "typescript", "mst", "firebase", "css3"],
 		"images": [
 			"./projects/hyApp/1.png",
@@ -41,7 +38,6 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "Filoweb",
-		"description": "Educational site that traces the history of western philosophy, from the pre-socratic schools to the postmodern ones, showing its main currents and exponents in a beautiful way.",
 		"icons": ["javascript", "react", "css3", "html5"],
 		"images": [
 			"./projects/Webfilo/1.png",
@@ -59,7 +55,6 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "Hybeans Web",
-		"description": "As part of my contributions to the continuous development of the Hybeans website, I also played a key role in implementing various functionalities of the application. These included profile types, bookings, the checkout process, landing page, and more.",
 		"icons": ["react", "typescript", "mst", "firebase", "css3"],
 		"images": [
 			"./projects/hyWeb/1.png",
@@ -79,7 +74,6 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "Jardin Management CPanel",
-		"description": "Commercial web application built to manage the inventory of a local second hand clothing store, with it the store employees can enter products, modify them, delete them and perform specific searches. A secured API is implemented with query, pagination, login and crud services. ",
 		"icons": ["javascript", "react", "css3", "java", "springboot", "jwt", "postgres", "amazon", "heroku"],
 		"images": [
 			"./projects/JardinApp/web/1.png",
@@ -95,7 +89,6 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "Your Lists App",
-		"description": "Web application for personal use created to use lists, as reminders, as a to-do list, as steps for recipes, etc, anything you can think of. In it you can manage the lists in folders to differentiate and order them.",
 		"icons": ["javascript", "react", "material", "css3", "java", "springboot", "postgres", "heroku"],
 		"images": [
 			"./projects/YourListsApp/1.png",

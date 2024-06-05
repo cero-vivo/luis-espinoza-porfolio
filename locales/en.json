@@ -1,60 +1,84 @@
 {
-    "landing": {
-      "title": "Luis Espinoza\nFront end solutions",
-      "message": "With years of experience and a focus on the best technologies in the market, I am ready to transform your ideas into real projects. Specializing in React, Next.js, and React Native, I provide web and mobile development services known for their quality and efficiency",
-      "button": "Lets talk"
-    },
-    "header": {
-      "skills": "Skills",
-      "works": "Works",
-      "ethos": "Ethos",
-      "contact": "Contact",
-      "cv": "CV"
-    },
-    "skills": {
-      "title": "SKILLS",
-      "sections": {
-        "0": {
-          "title": "Frontend & Mobile Development",
-          "item_0": "React & React Native: Extensive experience in building reusable and performance-optimized components.",
-          "item_1": "HTML, CSS, JavaScript: Mastery of fundamental concepts with the ability to write clean and semantic code.",
-          "item_2": "UI Programming: Utilization of tools like React, React Native, MST, and Figma to create high-quality and intuitive user interfaces.",
-          "item_3": "Version Control: Knowledge of Git with the ability to work with remote repositories and manage version conflicts."
-        },
-        "1": {
-          "title": "Application Architecture & Design",
-          "item_0":"Application Architecture: Understanding of React and React Native application architecture, with the ability to design and maintain an organized and scalable folder structure.",
-          "item_1": "Responsive & Accessible Design: Development and maintenance of optimized and accessible user experiences through responsive design techniques and accessibility practices.",
-          "item_2": "Firebase: Proficient in managing Firebase Realtime Database, Firestore for database management, user authentication, and integration of push notifications."
-        },
-        "2": {
-          "title": "Project Management & Team Collaboration",
-          "item_0": "Project Management Tools: Skilled in collaborating with teams using project management tools like Jira and communication platforms like Slack.",
-          "item_1": "Collaboration & Communication: Effective communication and collaboration with team members, clients, and stakeholders, fostering a collaborative work environment."
-        },
-        "3": {
-          "title": "Problem Solving & Continuous Learning",
-          "item_0": "Problem Analysis & Resolution: Effective analysis and resolution of problems in software development.",
-          "item_1": "Quick Learning: Rapid adaptation to new technologies and tools in mobile and web application development.",
-          "item_2": "Innovative Solutions: Commitment to staying updated with the latest technologies and development practices to offer innovative and effective solutions."
-      
-        }
-      }
-    },
-    "ethos": {
-      "title": "Ethos",
-      "content_1": "My name is Luis Espinoza, a software developer specialized in web and mobile applications. My life has been a constant journey of seeking and creating knowledge, combining studies in Philosophy at the University of Buenos Aires (UBA) and Computer Science at the National University of General Sarmiento (UNGS), with programming courses at the National Technological University (UTN).",
-      "content_2": "I am self-taught and value continuous learning, which is why I stay updated with the latest technologies, especially in the React ecosystem, React Native, HTML, CSS, and JavaScript.",
-      "content_3": "Outside of the professional realm, I am passionate about philosophy, reading, and writing. This nourishes my creativity and offers me new perspectives. These activities enrich my approach to software development, allowing me to tackle challenges in an innovative manner.",
-      "content_4": "I value trust, effective communication, and collaboration. My strong communication skills enable me to work efficiently with teams and clients, ensuring successful projects. My commitment is to create exceptional applications that provide memorable and rewarding experiences. Reliable, dedicated to excellence, always ready to face new challenges with enthusiasm."
-    },
-    "works": {
-      "title": "Works"
-    },
-    "contact": {
-      "email": "luis.espinoza.nav@live.com",
-      "phone_number": "+54 9 11 2388-1314",
-      "linkedin_label": "Linkedin"
-    }
-  }
-  
+	"landing": {
+		"title": "Luis Espinoza\nFront end solutions",
+		"message": "With years of experience and a focus on the best technologies in the market, I am ready to transform your ideas into real projects. Specializing in React, Next.js, and React Native, I provide web and mobile development services known for their quality and efficiency",
+		"button": "Lets talk"
+	},
+	"header": {
+		"skills": "Skills",
+		"works": "Works",
+		"ethos": "Ethos",
+		"contact": "Contact",
+		"cv": "CV"
+	},
+	"skills": {
+		"title": "SKILLS",
+		"sections": {
+			"0": {
+				"title": "Frontend & Mobile Development",
+				"item_0": "React & React Native: Extensive experience in building reusable and performance-optimized components.",
+				"item_1": "HTML, CSS, JavaScript: Mastery of fundamental concepts with the ability to write clean and semantic code.",
+				"item_2": "UI Programming: Utilization of tools like React, React Native, MST, and Figma to create high-quality and intuitive user interfaces.",
+				"item_3": "Version Control: Knowledge of Git with the ability to work with remote repositories and manage version conflicts."
+			},
+			"1": {
+				"title": "Application Architecture & Design",
+				"item_0": "Application Architecture: Understanding of React and React Native application architecture, with the ability to design and maintain an organized and scalable folder structure.",
+				"item_1": "Responsive & Accessible Design: Development and maintenance of optimized and accessible user experiences through responsive design techniques and accessibility practices.",
+				"item_2": "Firebase: Proficient in managing Firebase Realtime Database, Firestore for database management, user authentication, and integration of push notifications."
+			},
+			"2": {
+				"title": "Project Management & Team Collaboration",
+				"item_0": "Project Management Tools: Skilled in collaborating with teams using project management tools like Jira and communication platforms like Slack.",
+				"item_1": "Collaboration & Communication: Effective communication and collaboration with team members, clients, and stakeholders, fostering a collaborative work environment."
+			},
+			"3": {
+				"title": "Problem Solving & Continuous Learning",
+				"item_0": "Problem Analysis & Resolution: Effective analysis and resolution of problems in software development.",
+				"item_1": "Quick Learning: Rapid adaptation to new technologies and tools in mobile and web application development.",
+				"item_2": "Innovative Solutions: Commitment to staying updated with the latest technologies and development practices to offer innovative and effective solutions."
+			}
+		}
+	},
+	"ethos": {
+		"title": "ETHOS",
+		"content_1": "My name is Luis Espinoza, a software developer specialized in web and mobile applications. My life has been a constant journey of seeking and creating knowledge, combining studies in Philosophy at the University of Buenos Aires (UBA) and Computer Science at the National University of General Sarmiento (UNGS), with programming courses at the National Technological University (UTN).",
+		"content_2": "I am self-taught and value continuous learning, which is why I stay updated with the latest technologies, especially in the React ecosystem, React Native, HTML, CSS, and JavaScript.",
+		"content_3": "Outside of the professional realm, I am passionate about philosophy, reading, and writing. This nourishes my creativity and offers me new perspectives. These activities enrich my approach to software development, allowing me to tackle challenges in an innovative manner.",
+		"content_4": "I value trust, effective communication, and collaboration. My strong communication skills enable me to work efficiently with teams and clients, ensuring successful projects. My commitment is to create exceptional applications that provide memorable and rewarding experiences. Reliable, dedicated to excellence, always ready to face new challenges with enthusiasm."
+	},
+	"works": {
+		"title": "WORKS",
+		"projects": {
+			"Lux Ater": {
+				"name": "Lux Ater",
+				"description": "Designed and developed Lux Ater, a philosophy and poetry blog for a writer. Utilized Next.js for the framework, CSS Modules for styling, Firebase for database and authentication, and Markdown for content formatting. The project features a clean and intuitive interface, efficient content publishing, and robust scalability and security."
+			},
+			"Hybeans App": {
+				"name": "Hybeans App",
+				"description": "Contributed to the development of various key functionalities of the application, including login, password recovery, account validation, multiple profile types, feeds, notifications, configuration menus, bookings, product sales, hiring, and tour generation using map services, and much more."
+			},
+			"Filoweb": {
+				"name": "Filoweb",
+				"description": "Educational site that traces the history of western philosophy, from the pre-socratic schools to the postmodern ones, showing its main currents and exponents in a beautiful way."
+			},
+			"Hybeans Web": {
+				"name": "Hybeans Web",
+				"description": "As part of my contributions to the continuous development of the Hybeans website, I also played a key role in implementing various functionalities of the application. These included profile types, bookings, the checkout process, landing page, and more."
+			},
+			"Jardin Management CPanel": {
+				"name": "Jardin Management CPanel",
+				"description": "Commercial web application built to manage the inventory of a local second hand clothing store, with it the store employees can enter products, modify them, delete them and perform specific searches. A secured API is implemented with query, pagination, login and crud services. "
+			},
+			"Your Lists App": {
+				"name": "Your Lists App",
+				"description": "Web application for personal use created to use lists, as reminders, as a to-do list, as steps for recipes, etc, anything you can think of. In it you can manage the lists in folders to differentiate and order them."
+			}
+		}
+	},
+	"contact": {
+		"my_email": "luis.espinoza.nav@live.com",
+		"my_phone_number": "+54 9 11 2388-1314",
+		"linkedin_label": "Linkedin"
+	}
+}

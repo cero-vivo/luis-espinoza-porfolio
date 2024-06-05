@@ -1,59 +1,84 @@
 {
-    "landing": {
-      "title": "Luis Espinoza\nSoluciones Front end",
-      "message": "Con años de experiencia y un enfoque en las mejores tecnologías del mercado, estoy listo para transformar tus ideas en proyectos reales. Especializado en React, Next.js y React Native, ofrezco servicios de desarrollo web y móvil conocidos por su calidad y eficiencia",
-      "button": "Hablemos"
-    },
-    "header": {
-      "skills": "Skills",
-      "works": "Trabajos",
-      "ethos": "Ethos",
-      "contact": "Contacto",
-      "cv": "CV"
-    },
-    "skills": {
-      "title": "SKILLS",
-      "sections": {
-        "0": {
-          "title": "Desarrollo Frontend & Mobile",
-          "item_0": "React & React Native: Amplia experiencia en la construcción de componentes reutilizables y optimizados para el rendimiento.",
-          "item_1": "HTML, CSS, JavaScript: Dominio de los conceptos fundamentales con la capacidad de escribir código limpio y semántico.",
-          "item_2": "Programación de Interfaces de Usuario: Utilización de herramientas como React, React Native, MST y Figma para crear interfaces de usuario de alta calidad e intuitivas.",
-          "item_3": "Control de Versiones: Conocimiento de Git con la habilidad de trabajar con repositorios remotos y gestionar conflictos de versiones."
-        },
-        "1": {
-          "title": "Arquitectura & Diseño de Aplicaciones",
-          "item_0": "Arquitectura de Aplicaciones: Comprensión de la arquitectura de aplicaciones de React y React Native, con la capacidad de diseñar y mantener una estructura de carpetas organizada y escalable.",
-          "item_1": "Diseño Responsivo & Accesible: Desarrollo y mantenimiento de experiencias de usuario optimizadas y accesibles mediante técnicas de diseño responsivo y prácticas de accesibilidad.",
-          "item_2": "Firebase: Competencia en la gestión de Firebase Realtime Database, Firestore para la gestión de bases de datos, autenticación de usuarios e integración de notificaciones push."
-        },
-        "2": {
-          "title": "Gestión de Proyectos & Colaboración en Equipo",
-          "item_0": "Herramientas de Gestión de Proyectos: Habilidad para colaborar con equipos utilizando herramientas de gestión de proyectos como Jira y plataformas de comunicación como Slack.",
-          "item_1": "Colaboración & Comunicación: Comunicación y colaboración efectivas con miembros del equipo, clientes y stakeholders, fomentando un entorno de trabajo colaborativo."
-        },
-        "3": {
-          "title": "Resolución de Problemas & Aprendizaje Continuo",
-          "item_0": "Análisis & Resolución de Problemas: Análisis y resolución efectivos de problemas en el desarrollo de software.",
-          "item_1": "Aprendizaje Rápido: Adaptación rápida a nuevas tecnologías y herramientas en el desarrollo de aplicaciones móviles y web.",
-          "item_2": "Soluciones Innovadoras: Compromiso con mantenerse actualizado con las últimas tecnologías y prácticas de desarrollo para ofrecer soluciones innovadoras y efectivas."
-        }
-      }
-    },
-    "ethos": {
-      "title": "Ethos",
-      "content_1": "Mi nombre es Luis Espinoza, un desarrollador de software especializado en aplicaciones web y móviles. Mi vida ha sido un viaje constante en busca de conocimiento, combinando estudios de Filosofía en la Universidad de Buenos Aires (UBA) y Ciencias de la Computación en la Universidad Nacional de General Sarmiento (UNGS), con cursos de programación en la Universidad Tecnológica Nacional (UTN).",
-      "content_2": "Soy autodidacta y valoro el aprendizaje continuo, por eso me mantengo actualizado con las últimas tecnologías, especialmente en el ecosistema React, React Native, HTML, CSS y JavaScript.",
-      "content_3": "Fuera del ámbito profesional, me apasiona la filosofía, la lectura y la escritura. Esto nutre mi creatividad y me ofrece nuevas perspectivas. Estas actividades enriquecen mi enfoque en el desarrollo de software, permitiéndome abordar los desafíos de manera innovadora.",
-      "content_4": "Valoro la confianza, la comunicación efectiva y la colaboración. Mis fuertes habilidades de comunicación me permiten trabajar eficientemente con equipos y clientes, asegurando proyectos exitosos. Mi compromiso es crear aplicaciones excepcionales que brinden experiencias memorables y gratificantes. Fiable, dedicado a la excelencia, siempre listo para enfrentar nuevos desafíos con entusiasmo."
-    },
-    "works": {
-      "title": "Trabajos"
-    },
-    "contact": {
-      "email": "luis.espinoza.nav@live.com",
-      "phone_number": "+54 9 11 2388-1314",
-      "linkedin_label": "Linkedin"
-    }
-  }
-  
+	"landing": {
+		"title": "Luis Espinoza\nSoluciones Front end",
+		"message": "Con años de experiencia y un enfoque en las mejores tecnologías del mercado, estoy listo para transformar tus ideas en proyectos reales. Especializado en React, Next.js y React Native, ofrezco servicios de desarrollo web y móvil conocidos por su calidad y eficiencia",
+		"button": "Hablemos"
+	},
+	"header": {
+		"skills": "Skills",
+		"works": "Trabajos",
+		"ethos": "Ethos",
+		"contact": "Contacto",
+		"cv": "CV"
+	},
+	"skills": {
+		"title": "SKILLS",
+		"sections": {
+			"0": {
+				"title": "Desarrollo Frontend & Mobile",
+				"item_0": "React & React Native: Amplia experiencia en la construcción de componentes reutilizables y optimizados para el rendimiento.",
+				"item_1": "HTML, CSS, JavaScript: Dominio de los conceptos fundamentales con la capacidad de escribir código limpio y semántico.",
+				"item_2": "Programación de Interfaces de Usuario: Utilización de herramientas como React, React Native, MST y Figma para crear interfaces de usuario de alta calidad e intuitivas.",
+				"item_3": "Control de Versiones: Conocimiento de Git con la habilidad de trabajar con repositorios remotos y gestionar conflictos de versiones."
+			},
+			"1": {
+				"title": "Arquitectura & Diseño de Aplicaciones",
+				"item_0": "Arquitectura de Aplicaciones: Comprensión de la arquitectura de aplicaciones de React y React Native, con la capacidad de diseñar y mantener una estructura de carpetas organizada y escalable.",
+				"item_1": "Diseño Responsivo & Accesible: Desarrollo y mantenimiento de experiencias de usuario optimizadas y accesibles mediante técnicas de diseño responsivo y prácticas de accesibilidad.",
+				"item_2": "Firebase: Competencia en la gestión de Firebase Realtime Database, Firestore para la gestión de bases de datos, autenticación de usuarios e integración de notificaciones push."
+			},
+			"2": {
+				"title": "Gestión de Proyectos & Colaboración en Equipo",
+				"item_0": "Herramientas de Gestión de Proyectos: Habilidad para colaborar con equipos utilizando herramientas de gestión de proyectos como Jira y plataformas de comunicación como Slack.",
+				"item_1": "Colaboración & Comunicación: Comunicación y colaboración efectivas con miembros del equipo, clientes y stakeholders, fomentando un entorno de trabajo colaborativo."
+			},
+			"3": {
+				"title": "Resolución de Problemas & Aprendizaje Continuo",
+				"item_0": "Análisis & Resolución de Problemas: Análisis y resolución efectivos de problemas en el desarrollo de software.",
+				"item_1": "Aprendizaje Rápido: Adaptación rápida a nuevas tecnologías y herramientas en el desarrollo de aplicaciones móviles y web.",
+				"item_2": "Soluciones Innovadoras: Compromiso con mantenerse actualizado con las últimas tecnologías y prácticas de desarrollo para ofrecer soluciones innovadoras y efectivas."
+			}
+		}
+	},
+	"ethos": {
+		"title": "ETHOS",
+		"content_1": "Mi nombre es Luis Espinoza, un desarrollador de software especializado en aplicaciones web y móviles. Mi vida ha sido un viaje constante en busca de conocimiento, combinando estudios de Filosofía en la Universidad de Buenos Aires (UBA) y Ciencias de la Computación en la Universidad Nacional de General Sarmiento (UNGS), con cursos de programación en la Universidad Tecnológica Nacional (UTN).",
+		"content_2": "Soy autodidacta y valoro el aprendizaje continuo, por eso me mantengo actualizado con las últimas tecnologías, especialmente en el ecosistema React, React Native, HTML, CSS y JavaScript.",
+		"content_3": "Fuera del ámbito profesional, me apasiona la filosofía, la lectura y la escritura. Esto nutre mi creatividad y me ofrece nuevas perspectivas. Estas actividades enriquecen mi enfoque en el desarrollo de software, permitiéndome abordar los desafíos de manera innovadora.",
+		"content_4": "Valoro la confianza, la comunicación efectiva y la colaboración. Mis fuertes habilidades de comunicación me permiten trabajar eficientemente con equipos y clientes, asegurando proyectos exitosos. Mi compromiso es crear aplicaciones excepcionales que brinden experiencias memorables y gratificantes. Fiable, dedicado a la excelencia, siempre listo para enfrentar nuevos desafíos con entusiasmo."
+	},
+	"works": {
+		"title": "TRABAJOS",
+		"projects": {
+			"Lux Ater": {
+				"name": "Lux Ater",
+				"description": "Diseñé y desarrollé Lux Ater, un blog de filosofía y poesía para un escritor. Utilicé Next.js como framework, CSS Modules para el diseño, Firebase para la base de datos y la autenticación, y Markdown para el formato del contenido. El proyecto presenta una interfaz limpia e intuitiva, publicación de contenido eficiente y una escalabilidad y seguridad robustas."
+			},
+			"Hybeans App": {
+				"name": "Hybeans App",
+				"description": "Contribuí al desarrollo de diversas funcionalidades clave de la aplicación, incluyendo inicio de sesión, recuperación de contraseña, validación de cuenta, múltiples tipos de perfiles, feeds, notificaciones, menús de configuración, reservas, venta de productos, contratación y generación de recorridos utilizando servicios de mapas, entre otras."
+			},
+			"Filoweb": {
+				"name": "Filoweb",
+				"description": "Sitio educativo que traza la historia de la filosofía occidental, desde las escuelas presocráticas hasta las postmodernas, mostrando sus principales corrientes y exponentes de una manera hermosa."
+			},
+			"Hybeans Web": {
+				"name": "Hybeans Web",
+				"description": "Como parte de mis contribuciones al desarrollo continuo del sitio web de Hybeans, también desempeñé un papel clave en la implementación de diversas funcionalidades de la aplicación. Estas incluían tipos de perfil, reservas, el proceso de pago, la página de aterrizaje y más."
+			},
+			"Jardin Management CPanel": {
+				"name": "Jardin Management CPanel",
+				"description": "Aplicación web comercial construida para gestionar el inventario de una tienda local de ropa de segunda mano. Con ella, los empleados de la tienda pueden ingresar productos, modificarlos, eliminarlos y realizar búsquedas específicas. Se implementa una API segura con servicios de consulta, paginación, inicio de sesión y CRUD."
+			},
+			"Your Lists App": {
+				"name": "Your Lists App",
+				"description": "Aplicación web de uso personal creada para utilizar listas, ya sea como recordatorios, lista de tareas, pasos para recetas, etc. En ella, puedes gestionar las listas en carpetas para diferenciarlas y ordenarlas."
+			}
+		}
+	},
+	"contact": {
+		"my_email": "luis.espinoza.nav@live.com",
+		"my_phone_number": "+54 9 11 2388-1314",
+		"linkedin_label": "Linkedin"
+	}
+}
