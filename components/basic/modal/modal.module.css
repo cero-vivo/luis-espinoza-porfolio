@@ -11,7 +11,7 @@
     top: 0;
     height: 100dvh;
     width: 100vw;
-    z-index: 100;
+    z-index: 200;
     justify-content: center;
     opacity: 1;
     align-items: flex-start;

@@ -11,7 +11,7 @@ interface ParagraphProps {
 
 export const Paragraph: FC<ParagraphProps> = (props) => {
 
-	const { text, variant, classes, customTx, onClick } = props
+	const { text, variant, classes, onClick } = props
 
 	return (
         <p onClick={onClick} className={`${styles.paragraph} ${variant === "bold" ? styles.bold : styles.regular} ${classes}`}>
