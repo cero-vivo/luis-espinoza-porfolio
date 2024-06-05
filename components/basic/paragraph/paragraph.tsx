@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import styles from "./paragraph.module.css"
-import { en, textKeys } from '@/lenguages/en'
 
 interface ParagraphProps {
 	text?: string

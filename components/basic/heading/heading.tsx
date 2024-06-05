@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import styles from "./heading.module.css"
-import { en, textKeys } from '@/lenguages/en'
 
 interface HeadingProps {
 	variant: "h1" | "h2" | "h3",

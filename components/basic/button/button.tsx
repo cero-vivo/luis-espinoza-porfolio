@@ -2,7 +2,6 @@
 
 import React, { FC } from 'react'
 import styles from "./button.module.css"
-import { textKeys } from '@/lenguages/en'
 import { Paragraph } from '../paragraph/paragraph'
 
 interface ButtonProps {
