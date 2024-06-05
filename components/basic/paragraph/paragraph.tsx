@@ -3,22 +3,19 @@ import styles from "./paragraph.module.css"
 import { en, textKeys } from '@/lenguages/en'
 
 interface ParagraphProps {
-	text?: textKeys
+	text?: string
     variant: "bold" | "regular"
     classes?: string
-	customTx?: string
 	onClick?: () => void
 }
 
 export const Paragraph: FC<ParagraphProps> = (props) => {
 
-	const { text, variant, classes, customTx, onClick } = props
-
-	const finalText = customTx ? customTx : (text ? en[text] : "")
+	const { text, variant, classes, onClick } = props
 
 	return (
         <p onClick={onClick} className={`${styles.paragraph} ${variant === "bold" ? styles.bold : styles.regular} ${classes}`}>
-				{finalText?.toString()}
+				{text}
 		</p>
 	)
 }

@@ -6,3 +6,8 @@ export enum Sections {
     CONTACT = "contact",
     CV = "cv"
 }
+
+export enum Languages {
+    EN = "en",
+    ES = "es"
+}

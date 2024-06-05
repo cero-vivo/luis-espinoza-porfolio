@@ -9,6 +9,7 @@ import { TechStack } from '@/components/shared/tech-stack/tech-stack'
 import Image from 'next/image'
 import ExternalLinkIcon from '@/components/basic/icons/external-link-icon'
 import { colors } from '@/theme/colors'
+import { useTranslations } from 'next-intl'
 
 interface WorkCardProps {
     work: ProjectType
@@ -17,6 +18,7 @@ interface WorkCardProps {
 export const WorkCard: FC<WorkCardProps> = (props) => {
     
     const { work } = props
+    const t = useTranslations("works")
 
     const worksRef = useRef(null)
 
@@ -57,7 +59,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     return (
         <div key={work.name} className={styles.cardBox}>
             <div className={styles.titleBox}>
-                <Heading customTx={work.name} variant='h3' />
+                <Heading text={t(`projects.${work.name}.name`)} variant='h3' />
                 <div className={styles.linksBox}>
                     {links}
                 </div>
@@ -72,7 +74,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
                 <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollRight} className={styles.rightButton}/>
             </div>
             <TechStack icons={work.icons} boxClasses={styles.techStack} />
-            <Paragraph customTx={work.description} variant='regular' classes={styles.paragraph} />
+            <Paragraph text={t(`projects.${work.name}.description`)} variant='regular' classes={styles.paragraph} />
         </div>
     )
 }

@@ -9,6 +9,8 @@ import { Header } from '@/components/shared/header/header'
 import { Sections } from '@/types/constant'
 import { ContactModal } from '@/components/modals/contact-modal'
 import { LetsTalkButton } from './lets-talk-button'
+import { LanguageSwitcher } from '@/components/basic/language-switcher/language-switcher'
+import { useTranslations } from 'next-intl'
 
 const iconStack: TechIcon[] = [
 	"postgres",
@@ -24,12 +26,16 @@ const iconStack: TechIcon[] = [
 ]
 
 export const Landing = () => {
+
+	const t = useTranslations("landing")
+
 	return (
 		<Frame id={Sections.HOME}>
+			<LanguageSwitcher/>
 			<ContactModal/>
 			<Header />
-			<Heading variant={"h1"} text={"landing_title"} classes={styles.title}/>
-			<Paragraph text={"landing_message"} variant='bold' classes={styles.message}/>
+			<Heading variant={"h1"} text={t("title")} classes={styles.title}/>
+			<Paragraph text={t("message")} variant='bold' classes={styles.message}/>
 			<TechStack icons={iconStack}/>
 			<LetsTalkButton classes={styles.button}/>
 		</Frame>

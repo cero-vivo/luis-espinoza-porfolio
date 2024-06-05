@@ -1,0 +1,16 @@
+.switcherBox {
+    display: flex;
+    align-self: start;
+}
+.text {
+    font-size: 18px;
+    color: var(--slateGray);
+    cursor: pointer;
+}
+.selectedText {
+    color: var(--navyBlue)
+}
+.option:hover {
+    transition: color .3s ease-in-out;
+    color: var(--navyBlue)
+}
