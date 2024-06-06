@@ -10,6 +10,7 @@ import { EmailIcon } from '../basic/icons/email-icon'
 import { WhatsappIcon } from '../basic/icons/whatsapp-icon'
 import { PhoneIcon } from '../basic/icons/phone-icon'
 import { LinkedinIcon } from '../basic/icons/linkedin-icon'
+import Image from 'next/image'
 
 export const ContactModal = () => {
 
@@ -19,7 +20,7 @@ export const ContactModal = () => {
 		<Modal isOpen={contactModalVisible}>
 			<section className={styles.contactBox}>
 				<CloseIcon color={colors.navyBlue} width={30} height={30} onClick={closeContactModal} classes={styles.closeIcon} />
-				<img src={"/images/contact_modal.jpg"} alt="contact_modal" className={styles.image} />
+				<Image width={800} height={600} src={"/images/contact_modal.jpg"} alt="contact_modal" className={styles.image} />
 				<div className={styles.imageOverlay} />
 				<div className={styles.contactIconsBox}>
 					<EmailIcon color={colors.navyBlue} width={90} height={90} onClick={sendMeEmail} classes={styles.contactIcon} />

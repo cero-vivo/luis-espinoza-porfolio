@@ -16,7 +16,7 @@ interface WorkCardProps {
 }
 
 export const WorkCard: FC<WorkCardProps> = (props) => {
-    
+
     const { work } = props
     const t = useTranslations("works")
 
@@ -43,17 +43,17 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     const links = work.urls.map((url) => {
         const handleClick = () => {
             if (url) {
-              window.open(url, "_blank", "noopener,noreferrer")
+                window.open(url, "_blank", "noopener,noreferrer")
             }
-          };
-          return <ExternalLinkIcon 
-                    key={url}
-                    color={colors.navyBlue} 
-                    width={20} 
-                    height={20} 
-                    classes={styles.externalLinkIcon} 
-                    onClick={handleClick} 
-                />
+        };
+        return <ExternalLinkIcon
+            key={url}
+            color={colors.navyBlue}
+            width={20}
+            height={20}
+            classes={styles.externalLinkIcon}
+            onClick={handleClick}
+        />
     })
 
     return (
@@ -65,13 +65,21 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
                 </div>
             </div>
             <div className={styles.slideBox}>
-                <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollLeft} className={styles.leftButton}/>
+                <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollLeft} className={styles.leftButton} />
                 <div className={styles.slideImagesBox} ref={worksRef}>
                     {work.images.map((image, index) => {
-                        return <img key={index} src={image} alt={work.name} className={styles.slideImage} loading='lazy' />
+                        return <Image
+                                key={index}
+                                src={image}
+                                alt={work.name}
+                                className={styles.slideImage}
+                                loading='lazy'
+                                width={700}
+                                height={700}
+                            />
                     })}
                 </div>
-                <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollRight} className={styles.rightButton}/>
+                <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollRight} className={styles.rightButton} />
             </div>
             <TechStack icons={work.icons} boxClasses={styles.techStack} />
             <Paragraph text={t(`projects.${work.name}.description`)} variant='regular' classes={styles.paragraph} />

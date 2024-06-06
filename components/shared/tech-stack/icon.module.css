@@ -8,6 +8,7 @@
 }
 .icon {
     width: 60px;
+    height: auto;
     object-fit: contain;
     aspect-ratio: 1/1;
 }
@@ -22,6 +23,7 @@
     }
     .icon {
         width: 40px;
+        height: auto;
         object-fit: contain;
         aspect-ratio: 1/1;
     }

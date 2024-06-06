@@ -22,8 +22,6 @@
     color: var(--navyBlue);
     transition: color .1s ease-in-out;
 }
-
-
 .activeSection {
     color: var(--navyBlue);
     font-weight: 800;

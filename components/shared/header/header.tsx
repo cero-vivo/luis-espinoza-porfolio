@@ -6,6 +6,7 @@ import styles from "./header.module.css"
 import { Sections } from '@/types/constant'
 import { useLandingStore } from '@/model/landing-store'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 export const Header = () => {
 
@@ -39,7 +40,7 @@ export const Header = () => {
 		<header className={styles.headerBox}>
 			{sections}
 			<a href={`#${Sections.HOME}`} onClick={goToHome} className={styles.headerPhoto}>
-				<img src='/images/header_photo1.png' alt="header_photo" className={styles.headerPhoto} />
+				<Image width={103} height={103} layout='responsive' src='/images/header_photo1.png' alt="header_photo" className={styles.headerPhoto} />
 			</a>
 		</header>
 	)

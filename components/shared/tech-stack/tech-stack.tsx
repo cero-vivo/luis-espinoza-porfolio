@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { TechIcon, techIcons } from './tech-index'
 import styles from "./icon.module.css"
+import Image from 'next/image'
 
 interface TechStackProps {
 	icons: TechIcon[]
@@ -14,7 +15,7 @@ export const TechStack: FC<TechStackProps> = (props) => {
 
 	const iconsList = icons.map((techIcon: TechIcon) => {
 		const icon = techIcons[techIcon]
-		return <img key={techIcon} src={icon} alt={techIcon} className={`${styles.icon} ${iconClasses}`} loading='lazy' />
+		return <Image width={60} height={60} key={techIcon} src={icon} alt={techIcon} className={`${styles.icon} ${iconClasses}`} loading='lazy' />
 	})
 
 	return (
