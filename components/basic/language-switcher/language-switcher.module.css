@@ -1,6 +1,7 @@
 .switcherBox {
     display: flex;
     align-self: start;
+    position: fixed;
 }
 .text {
     font-size: 18px;

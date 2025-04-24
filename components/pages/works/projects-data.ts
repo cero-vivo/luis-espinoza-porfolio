@@ -28,10 +28,13 @@ export const projects: ProjectType[] = [
 		"name": "0-Registros",
 		"icons": ["typescript", "next", "css3", "firebase", "netlify"],
 		"images": [
-			"/projects/luxater/1.png",
-			"/projects/luxater/2.png",
-			"/projects/luxater/3.png",
-			"/projects/luxater/4.png"
+			"/projects/0-registros/1.png",
+			"/projects/0-registros/2.png",
+			"/projects/0-registros/3.png",
+			"/projects/0-registros/4.png",
+			"/projects/0-registros/6.png",
+			"/projects/0-registros/7.png",
+			"/projects/0-registros/8.png"
 		],
 		"urls": ["https://www.0-registros.blog"]
 	},
@@ -88,7 +91,7 @@ export const projects: ProjectType[] = [
 		],
 		"urls": ["https://www.hybeans.com"]
 	},
-	{
+	/* {
 		"name": "Jardin Management CPanel",
 		"icons": ["javascript", "react", "css3", "java", "springboot", "jwt", "postgres", "amazon", "heroku"],
 		"images": [
@@ -112,5 +115,5 @@ export const projects: ProjectType[] = [
 			"/projects/YourListsApp/3.png"
 		],
 		urls: []
-	}
+	} */
 ]

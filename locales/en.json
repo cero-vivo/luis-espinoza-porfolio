@@ -1,6 +1,6 @@
 {
 	"landing": {
-		"title": "Luis Espinoza\nFront end solutions",
+		"title": "Luis Espinoza\nWeb & Mobile Dev",
 		"message": "With years of experience and a focus on the best technologies in the market, I am ready to transform your ideas into real projects. Specializing in React, Next.js, and React Native, I provide web and mobile development services known for their quality and efficiency",
 		"button": "Lets talk"
 	},
@@ -56,7 +56,7 @@
 			},
 			"0-Registros": {
 				"name": "0-Registros",
-				"description": "Designed and developed 0-Registros, a philosophy and poetry blog for a writer. Utilized Next.js for the framework, CSS Modules for styling, Firebase for database and authentication, and Markdown for content formatting. The project features a clean and intuitive interface, efficient content publishing, and robust scalability and security."
+				"description": "0-registros is an experimental web project that blends poetry, generative art, and technology to explore existential themes. Built with Next.js and TypeScript in a monorepo architecture that unifies frontend and backend, it leverages React, CSS Modules, p5.js, i18n for internationalization, Zustand for state management, and Firebase as a backend with a REST API. The site offers an immersive experience where texts intertwine with code-generated visuals in a minimalist, contemplative environment."
 			},
 			"Hybeans App": {
 				"name": "Hybeans App",
