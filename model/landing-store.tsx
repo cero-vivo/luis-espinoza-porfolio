@@ -53,7 +53,7 @@ export const useLandingStore = create<LandingUIState>()((set, get) => ({
 	closeContactModal: () => set({ contactModalVisible: false }),
 	sendMeEmail: () => {
 		const email = 'luis.espinoza.nav@outlook.com'
-		const subject = 'Job Proposal'
+		const subject = 'De sitio Luis Espinoza'
 		const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`
 		window.open(mailtoLink, '_blank')
 

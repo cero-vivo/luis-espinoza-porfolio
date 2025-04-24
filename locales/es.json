@@ -50,9 +50,13 @@
 	"works": {
 		"title": "TRABAJOS",
 		"projects": {
-			"Lux Ater": {
-				"name": "Lux Ater",
-				"description": "Diseñé y desarrollé Lux Ater, un blog de filosofía y poesía para un escritor. Utilicé Next.js como framework, CSS Modules para el diseño, Firebase para la base de datos y la autenticación, y Markdown para el formato del contenido. El proyecto presenta una interfaz limpia e intuitiva, publicación de contenido eficiente y una escalabilidad y seguridad robustas."
+			"Pago Fácil & Western Union": {
+				"name": " Pago Fácil & Western Union",
+				"description": "Actualmente trabajo en la aplicación Pago Fácil en colaboración directa con Western Union. Me encargo del mantenimiento continuo de la app, que cuenta con más de 1 millón de descargas en Android y alrededor de 500,000 usuarios activos.He liderado la implementación de múltiples mejoras y nuevos módulos, mejorando tanto la experiencia de usuario como la arquitectura interna del proyecto.Trabajo con un stack centrado en React Native, TypeScript, Redux y consumo de REST APIs, con un enfoque sólido en el desarrollo escalable y sostenible."
+			},
+			"0-Registros": {
+				"name": "0-Registros",
+				"description": "Diseñé y desarrollé 0-Registros, un blog de filosofía y poesía para un escritor. Utilicé Next.js como framework, CSS Modules para el diseño, Firebase para la base de datos y la autenticación, y Markdown para el formato del contenido. El proyecto presenta una interfaz limpia e intuitiva, publicación de contenido eficiente y una escalabilidad y seguridad robustas."
 			},
 			"Hybeans App": {
 				"name": "Hybeans App",

@@ -16,7 +16,8 @@ export const techIcons = {
     "java": "/icons/java.png",
     "heroku": "/icons/heroku.png",
     "jwt": "/icons/jwt.svg",
-    "material": "/icons/material.png"
+    "material": "/icons/material.png",
+    "redux": "/icons/redux.png",
 }
 
 export type TechIcon = keyof typeof techIcons

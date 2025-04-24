@@ -9,7 +9,23 @@ export interface ProjectType {
 
 export const projects: ProjectType[] = [
 	{
-		"name": "Lux Ater",
+		"name": "Pago Fácil & Western Union",
+		"icons": ["typescript", "react", "firebase", "redux", "amazon"],
+		"images": [
+			"/projects/pagoFacil/1.png",
+			"/projects/pagoFacil/2.png",
+			"/projects/pagoFacil/4.png",
+			"/projects/pagoFacil/9.png",
+			"/projects/pagoFacil/5.png",
+			"/projects/pagoFacil/3.png",
+			"/projects/pagoFacil/6.png",
+			"/projects/pagoFacil/7.png",
+			"/projects/pagoFacil/8.png",
+		],
+		"urls": ["https://apps.apple.com/ar/app/app-pago-f%C3%A1cil/id6443566167", "https://play.google.com/store/apps/details?id=com.westernunionwallet&hl=en-US"]
+	},
+	{
+		"name": "0-Registros",
 		"icons": ["typescript", "next", "css3", "firebase", "netlify"],
 		"images": [
 			"/projects/luxater/1.png",
@@ -17,7 +33,7 @@ export const projects: ProjectType[] = [
 			"/projects/luxater/3.png",
 			"/projects/luxater/4.png"
 		],
-		"urls": ["https://www.luxater.blog"]
+		"urls": ["https://www.0-registros.blog"]
 	},
 	{
 		"name": "Hybeans App",

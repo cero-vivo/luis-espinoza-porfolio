@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
 	title: "Luis Espinoza",
-	description: "Luis Espinoza - Desarrollador de Software | Experto en React y React Native.\nSoy Luis Espinoza, un desarrollador de software especializado en la creación de aplicaciones web y móviles con React y React Native. Con una sólida formación en Filosofía e Informática y un enfoque autodidacta, ofrezco soluciones innovadoras y funcionales. Descubre mis proyectos y habilidades en desarrollo frontend y backend, y cómo mi pasión por la música y la lectura enriquecen mi enfoque creativo. Visita mi portafolio para conocer más sobre mi trabajo y colaboración en equipos de alto rendimiento.",
+	description: "Luis Espinoza - Software develop dev react react native mobile app web app argentina chile latam web frontend fullstack",
 };
 
 export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string }; }) {
