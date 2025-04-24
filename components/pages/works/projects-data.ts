@@ -26,7 +26,7 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "0-Registros",
-		"icons": ["typescript", "next", "css3", "firebase", "netlify"],
+		"icons": ["typescript", "next", "css3", "firebase", "netlify", "p5js"],
 		"images": [
 			"/projects/0-registros/1.png",
 			"/projects/0-registros/2.png",
@@ -36,7 +36,7 @@ export const projects: ProjectType[] = [
 			"/projects/0-registros/7.png",
 			"/projects/0-registros/8.png"
 		],
-		"urls": ["https://www.0-registros.blog"]
+		"urls": ["https://www.0-registros.art"]
 	},
 	{
 		"name": "Hybeans App",
