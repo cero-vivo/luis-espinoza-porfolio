@@ -26,12 +26,12 @@ export const useLandingStore = create<LandingUIState>()((set, get) => ({
 	setActionSection: (section: Sections) => set({ actionSection: section }),
 	links: [
 		{
-			sectionId: Sections.SKILLS,
-			text: "skills"
-		},
-		{
 			sectionId: Sections.WORKS,
 			text: "works"
+		},
+		{
+			sectionId: Sections.SKILLS,
+			text: "skills"
 		},
 		{
 			sectionId: Sections.ETHOS,

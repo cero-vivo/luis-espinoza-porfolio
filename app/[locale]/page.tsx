@@ -10,8 +10,8 @@ export default function Home() {
 	return (
 		<main>
 			<Landing />
-			<Skills/>
 			<Works/>
+			<Skills/>
 			<Ethos />
 			<Footer/>
 		</main>
