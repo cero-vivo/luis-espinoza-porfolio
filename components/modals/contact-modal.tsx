@@ -25,10 +25,10 @@ export const ContactModal = () => {
 				<div className={styles.contactInfo}>
 					<h2 className={styles.name}>Luis Espinoza</h2>
 					<p className={styles.role}>Software Engineer</p>
-					<p className={styles.detail}>📧 <a href="mailto:luis.espinoza.nav@outlook.com">luis.espinoza.nav@outlook.com</a></p>
-					<p className={styles.detail}>📞 <a href="tel:+5491123881314">Tel +54 9 11 2388 1314</a></p>
-					<p className={styles.detail}>💬 <a href="https://wa.me/5491123881314" target="_blank" rel="noopener noreferrer">WhatsApp +54 9 11 2388 1314</a></p>
-					<p className={styles.detail}>🔗 <a href="https://www.linkedin.com/in/luisespinozadev/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+					<p className={styles.detail}>📧 <a href='' onClick={sendMeEmail}>luis.espinoza.nav@outlook.com</a></p>
+					<p className={styles.detail}>📞 <a href='' onClick={callMe}>Tel +54 9 11 2388 1314</a></p>
+					<p className={styles.detail}>💬 <a href='' onClick={sendMeWhatsapp} target="_blank" rel="noopener noreferrer">WhatsApp +54 9 11 2388 1314</a></p>
+					<p className={styles.detail}>🔗 <a href='' onClick={openLinkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 					<p className={styles.location}>📍<a href="https://www.google.com/maps/place/Palermo,+CABA,+Argentina" target="_blank" rel="noopener noreferrer">Palermo, Ciudad Autónoma de Buenos Aires, Argentina</a></p>
 
 					<div className={styles.contactIconsBox}>
