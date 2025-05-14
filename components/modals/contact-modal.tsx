@@ -22,11 +22,22 @@ export const ContactModal = () => {
 				<CloseIcon color={colors.navyBlue} width={30} height={30} onClick={closeContactModal} classes={styles.closeIcon} />
 				<Image width={800} height={600} src={"/images/contact_modal.jpg"} alt="contact_modal" className={styles.image} />
 				<div className={styles.imageOverlay} />
-				<div className={styles.contactIconsBox}>
-					<EmailIcon color={colors.navyBlue} width={90} height={90} onClick={sendMeEmail} classes={styles.contactIcon} />
-					<WhatsappIcon color={colors.navyBlue} width={90} height={90} onClick={sendMeWhatsapp} classes={styles.contactIcon} />
-					<PhoneIcon color={colors.navyBlue} width={90} height={90} onClick={callMe} classes={styles.contactIcon} />
-					<LinkedinIcon color={colors.navyBlue} width={90} height={90} onClick={openLinkedin} classes={styles.contactIcon} />
+				<div className={styles.contactInfo}>
+					<h2 className={styles.name}>Luis Espinoza</h2>
+					<p className={styles.role}>Software Engineer</p>
+					<p className={styles.detail}>📧 <a href="mailto:luis.espinoza.nav@outlook.com">luis.espinoza.nav@outlook.com</a></p>
+					<p className={styles.detail}>📞 <a href="tel:+5491123881314">+54 9 11 2388 1314</a></p>
+					<p className={styles.detail}>💬 <a href="https://wa.me/5491123881314" target="_blank" rel="noopener noreferrer">Envia un mensaje por WhatsApp</a></p>
+					<p className={styles.detail}>🔗 <a href="https://www.linkedin.com/in/luisespinozadev/" target="_blank" rel="noopener noreferrer">LinkedIn - Luis Espinoza Dev</a></p>
+					<p className={styles.detail}>📍 Palermo, Ciudad Autónoma de Buenos Aires, Argentina</p>
+
+
+					<div className={styles.contactIconsBox}>
+					<EmailIcon color={colors.navyBlue} width={50} height={50} onClick={sendMeEmail} classes={styles.contactIcon} />
+					<WhatsappIcon color={colors.navyBlue} width={50} height={50} onClick={sendMeWhatsapp} classes={styles.contactIcon} />
+					<PhoneIcon color={colors.navyBlue} width={50} height={50} onClick={callMe} classes={styles.contactIcon} />
+					<LinkedinIcon color={colors.navyBlue} width={50} height={50} onClick={openLinkedin} classes={styles.contactIcon} />
+				</div>
 				</div>
 			</section>
 		</Modal>
