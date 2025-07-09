@@ -38,7 +38,7 @@ export const Skills = () => {
 
 	return (
 		<Frame id={Sections.SKILLS}>
-			<Heading text={t("title")} variant='h2' classes={styles.title} />
+			<Heading text={t("title")} variant='h2' classes={`${styles.title} ${styles.stickyTitle}`} />
 			<section className={styles.contentBox}>
 				<Image width={400} height={600} src='/images/skills_photo1.jpg' alt="skills" className={styles.mainImage} loading='lazy' />
 				<span className={styles.detailBox}>

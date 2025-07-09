@@ -63,3 +63,25 @@
         margin-top: 63px;
     }
 }
+
+/* Contenedor Sticky para título + imagen en desktop */
+.stickyBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (min-width: 1096px) {
+    .mainImage {
+        position: sticky;
+        top: 110px; /* por encima del header fijo */
+        z-index: 5;
+    }
+    .stickyTitle {
+        position: sticky;
+        top: 50px;
+        z-index: 10;
+    }
+}
