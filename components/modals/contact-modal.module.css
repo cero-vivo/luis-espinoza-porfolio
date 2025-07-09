@@ -63,6 +63,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     margin-top: 12px;
+    justify-content: center;
 }
 
 .contactButton {
@@ -75,7 +76,7 @@
     border-radius: 16px;
     background-color: var(--white);
     border: 2px solid var(--paleBlue);
-    color: var(--navyBlue);
+    color: var(--navyBlue); /* this will tint SVG using currentColor */
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
@@ -89,10 +90,7 @@
     border-color: var(--skyBlue);
 }
 
-.contactButton svg {
-    width: 28px;
-    height: 28px;
-}
+/* remove explicit fill; rely on currentColor */
 
 .contactLabel {
     font-size: 0.9rem;
@@ -106,6 +104,7 @@
 
 @media (max-width: 480px) {
     .modalCard {
+        width: 80%;
         margin-top: 60px;
         padding: 24px 16px 32px;
     }

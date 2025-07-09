@@ -86,7 +86,6 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
 
     return (
         <div key={work.name} className={styles.cardBox}>
-            <div className={styles.stickyContent}>
             <div className={styles.titleBox}>
                 <Heading text={t(`projects.${work.name}.name`)} variant='h3' />
                 <div className={styles.linksBox}>
@@ -116,7 +115,6 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
                     <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollRight} className={styles.rightButton} />
                 </div>
                 <TechStack icons={work.icons} boxClasses={styles.techStack} />
-            </div>
             <div
                 ref={paragraphRef}
                 className={styles.paragraphContainer}
