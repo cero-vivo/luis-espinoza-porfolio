@@ -76,7 +76,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
         };
         return <ExternalLinkIcon
             key={url}
-            color={colors.navyBlue}
+            color={'var(--navyBlue)'}
             width={20}
             height={20}
             classes={styles.externalLinkIcon}
