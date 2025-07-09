@@ -6,6 +6,8 @@
     flex-direction: row;
     position: fixed;
     top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     gap: 27px;
     border-radius: 16px;
     height: 60px;
@@ -58,7 +60,9 @@
 
 @media(width <= 758px) {
     .headerBox {
-        width: 320px;
+        /* width: 320px; */
+        min-width: 300px;
+        max-width: 315px;
         gap: 22px;
         height: 48px;
         justify-content: center;
