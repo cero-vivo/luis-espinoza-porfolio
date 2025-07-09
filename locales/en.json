@@ -1,8 +1,8 @@
 {
 	"landing": {
-		"title": "Luis Espinoza\nSoftware Engineer",
-		"message": "Focused on mobile and web development, with specialization in React, React Native, Node.js, TypeScript, REST APIs, and both NoSQL and SQL databases.",
-		"button": "Lets talk"
+		"title": "Luis Espinoza\nMobile & Web Engineer",
+		"message": "I build high-performance experiences with React, React Native and Node.js. I deliver FinTech & EventTech apps that reach thousands of users every month.",
+		"button": "Let's talk"
 	},
 	"header": {
 		"skills": "Skills",
