@@ -78,6 +78,7 @@
     }
     .option {
         font-size: 14px !important;
+        z-index: 100;
     }
     .headerPhoto:hover {
         transform: translateX(-50%) scale(1.05);
