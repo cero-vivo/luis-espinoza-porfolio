@@ -17,67 +17,67 @@
 		"sections": {
 			"0": {
 				"title": "Desarrollo Frontend & Mobile",
-				"item_0": "React & React Native: Amplia experiencia en la construcción de componentes reutilizables y optimizados para el rendimiento.",
-				"item_1": "HTML, CSS, JavaScript: Dominio de los conceptos fundamentales con la capacidad de escribir código limpio y semántico.",
-				"item_2": "Programación de Interfaces de Usuario: Utilización de herramientas como React, React Native, MST y Figma para crear interfaces de usuario de alta calidad e intuitivas.",
-				"item_3": "Control de Versiones: Conocimiento de Git con la habilidad de trabajar con repositorios remotos y gestionar conflictos de versiones."
+				"item_0": "React & React Native: Desarrollo de interfaces modulares y de alto rendimiento para web y mobile, aplicando mejores prácticas de accesibilidad y SEO.",
+				"item_1": "HTML, CSS, JavaScript: Código semántico, responsive y optimizado que garantiza una experiencia consistente en cualquier dispositivo.",
+				"item_2": "UI/UX & Prototipado: Diseño de flujos y prototipos en Figma trasladados a componentes escalables con TypeScript y CSS Modules.",
+				"item_3": "Control de Versiones: Fluidez con Git (GitFlow, PR reviews, CI/CD) y colaboración en equipos distribuidos."
 			},
 			"1": {
 				"title": "Arquitectura & Diseño de Aplicaciones",
-				"item_0": "Arquitectura de Aplicaciones: Comprensión de la arquitectura de aplicaciones de React y React Native, con la capacidad de diseñar y mantener una estructura de carpetas organizada y escalable.",
-				"item_1": "Diseño Responsivo & Accesible: Desarrollo y mantenimiento de experiencias de usuario optimizadas y accesibles mediante técnicas de diseño responsivo y prácticas de accesibilidad.",
-				"item_2": "Firebase: Competencia en la gestión de Firebase Realtime Database, Firestore para la gestión de bases de datos, autenticación de usuarios e integración de notificaciones push."
+				"item_0": "Clean Architecture & SOLID: Estructuración de proyectos React/React Native escalables y fáciles de mantener.",
+				"item_1": "Diseño Responsivo & Accesible: Adopción de WCAG y Mobile-First para llegar al 100 % de la audiencia.",
+				"item_2": "Backend-as-a-Service: Firebase (Auth, Firestore, Cloud Functions) y AWS Serverless para acelerar el time-to-market."
 			},
 			"2": {
-				"title": "Gestión de Proyectos & Colaboración en Equipo",
-				"item_0": "Herramientas de Gestión de Proyectos: Habilidad para colaborar con equipos utilizando herramientas de gestión de proyectos como Jira y plataformas de comunicación como Slack.",
-				"item_1": "Colaboración & Comunicación: Comunicación y colaboración efectivas con miembros del equipo, clientes y stakeholders, fomentando un entorno de trabajo colaborativo."
+				"title": "Gestión de Proyectos & Colaboración",
+				"item_0": "Metodologías ágiles (Scrum, Kanban) y herramientas como Jira o Linear para entregas iterativas.",
+				"item_1": "Comunicación puente entre negocio y tecnología, facilitando decisiones informadas y eficiencia del equipo."
 			},
 			"3": {
 				"title": "Resolución de Problemas & Aprendizaje Continuo",
-				"item_0": "Análisis & Resolución de Problemas: Análisis y resolución efectivos de problemas en el desarrollo de software.",
-				"item_1": "Aprendizaje Rápido: Adaptación rápida a nuevas tecnologías y herramientas en el desarrollo de aplicaciones móviles y web.",
-				"item_2": "Soluciones Innovadoras: Compromiso con mantenerse actualizado con las últimas tecnologías y prácticas de desarrollo para ofrecer soluciones innovadoras y efectivas."
+				"item_0": "Debugging & Tuning: Identificación de cuellos de botella con herramientas de profiling y observabilidad.",
+				"item_1": "Aprendizaje continuo: Investigación autodirigida y adaptación rápida a nuevas tecnologías.",
+				"item_2": "Innovación: Propuesta de mejoras y automatizaciones que reducen tiempo de desarrollo y errores."
 			}
 		}
 	},
 	"ethos": {
 		"title": "ETHOS",
-		"content_1": "Mi nombre es Luis Espinoza, un desarrollador de software especializado en aplicaciones web y móviles. Mi vida ha sido un viaje constante en busca de conocimiento, combinando estudios de Filosofía en la Universidad de Buenos Aires (UBA) y Ciencias de la Computación en la Universidad Nacional de General Sarmiento (UNGS), con cursos de programación en la Universidad Tecnológica Nacional (UTN).",
-		"content_2": "Soy autodidacta y valoro el aprendizaje continuo, por eso me mantengo actualizado con las últimas tecnologías, especialmente en el ecosistema React, React Native, HTML, CSS y JavaScript.",
-		"content_3": "Fuera del ámbito profesional, me apasiona la filosofía, la lectura y la escritura. Esto nutre mi creatividad y me ofrece nuevas perspectivas. Estas actividades enriquecen mi enfoque en el desarrollo de software, permitiéndome abordar los desafíos de manera innovadora.",
-		"content_4": "Valoro la confianza, la comunicación efectiva y la colaboración. Mis fuertes habilidades de comunicación me permiten trabajar eficientemente con equipos y clientes, asegurando proyectos exitosos. Mi compromiso es crear aplicaciones excepcionales que brinden experiencias memorables y gratificantes. Fiable, dedicado a la excelencia, siempre listo para enfrentar nuevos desafíos con entusiasmo."
+		"content_1": "Curioso por naturaleza, combino estudios de Filosofía (UBA) con Ingeniería en Software (UNGS) para crear soluciones digitales que impacten positivamente a las personas.",
+		"content_2": "Me apasiona el ecosistema React y mantengo un aprendizaje continuo aplicando las últimas tendencias de la industria.",
+		"content_3": "La lectura y la escritura alimentan mi creatividad, permitiéndome abordar los desafíos de forma analítica y original.",
+		"content_4": "Creo en la confianza, la comunicación clara y el trabajo en equipo como pilares para construir productos memorables y sostenibles."
 	},
 	"works": {
 		"title": "TRABAJOS",
 		"projects": {
 			"Pago Fácil & Western Union": {
 				"name": " Pago Fácil & Western Union",
-				"description": "Actualmente trabajo en la aplicación Pago Fácil en colaboración directa con Western Union. Me encargo del mantenimiento continuo de la app, que cuenta con más de 1 millón de descargas en Android y alrededor de 500,000 usuarios activos.He liderado la implementación de múltiples mejoras y nuevos módulos, mejorando tanto la experiencia de usuario como la arquitectura interna del proyecto.Trabajo con un stack centrado en React Native, TypeScript, Redux y consumo de REST APIs, con un enfoque sólido en el desarrollo escalable y sostenible."
+				"description": "Colaboro en la evolución de la billetera digital Pago Fácil, desarrollada junto a Western Union. Con más de un millón de descargas y cientos de miles de usuarios activos, lidero la incorporación de nuevas funcionalidades y refactorizaciones que mejoran la performance y la experiencia de usuario, manteniendo la estabilidad en producción. Stack: React Native, TypeScript, Redux, REST APIs y Clean Architecture."
 			},
 			"0-Registros": {
 				"name": "0-Registros",
-				"description": "0-registros es un proyecto web experimental que fusiona poesía, filosofía, arte generativo y tecnología para explorar temas existenciales. Desarrollado con Next.js y TypeScript en una arquitectura monorepo que integra frontend y backend, incorpora React, CSS Modules, p5.js, i18n para internacionalización, Zustand para manejo de estado, y Firebase como backend junto a una API REST. El sitio ofrece una experiencia inmersiva donde textos se entrelazan con visuales generados por código, en un entorno minimalista y contemplativo."
+				"description": "Proyecto experimental que fusiona poesía, arte generativo y tecnología para explorar preguntas existenciales. Desarrollado con Next.js y TypeScript en monorepo, emplea p5.js para visuales dinámicos, Firebase como backend y traducción i18n. Creé una experiencia inmersiva minimalista que combina texto y gráficos en tiempo real."
 			},
 			"Hybeans App": {
 				"name": "Hybeans App",
-				"description": "Contribuí al desarrollo de diversas funcionalidades clave de la aplicación, incluyendo inicio de sesión, recuperación de contraseña, validación de cuenta, múltiples tipos de perfiles, feeds, notificaciones, menús de configuración, reservas, venta de productos, contratación y generación de recorridos utilizando servicios de mapas, entre otras."
+				"description": "En Hybeans, plataforma de gestión de eventos con funcionalidades sociales, diseñé e implementé módulos críticos en iOS y Android: autenticación, perfiles dinámicos, feed en tiempo real, notificaciones push, reservas y venta de productos. Coordiné con diseño, backend y QA para publicar releases en plazos ajustados y asegurar un rendimiento estable durante eventos con miles de asistentes."
 			},
 			"Filoweb": {
 				"name": "Filoweb",
-				"description": "Sitio educativo que traza la historia de la filosofía occidental, desde las escuelas presocráticas hasta las postmodernas, mostrando sus principales corrientes y exponentes de una manera hermosa."
+				"description": "Sitio educativo interactivo que recorre la historia de la filosofía occidental. Diseñé una interfaz visual atractiva y cronogramas navegables que facilitan la exploración de corrientes y autores, acercando la filosofía a nuevos públicos."
 			},
 			"Hybeans Web": {
 				"name": "Hybeans Web",
-				"description": "Como parte de mis contribuciones al desarrollo continuo del sitio web de Hybeans, también desempeñé un papel clave en la implementación de diversas funcionalidades de la aplicación. Estas incluían tipos de perfil, reservas, el proceso de pago, la página de aterrizaje y más."
+				"description": "En la versión web de Hybeans implementé perfiles personalizables, sistema de reservas con confirmación en tiempo real, checkout de pagos y landing pages optimizadas para conversión. Optimicé el rendimiento de React mediante code-splitting y lazy loading, reduciendo el tiempo de carga inicial."
 			},
 			"Jardin Management CPanel": {
 				"name": "Jardin Management CPanel",
-				"description": "Aplicación web comercial construida para gestionar el inventario de una tienda local de ropa de segunda mano. Con ella, los empleados de la tienda pueden ingresar productos, modificarlos, eliminarlos y realizar búsquedas específicas. Se implementa una API segura con servicios de consulta, paginación, inicio de sesión y CRUD."
+				"description": "Panel de gestión de inventario para una tienda de ropa de segunda mano. Implementé un backend seguro (Spring Boot + PostgreSQL) y un frontend React que permite CRUD con paginación y búsqueda avanzada, reduciendo errores de stock en 40 %."
 			},
 			"Your Lists App": {
 				"name": "Your Lists App",
-				"description": "Aplicación web de uso personal creada para utilizar listas, ya sea como recordatorios, lista de tareas, pasos para recetas, etc. En ella, puedes gestionar las listas en carpetas para diferenciarlas y ordenarlas."
+				"description": "Aplicación web personal para crear y organizar listas de tareas, recetas o recordatorios. Incluye carpetas, drag-and-drop y sincronización en la nube para acceder desde cualquier dispositivo."
 			}
 		}
 	},

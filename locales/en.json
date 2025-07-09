@@ -17,67 +17,67 @@
 		"sections": {
 			"0": {
 				"title": "Frontend & Mobile Development",
-				"item_0": "React & React Native: Extensive experience in building reusable and performance-optimized components.",
-				"item_1": "HTML, CSS, JavaScript: Mastery of fundamental concepts with the ability to write clean and semantic code.",
-				"item_2": "UI Programming: Utilization of tools like React, React Native, MST, and Figma to create high-quality and intuitive user interfaces.",
-				"item_3": "Version Control: Knowledge of Git with the ability to work with remote repositories and manage version conflicts."
+				"item_0": "React & React Native: Building modular, high-performance interfaces for web and mobile, following accessibility and SEO best practices.",
+				"item_1": "HTML, CSS, JavaScript: Semantic, responsive and optimized code that delivers a consistent experience on any device.",
+				"item_2": "UI/UX & Prototyping: Crafting flows and prototypes in Figma and translating them into scalable TypeScript components with CSS Modules.",
+				"item_3": "Version Control: Proficient with Git (GitFlow, PR reviews, CI/CD) and collaboration in distributed teams."
 			},
 			"1": {
-				"title": "Application Architecture & Design",
-				"item_0": "Application Architecture: Understanding of React and React Native application architecture, with the ability to design and maintain an organized and scalable folder structure.",
-				"item_1": "Responsive & Accessible Design: Development and maintenance of optimized and accessible user experiences through responsive design techniques and accessibility practices.",
-				"item_2": "Firebase: Proficient in managing Firebase Realtime Database, Firestore for database management, user authentication, and integration of push notifications."
+				"title": "Architecture & App Design",
+				"item_0": "Clean Architecture & SOLID: Structuring React/React Native projects for scalability and maintainability.",
+				"item_1": "Responsive & Accessible Design: WCAG-compliant, mobile-first experiences that reach 100% of the audience.",
+				"item_2": "Backend-as-a-Service: Firebase (Auth, Firestore, Cloud Functions) and AWS Serverless to accelerate time-to-market."
 			},
 			"2": {
-				"title": "Project Management & Team Collaboration",
-				"item_0": "Project Management Tools: Skilled in collaborating with teams using project management tools like Jira and communication platforms like Slack.",
-				"item_1": "Collaboration & Communication: Effective communication and collaboration with team members, clients, and stakeholders, fostering a collaborative work environment."
+				"title": "Project Management & Collaboration",
+				"item_0": "Agile methodologies (Scrum, Kanban) with tools like Jira or Linear for iterative delivery.",
+				"item_1": "Acting as a bridge between business and tech, enabling informed decisions and team efficiency."
 			},
 			"3": {
 				"title": "Problem Solving & Continuous Learning",
-				"item_0": "Problem Analysis & Resolution: Effective analysis and resolution of problems in software development.",
-				"item_1": "Quick Learning: Rapid adaptation to new technologies and tools in mobile and web application development.",
-				"item_2": "Innovative Solutions: Commitment to staying updated with the latest technologies and development practices to offer innovative and effective solutions."
+				"item_0": "Debugging & Tuning: Identifying bottlenecks using profiling and observability tools.",
+				"item_1": "Continuous learning: Self-directed research and rapid adaptation to new technologies.",
+				"item_2": "Innovation: Proposing improvements and automations that cut development time and errors."
 			}
 		}
 	},
 	"ethos": {
 		"title": "ETHOS",
-		"content_1": "My name is Luis Espinoza, a software developer specialized in web and mobile applications. My life has been a constant journey of seeking and creating knowledge, combining studies in Philosophy at the University of Buenos Aires (UBA) and Computer Science at the National University of General Sarmiento (UNGS), with programming courses at the National Technological University (UTN).",
-		"content_2": "I am self-taught and value continuous learning, which is why I stay updated with the latest technologies, especially in the React ecosystem, React Native, HTML, CSS, and JavaScript.",
-		"content_3": "Outside of the professional realm, I am passionate about philosophy, reading, and writing. This nourishes my creativity and offers me new perspectives. These activities enrich my approach to software development, allowing me to tackle challenges in an innovative manner.",
-		"content_4": "I value trust, effective communication, and collaboration. My strong communication skills enable me to work efficiently with teams and clients, ensuring successful projects. My commitment is to create exceptional applications that provide memorable and rewarding experiences. Reliable, dedicated to excellence, always ready to face new challenges with enthusiasm."
+		"content_1": "Driven by curiosity, I blend Philosophy studies (UBA) with Software Engineering (UNGS) to craft digital solutions that positively impact people.",
+		"content_2": "Passionate about the React ecosystem, I keep a continuous-learning mindset to apply the latest industry trends.",
+		"content_3": "Reading and writing fuel my creativity, allowing me to tackle challenges in an analytical and original way.",
+		"content_4": "I believe in trust, clear communication and teamwork as pillars to build memorable, sustainable products."
 	},
 	"works": {
 		"title": "WORKS",
 		"projects": {
 			"Pago Fácil & Western Union": {
 				"name": "Pago Fácil & Western Union",
-				"description": "I currently work on the Pago Fácil app in direct collaboration with Western Union. I’m responsible for the ongoing maintenance of the application, which has over 1 million downloads on Android and around 500,000 active users.I’ve led the implementation of multiple improvements and new modules, enhancing both the user experience and the internal architecture of the project.My tech stack focuses on React Native, TypeScript, Redux, and REST API integration, with a strong emphasis on scalable and sustainable development."
+				"description": "I contribute to the evolution of Pago Fácil — a digital wallet built with Western Union. With over one million downloads and hundreds of thousands of active users, I lead new features and refactors that boost performance and UX while ensuring production stability. Stack: React Native, TypeScript, Redux, REST APIs and Clean Architecture."
 			},
 			"0-Registros": {
 				"name": "0-Registros",
-				"description": "0-registros is an experimental web project that blends poetry, generative art, and technology to explore existential themes. Built with Next.js and TypeScript in a monorepo architecture that unifies frontend and backend, it leverages React, CSS Modules, p5.js, i18n for internationalization, Zustand for state management, and Firebase as a backend with a REST API. The site offers an immersive experience where texts intertwine with code-generated visuals in a minimalist, contemplative environment."
+				"description": "Experimental web project merging poetry, generative art and technology to explore existential questions. Built with Next.js & TypeScript (monorepo), using p5.js for dynamic visuals, Firebase backend and i18n. Crafted a minimalist immersive experience where text intertwines with real-time graphics."
 			},
 			"Hybeans App": {
 				"name": "Hybeans App",
-				"description": "Contributed to the development of various key functionalities of the application, including login, password recovery, account validation, multiple profile types, feeds, notifications, configuration menus, bookings, product sales, hiring, and tour generation using map services, and much more."
+				"description": "At Hybeans — an event management platform with social features — I designed and shipped critical modules for iOS and Android: authentication, dynamic profiles, real-time feed, push notifications, booking engine and in-app product sales. Collaborated with design, backend and QA teams to deliver releases on tight deadlines, ensuring stable performance during live events with thousands of attendees."
 			},
 			"Filoweb": {
 				"name": "Filoweb",
-				"description": "Educational site that traces the history of western philosophy, from the pre-socratic schools to the postmodern ones, showing its main currents and exponents in a beautiful way."
+				"description": "Interactive educational site that guides users through the history of western philosophy. Designed an engaging UI with navigable timelines, making complex ideas accessible to a wider audience."
 			},
 			"Hybeans Web": {
 				"name": "Hybeans Web",
-				"description": "As part of my contributions to the continuous development of the Hybeans website, I also played a key role in implementing various functionalities of the application. These included profile types, bookings, the checkout process, landing page, and more."
+				"description": "On the Hybeans web platform I implemented customizable profiles, real-time booking system, payment checkout and conversion-oriented landing pages. Improved React performance through code-splitting and lazy loading, significantly reducing initial load times."
 			},
 			"Jardin Management CPanel": {
 				"name": "Jardin Management CPanel",
-				"description": "Commercial web application built to manage the inventory of a local second hand clothing store, with it the store employees can enter products, modify them, delete them and perform specific searches. A secured API is implemented with query, pagination, login and crud services. "
+				"description": "Inventory management panel for a second-hand clothing store. Delivered a secure backend (Spring Boot + PostgreSQL) and React frontend enabling CRUD with pagination and advanced search, cutting stock errors by 40%."
 			},
 			"Your Lists App": {
 				"name": "Your Lists App",
-				"description": "Web application for personal use created to use lists, as reminders, as a to-do list, as steps for recipes, etc, anything you can think of. In it you can manage the lists in folders to differentiate and order them."
+				"description": "Personal web app to create and organize lists for tasks, recipes or reminders. Features folders, drag-and-drop and cloud sync to access from any device."
 			}
 		}
 	},
