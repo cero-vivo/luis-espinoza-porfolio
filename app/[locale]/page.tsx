@@ -1,3 +1,4 @@
+import { ContactModal } from "@/components/modals/contact-modal";
 import { Ethos } from "@/components/pages/ethos/ethos";
 import { Landing } from "@/components/pages/landing/landing";
 import { Skills } from "@/components/pages/skills/skills";
@@ -14,6 +15,7 @@ export default function Home() {
 			<Skills/>
 			<Ethos />
 			<Footer/>
+			<ContactModal/>
 		</main>
   )
 }

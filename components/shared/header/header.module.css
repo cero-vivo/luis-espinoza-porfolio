@@ -45,7 +45,7 @@
     object-fit: contain;
     aspect-ratio: 1/1;
     position: relative;
-    left: 0px;
+
     transition: transform .3s linear;
 }
 .headerPhoto:hover {
@@ -70,11 +70,12 @@
     }
     .headerPhoto {
         position: fixed;
-        top: 10px;
+        top: -45px;
         left: 50%;
         transform: translateX(-50%);
         width: 80px;
         height: 80px;
+        animation: none; /* Desactiva animación en mobile */
     }
     .option {
         font-size: 14px !important;
@@ -82,9 +83,11 @@
     .headerPhoto:hover {
         transform: translateX(-50%) scale(1.05);
         transition: transform .1s linear;
+        animation: none; /* Sin pulso en hover */
     }
     .headerPhoto:active {
         transform: translateX(-50%) scale(.95);
         transition: transform .1s linear;
+        animation: none; /* Sin pulso en active */
     }
 }

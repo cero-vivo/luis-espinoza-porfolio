@@ -15,7 +15,7 @@
     justify-content: center;
     opacity: 1;
     align-items: flex-start;
-    top: 0%;
+
 }
 .childBoxClose {
     transform: translateY(-300%);
