@@ -8,11 +8,12 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: transparent;
+    background-color: var(--lightCyan);
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 33px;
+    opacity: 0.9;
 }
 .titleBox {
     display: flex;
