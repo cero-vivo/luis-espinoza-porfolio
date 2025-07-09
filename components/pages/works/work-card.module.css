@@ -8,7 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: var(--lightCyan);
+    background-color: transparent;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -80,6 +80,17 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* Animaciones fade in / fade out para el párrafo */
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 @media(width <=1096px) {
     .cardBox {
