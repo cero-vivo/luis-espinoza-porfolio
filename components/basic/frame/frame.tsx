@@ -35,7 +35,7 @@ export const Frame: FC<FrameProps> = (props) => {
 		observer.observe(element)
 
 		return () => observer.disconnect()
-	}, [threshold])
+	}, [threshold, props.id, setActionSection])
 
 	return (
 		<main ref={ref} className={`${styles.frame} ${props.classes}`} id={props?.id}>
