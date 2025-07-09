@@ -114,3 +114,29 @@
         gap: 12px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+  .modalCard {
+    background: rgba(48, 49, 68, 0.9); /* var(--paleBlue) con alpha */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  }
+
+  .contactButton {
+    background-color: var(--paleBlue);
+    border-color: var(--skyBlue);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .contactButton:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.55);
+    border-color: var(--skyBlue);
+  }
+
+  .contactLabel {
+    color: var(--navyBlue);
+  }
+
+  .contactDetail {
+    color: var(--slateGray);
+  }
+}

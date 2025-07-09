@@ -19,29 +19,29 @@ export const ContactModal = () => {
 		<Modal isOpen={contactModalVisible}>
 			<article className={styles.modalCard}>
 				<span className={styles.closeButton} onClick={closeContactModal}>
-					<CloseIcon color={colors.navyBlue} width={28} height={28} />
+					<CloseIcon color={'var(--navyBlue)'} width={28} height={28} />
 				</span>
 				<h2 className={styles.name}>Luis Espinoza</h2>
 				<p className={styles.role}>Software Engineer</p>
 
 				<div className={styles.contactList}>
 					<button className={styles.contactButton} onClick={sendMeEmail}>
-						<EmailIcon color={colors.navyBlue} width={28} height={28} />
+						<EmailIcon color={'var(--navyBlue)'} width={28} height={28} />
 						<span className={styles.contactLabel}>Email</span>
 						<span className={styles.contactDetail}>luis.espinoza.nav@outlook.com</span>
 					</button>
 					<button className={styles.contactButton} onClick={sendMeWhatsapp}>
-						<WhatsappIcon color={colors.navyBlue} width={28} height={28} />
+						<WhatsappIcon color={'var(--navyBlue)'} width={28} height={28} />
 						<span className={styles.contactLabel}>WhatsApp</span>
 						<span className={styles.contactDetail}>+54 9 11 2388 1314</span>
 					</button>
 					<button className={styles.contactButton} onClick={callMe}>
-						<PhoneIcon color={colors.navyBlue} width={28} height={28} />
+						<PhoneIcon color={'var(--navyBlue)'} width={28} height={28} />
 						<span className={styles.contactLabel}>Llamar</span>
 						<span className={styles.contactDetail}>+54 9 11 2388 1314</span>
 					</button>
 					<button className={styles.contactButton} onClick={openLinkedin}>
-						<LinkedinIcon color={colors.navyBlue} width={28} height={28} />
+						<LinkedinIcon color={'var(--navyBlue)'} width={28} height={28} />
 						<span className={styles.contactLabel}>LinkedIn</span>
 						<span className={styles.contactDetail}>/in/luis-espinoza</span>
 					</button>

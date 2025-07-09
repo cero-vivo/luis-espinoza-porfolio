@@ -30,7 +30,6 @@ export const Landing = () => {
 
 	return (
 		<Frame id={Sections.HOME}>
-			<LanguageSwitcher/>
 			<Heading variant={"h1"} text={t("title")} classes={styles.title}/>
 			<Paragraph text={t("message")} variant='bold' classes={styles.message}/>
 			<TechStack icons={iconStack}/>
