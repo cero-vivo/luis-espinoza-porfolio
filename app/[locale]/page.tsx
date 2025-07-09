@@ -10,7 +10,7 @@ import { Header } from "@/components/shared/header/header";
 
 export default function Home() {
 	return (
-		<main>
+		<main style={{width: '100vw', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 			<Header />
 			<LanguageSwitcher/>
 			<ThemeToggle />
