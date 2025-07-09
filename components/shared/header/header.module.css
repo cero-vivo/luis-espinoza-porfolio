@@ -40,14 +40,12 @@
 	}
 }
 .headerPhoto {
-    position: relative;
-    transition: transform .3s linear;
-}
-.headerPhoto img {
     width: 103px;
     height: 103px;
-    aspect-ratio: 1/1;
     object-fit: contain;
+    aspect-ratio: 1/1;
+    position: relative;
+    transition: transform .3s linear;
 }
 .headerPhoto:hover {
     transform: scale(1.05);
