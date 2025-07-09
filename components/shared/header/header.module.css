@@ -57,6 +57,48 @@
     transition: transform .1s linear;
 }
 
+.cvWrapper {
+    position: relative;
+}
+.cvDropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: var(--lightCyan);
+    border: 1px solid var(--paleBlue);
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform-origin: top right;
+    opacity: 0;
+    transform: scale(0.9) translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 2000;
+}
+
+.cvDropdownOpen {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+}
+
+.cvLink {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--navyBlue);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+html.dark .cvDropdown {
+    background: var(--paleBlue);
+    border-color: var(--slateGray);
+}
+html.dark .cvLink {
+    color: var(--white);
+}
+
 @media(width <= 758px) {
     .headerBox {
         /* width: 320px; */
