@@ -33,6 +33,17 @@
     line-height: 36px !important;
     text-align: center;
 }
+
+/* Contenedor del párrafo con transición de opacidad */
+.paragraphContainer {
+    transition: opacity 0.6s ease-in-out;
+}
+
+@media(width <= 768px) {
+    .paragraphContainer {
+        transition: opacity 0.3s ease-in-out; /* el doble de rápido en mobile */
+    }
+}
 .slideBox {
     display: flex;
     justify-content: center;

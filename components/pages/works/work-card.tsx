@@ -119,7 +119,8 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
             </div>
             <div
                 ref={paragraphRef}
-                style={{ opacity: paragraphOpacity, transition: 'opacity 0.8s ease-in-out' }}
+                className={styles.paragraphContainer}
+                style={{ opacity: paragraphOpacity }}
             >
                 <Paragraph
                     text={t(`projects.${work.name}.description`)}
