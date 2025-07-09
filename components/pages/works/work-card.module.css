@@ -31,7 +31,7 @@
 }
 .paragraph {
     line-height: 36px !important;
-    text-align: center;
+    text-align: left;
 }
 
 /* Contenedor del párrafo con transición de opacidad */

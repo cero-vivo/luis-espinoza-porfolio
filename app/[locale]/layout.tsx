@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
@@ -13,6 +13,14 @@ const poppins = Poppins({
 export const metadata: Metadata = {
 	title: "Luis Espinoza",
 	description: "Luis Espinoza - Software develop dev react react native mobile app web app argentina chile latam web frontend fullstack",
+};
+
+// Desactiva el zoom/pinch en dispositivos móviles
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
 };
 
 export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string }; }) {
