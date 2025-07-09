@@ -2,7 +2,18 @@
     width: calc(100vw - 64px);
     display: flex;
     flex-direction: column;
-    gap: 33px
+    gap: 33px;
+}
+.stickyContent {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--lightCyan);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    opacity: 0.9;
 }
 .titleBox {
     display: flex;
@@ -22,6 +33,17 @@
     line-height: 36px !important;
     text-align: center;
 }
+
+/* Contenedor del párrafo con transición de opacidad */
+.paragraphContainer {
+    transition: opacity 0.6s ease-in-out;
+}
+
+@media(width <= 768px) {
+    .paragraphContainer {
+        transition: opacity 0.3s ease-in-out; /* el doble de rápido en mobile */
+    }
+}
 .slideBox {
     display: flex;
     justify-content: center;
@@ -36,6 +58,8 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     gap: 20px;
+    will-change: transform;
+    transition: transform 0.3s ease-out;
 }
 .slideImage {
     width: fit-content;
@@ -69,12 +93,23 @@
     align-items: center;
     gap: 10px;
 }
+
+/* Animaciones fade in / fade out para el párrafo */
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
 @media(width <=1096px) {
     .cardBox {
         width: calc(100vw - 74px);
         display: flex;
         flex-direction: column;
-        gap: 33px
+        gap: 33px;
     }
     .slideImagesBox {
         display: flex;
@@ -95,7 +130,7 @@
         width: calc(100vw - 40px);
         display: flex;
         flex-direction: column;
-        gap: 33px
+        gap: 33px;
     }
     .slideImagesBox {
         display: flex;
@@ -109,5 +144,13 @@
         min-height: 390px;
         border-radius: 19px;
         object-fit: cover;
+    }
+}
+
+/* Deshabilitar sticky en dispositivos móviles y tablets */
+@media(width <= 768px) {
+    .stickyContent {
+        position: static;
+        top: auto;
     }
 }
