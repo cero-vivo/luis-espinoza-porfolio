@@ -1,47 +1,83 @@
 .footer {
-    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 32px 16px 40px;
+    background: var(--lightCyan);
+    border-top: 1px solid var(--paleBlue);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 -6px 16px rgba(0,0,0,0.08);
+    color: var(--navyBlue);
+}
+
+html.dark .footer {
+    background: var(--paleBlue);
+    border-top: 1px solid var(--slateGray);
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.4);
+    color: var(--white);
+}
+
+.iconRow {
     display: flex;
     align-items: center;
-    background-color: var(--navyBlue);
-    gap: 25px;
-    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.contactIcon {
-    z-index: 101;
-    cursor: pointer;
+
+.iconLink {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: currentColor;
+    text-decoration: none;
     opacity: 0.85;
+    transition: color 0.2s ease, opacity 0.2s ease;
 }
-.contactIcon:hover {
-    transform: scale(1.03);
+
+.iconLink:hover {
     opacity: 1;
-    transition: all .3s ease;
-}
-.infoRow {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.text {
-    color: var(--white);
-    transition: all .3s ease;
-    cursor: pointer;
-}
-.text:hover {
     color: var(--skyBlue);
-    transition: all .3s ease;
 }
-.date {
-    color: var(--white);
+
+html.dark .iconLink:hover {
+    color: var(--skyBlue);
+}
+
+.iconLink svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.copy {
+    font-size: 0.75rem;
+    opacity: 0.6;
 }
 
 @media(width <= 758px) {
     .footer {
-        height: 244px;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--navyBlue);
-        gap: 25px;
+        background: var(--lightCyan);
+        gap: 16px;
+        padding: 24px 16px 32px;
+        justify-content: center;
+        color: var(--navyBlue);
+    }
+
+    html.dark .footer {
+        background: var(--paleBlue);
+        color: var(--white);
+    }
+
+    .iconRow {
         justify-content: center;
     }
 }
