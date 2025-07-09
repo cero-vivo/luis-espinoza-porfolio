@@ -20,13 +20,13 @@ const { sendMeEmail, callMe, sendMeWhatsapp, openLinkedin } = useLandingStore()
 		<footer className={styles.footer}>
 			<div className={styles.iconRow}>
 				<a className={styles.iconLink} onClick={sendMeEmail} href="#">
-					<EmailIcon color="currentColor" /> {t('email_short')}
+					<EmailIcon color="currentColor" /> {t('my_email')}
 				</a>
 				<a className={styles.iconLink} onClick={sendMeWhatsapp} href="#">
 					<WhatsappIcon color="currentColor" /> WhatsApp
 				</a>
 				<a className={styles.iconLink} onClick={callMe} href="#">
-					<PhoneIcon color="currentColor" /> {t('call')}
+					<PhoneIcon color="currentColor" /> {t('my_phone_number')}
 				</a>
 				<a className={styles.iconLink} onClick={openLinkedin} href="#">
 					<ExternalLinkIcon color="currentColor" width={20} height={20} /> LinkedIn
