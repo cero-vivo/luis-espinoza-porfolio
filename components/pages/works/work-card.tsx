@@ -1,6 +1,6 @@
 "use client"
 
-import React, { FC, useRef } from 'react'
+import React, { FC, useRef, useEffect } from 'react'
 import { Heading } from '@/components/basic/heading/heading'
 import styles from "./work-card.module.css"
 import { ProjectType } from './projects-data'
@@ -20,8 +20,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     const { work } = props
     const t = useTranslations("works")
 
-    const worksRef = useRef(null)
-
+    const worksRef = useRef<HTMLDivElement | null>(null)
 
     const scrollRight = () => {
         if (worksRef.current) {
@@ -58,35 +57,37 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
 
     return (
         <div key={work.name} className={styles.cardBox}>
+            <div className={styles.stickyContent}>
             <div className={styles.titleBox}>
                 <Heading text={t(`projects.${work.name}.name`)} variant='h3' />
                 <div className={styles.linksBox}>
                     {links}
                 </div>
             </div>
-            <div className={styles.slideBox}>
-                <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollLeft} className={styles.leftButton} />
-                <div className={styles.slideImagesBox} ref={worksRef}>
-                    {work.images.map((image, index) => {
-                        return <Image
-                                key={index}
-                                src={image}
-                                alt={work.name}
-                                className={styles.slideImage}
-                                loading='lazy'
-                                objectFit='contain'
-                                width={700}
-                                height={700}
-                                quality={100}
-                                sizes="(max-width: 768px) 60vw, 
-                                (max-width: 1200px) 70vw, 
-                                700px"
-                            />
-                    })}
+                <div className={styles.slideBox}>
+                    <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollLeft} className={styles.leftButton} />
+                    <div className={styles.slideImagesBox} ref={worksRef}>
+                        {work.images.map((image, index) => {
+                            return <Image
+                                    key={index}
+                                    src={image}
+                                    alt={work.name}
+                                    className={styles.slideImage}
+                                    loading='lazy'
+                                    objectFit='contain'
+                                    width={700}
+                                    height={700}
+                                    quality={100}
+                                    sizes="(max-width: 768px) 60vw, 
+                                    (max-width: 1200px) 70vw, 
+                                    700px"
+                                />
+                        })}
+                    </div>
+                    <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollRight} className={styles.rightButton} />
                 </div>
-                <Image src={"/icons/button-triangle.svg"} width={40} height={40} alt={work.name} onClick={scrollRight} className={styles.rightButton} />
+                <TechStack icons={work.icons} boxClasses={styles.techStack} />
             </div>
-            <TechStack icons={work.icons} boxClasses={styles.techStack} />
             <Paragraph text={t(`projects.${work.name}.description`)} variant='regular' classes={styles.paragraph} />
         </div>
     )
