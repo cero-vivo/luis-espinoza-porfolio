@@ -102,9 +102,9 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
                                     alt={work.name}
                                     className={styles.slideImage}
                                     loading='lazy'
-                                    objectFit='contain'
                                     width={700}
                                     height={700}
+                                    style={{ objectFit: 'contain' }}
                                     quality={100}
                                     sizes="(max-width: 768px) 60vw, 
                                     (max-width: 1200px) 70vw, 

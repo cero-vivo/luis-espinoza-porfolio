@@ -2,7 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
+import AnalyticsProvider from '@/components/analytics-provider';
+import { CookieBanner } from '@/components/basic/cookie-banner/cookie-banner';
 
 
 const poppins = Poppins({
@@ -33,6 +35,8 @@ export default async function RootLayout({ children, params: { locale } }: { chi
 			<body className={poppins.className}>
 				<NextIntlClientProvider messages={messages}>
 					{children}
+					{/* Analytics global */}
+					<AnalyticsProvider />
 				</NextIntlClientProvider>
 			</body>
 		</html>

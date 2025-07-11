@@ -1,0 +1,56 @@
+'use client'
+
+import { useEffect, useCallback } from 'react';
+import { logEvent } from 'firebase/analytics';
+import { usePathname, useSearchParams } from 'next/navigation';
+import { initFirebase, getFirebaseAnalytics } from '@/lib/firebase';
+import { useConsent } from '@/hooks/useConsent';
+
+export const usePageView = (enabled: boolean = true) => {
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
+
+	useEffect(() => {
+		if (!enabled) return;
+		initFirebase();
+	}, [enabled]);
+
+	// Dispara page_view cuando cambie la ruta
+	useEffect(() => {
+		if (!enabled) return;
+		const sendPageView = async () => {
+			// Nos aseguramos de que Firebase esté listo
+			await initFirebase();
+			const analytics = getFirebaseAnalytics();
+			if (!analytics) return;
+
+			const query = searchParams?.toString();
+			const page_path = query ? `${pathname}?${query}` : pathname;
+
+			logEvent(analytics, 'page_view', { page_path });
+		};
+
+		sendPageView();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [enabled, pathname, searchParams]);
+};
+
+/**
+ * Devuelve una función para enviar eventos custom.
+ * Ejemplo de uso: const track = useTrackEvent(); track('download_cv');
+ */
+export const useTrackEvent = () => {
+	const { consent } = useConsent();
+	// aseguramos que Firebase esté inicializado cuando haya consentimiento
+	useEffect(() => {
+		if (consent !== 'granted') return;
+		initFirebase();
+	}, [consent]);
+
+	return useCallback((name: string, params?: Record<string, any>) => {
+		if (consent !== 'granted') return;
+		const analytics = getFirebaseAnalytics();
+		if (!analytics) return;
+		logEvent(analytics, name, params);
+	}, [consent]);
+}; 

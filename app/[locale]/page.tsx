@@ -7,6 +7,7 @@ import { Skills } from "@/components/pages/skills/skills";
 import { Works } from "@/components/pages/works/works";
 import { Footer } from "@/components/shared/footer/footer";
 import { Header } from "@/components/shared/header/header";
+import { CookieBanner } from "@/components/basic/cookie-banner/cookie-banner";
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 			<Ethos />
 			<Footer/>
 			<ContactModal/>
+			<CookieBanner />
 		</main>
   )
 }
