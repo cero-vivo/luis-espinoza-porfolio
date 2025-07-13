@@ -1,6 +1,6 @@
 "use client"
 
-import { useLandingStore } from '@/model/landing-store'
+import { useContactActions } from '@/model/landing-store'
 import React from 'react'
 import styles from "./contact-modal.module.css"
 import { Modal } from '../basic/modal/modal'
@@ -13,7 +13,7 @@ import { LinkedinIcon } from '../basic/icons/linkedin-icon'
 
 export const ContactModal = () => {
 
-	const { contactModalVisible, closeContactModal, sendMeEmail, sendMeWhatsapp, callMe, openLinkedin } = useLandingStore()
+	const { contactModalVisible, closeContactModal, sendMeEmail, sendMeWhatsapp, callMe, openLinkedin } = useContactActions()
 
 	return (
 		<Modal isOpen={contactModalVisible}>

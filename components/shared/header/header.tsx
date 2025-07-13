@@ -4,7 +4,7 @@ import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import React, { useState, useEffect, useRef, FC } from 'react'
 import styles from "./header.module.css"
 import { Sections } from '@/types/constant'
-import { useLandingStore } from '@/model/landing-store'
+import { useLandingStore, useContactActions } from '@/model/landing-store'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
@@ -45,7 +45,8 @@ const CVLink: FC<CVLinkProps> = ({ link, isSelected }) => {
 
 export const Header = () => {
 
-	const { links, actionSection, setActionSection, openContactModal } = useLandingStore()
+	const { links, actionSection, setActionSection } = useLandingStore()
+	const { openContactModal } = useContactActions()
 
 	const t = useTranslations("header")
 

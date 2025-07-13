@@ -6,13 +6,13 @@ import { WhatsappIcon } from '@/components/basic/icons/whatsapp-icon'
 import { PhoneIcon } from '@/components/basic/icons/phone-icon'
 import ExternalLinkIcon from '@/components/basic/icons/external-link-icon'
 import { Paragraph } from '@/components/basic/paragraph/paragraph'
-import { useLandingStore } from '@/model/landing-store'
+import { useContactActions } from '@/model/landing-store'
 import { useTranslations } from 'next-intl'
 import styles from "./footer.module.css"
 
 export const Footer = () => {
 
-const { sendMeEmail, callMe, sendMeWhatsapp, openLinkedin } = useLandingStore()
+const { sendMeEmail, callMe, sendMeWhatsapp, openLinkedin } = useContactActions()
 
 	const t = useTranslations('contact')
 

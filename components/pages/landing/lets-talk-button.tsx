@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/basic/button/button"
-import { useLandingStore } from "@/model/landing-store"
+import { useContactActions } from "@/model/landing-store"
 import { useTranslations } from "next-intl"
 import { FC } from "react"
 
@@ -13,7 +13,7 @@ interface LetsTalkButtonProps {
 export const LetsTalkButton: FC<LetsTalkButtonProps> = (props) => {
 
 	const { classes } = props
-	const { openContactModal } = useLandingStore()
+	const { openContactModal } = useContactActions()
 	const t = useTranslations("landing")
 
 
