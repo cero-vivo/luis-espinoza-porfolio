@@ -44,7 +44,7 @@ export const useLandingStore = create<LandingUIState>()((set, get) => ({
 		{
 			sectionId: Sections.CV,
 			text: "cv",
-			downloadLink: "cv/CV-LuisEspinoza.pdf"
+			downloadLink: "cv/CV-Luis Espinoza.pdf"
 		}
 	],
 	//contact modal

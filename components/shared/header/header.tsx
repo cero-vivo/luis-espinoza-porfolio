@@ -19,7 +19,7 @@ const CVLink: FC<CVLinkProps> = ({ link, isSelected }) => {
     const wrapperRef = useRef<HTMLSpanElement | null>(null)
     const t = useTranslations("header")
     const locale = useLocale()
-    const cvPath = locale === 'en' ? '/cv/CV-LuisEspinoza-EN.pdf' : '/cv/CV-LuisEspinoza.pdf'
+    const cvPath = locale === 'en' ? '/cv/CV-Luis EspinozaEN.pdf' : '/cv/CV-Luis Espinoza.pdf'
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
