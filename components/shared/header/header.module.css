@@ -63,7 +63,8 @@
 .cvDropdown {
     position: absolute;
     top: 110%;
-    right: -50%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9) translateY(-4px);
     background: var(--lightCyan);
     border: 1px solid var(--paleBlue);
     border-radius: 12px;
@@ -71,7 +72,6 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transform-origin: top center;
     opacity: 0;
-    transform: scale(0.9) translateY(-4px);
     pointer-events: none;
     transition: opacity 0.25s ease, transform 0.25s ease;
     z-index: 2000;
@@ -83,7 +83,7 @@
 
 .cvDropdownOpen {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: translateX(-50%) scale(1) translateY(0);
     pointer-events: auto;
 }
 
@@ -168,5 +168,24 @@ html.dark .worksLink:hover {
     .cvDropdown {
         max-height: 200px;
         font-size: 0.8rem;
+        min-width: 240px;
+        max-width: 280px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.9) translateY(-4px);
+    }
+    .cvDropdownOpen {
+        transform: translateX(-50%) scale(1) translateY(0);
+    }
+}
+
+@media(width <= 480px) {
+    .cvDropdown {
+        min-width: 220px;
+        max-width: 260px;
+        left: 200%;
+        transform: translateX(-50%) scale(0.9) translateY(-4px);
+    }
+    .cvDropdownOpen {
+        transform: translateX(-50%) scale(1) translateY(0);
     }
 }
