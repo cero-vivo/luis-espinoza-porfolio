@@ -19,6 +19,8 @@ export const techIcons = {
     "material": "/icons/material.png",
     "redux": "/icons/redux.png",
     "p5js": "/icons/p5js.png",
+    "bootstrap": "/icons/bootstrap.png",
+    "tailwind": "/icons/tailwind.png",
 }
 
 export type TechIcon = keyof typeof techIcons

@@ -78,6 +78,14 @@
 			"Your Lists App": {
 				"name": "Your Lists App",
 				"description": "Personal web app to create and organize lists for tasks, recipes or reminders. Features folders, drag-and-drop and cloud sync to access from any device."
+			},
+			"AEG Hornos de Cerámica": {
+				"name": "AEG Service - Hornos de Cerámica",
+				"description": "Professional website for ceramic oven repair and maintenance services. Built with Bootstrap and deployed on Netlify, connected to Firebase Remote Config to update content dynamically without redeployment. Includes contact forms, work gallery and detailed service information. SEO optimized and designed for customer conversion in CABA and AMBA areas."
+			},
+			"Digital Consultora - Retail Spark Grow": {
+				"name": "Digital Consultora - Retail Spark Grow",
+				"description": "Web platform for consultancy specialized in digital transformation of physical retail. Implemented with Tailwind CSS and Bootstrap, features modern landing page, contact forms and success cases. Designed to generate leads and showcase digital consultancy services."
 			}
 		}
 	},

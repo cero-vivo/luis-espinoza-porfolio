@@ -91,6 +91,28 @@ export const projects: ProjectType[] = [
 		],
 		"urls": ["https://www.hybeans.com"]
 	},
+	{
+		"name": "AEG Hornos de Cerámica",
+		"icons": ["next", "react", "typescript", "firebase", "netlify", "css3"],
+		"images": [
+			"/projects/hornos-aeg/1.png",
+			"/projects/hornos-aeg/2.png",
+			"/projects/hornos-aeg/3.png",
+			"/projects/hornos-aeg/4.png"
+		],
+		"urls": ["https://hornos-aeg.netlify.app/"]
+	},
+	{
+		"name": "Digital Consultora - Retail Spark Grow",
+		"icons": ["javascript", "css3", "html5", "tailwind", "netlify", "react"],
+		"images": [
+			"/projects/retail-spark-grow/1.png",
+			"/projects/retail-spark-grow/2.png",
+			"/projects/retail-spark-grow/3.png",
+			"/projects/retail-spark-grow/4.png"
+		],
+		"urls": ["https://retail-spark-grow.netlify.app/"]
+	}
 	/* {
 		"name": "Jardin Management CPanel",
 		"icons": ["javascript", "react", "css3", "java", "springboot", "jwt", "postgres", "amazon", "heroku"],
