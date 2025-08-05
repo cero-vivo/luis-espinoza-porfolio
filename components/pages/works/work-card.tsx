@@ -13,11 +13,12 @@ import { useTranslations } from 'next-intl'
 
 interface WorkCardProps {
     work: ProjectType
+    projectId: string
 }
 
 export const WorkCard: FC<WorkCardProps> = (props) => {
 
-    const { work } = props
+    const { work, projectId } = props
     const t = useTranslations("works")
 
     const worksRef = useRef<HTMLDivElement | null>(null)
@@ -85,7 +86,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
     })
 
     return (
-        <div key={work.name} className={styles.cardBox}>
+        <div key={work.name} className={styles.cardBox} id={projectId}>
             <div className={styles.titleBox}>
                 <Heading text={t(`projects.${work.name}.name`)} variant='h3' />
                 <div className={styles.linksBox}>

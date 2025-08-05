@@ -3,7 +3,9 @@
     display: flex;
     flex-direction: column;
     gap: 33px;
+    transition: all 0.3s ease;
 }
+
 .stickyContent {
     position: sticky;
     top: 0;

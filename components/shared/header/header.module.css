@@ -63,18 +63,22 @@
 .cvDropdown {
     position: absolute;
     top: 110%;
-    right: 0;
+    right: -50%;
     background: var(--lightCyan);
     border: 1px solid var(--paleBlue);
     border-radius: 12px;
     padding: 8px 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transform-origin: top right;
+    transform-origin: top center;
     opacity: 0;
     transform: scale(0.9) translateY(-4px);
     pointer-events: none;
     transition: opacity 0.25s ease, transform 0.25s ease;
     z-index: 2000;
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 280px;
+    max-width: 350px;
 }
 
 .cvDropdownOpen {
@@ -91,12 +95,41 @@
     text-decoration: none;
     font-size: 0.85rem;
 }
+
+.worksLink {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--navyBlue);
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+.worksLink:hover {
+    color: var(--navyBlue);
+    background-color: var(--paleBlue);
+    opacity: 1;
+}
+
 html.dark .cvDropdown {
     background: var(--paleBlue);
     border-color: var(--slateGray);
 }
 html.dark .cvLink {
     color: var(--white);
+}
+html.dark .worksLink {
+    color: var(--white);
+}
+html.dark .worksLink:hover {
+    background-color: var(--slateGray);
 }
 
 @media(width <= 758px) {
@@ -131,5 +164,9 @@ html.dark .cvLink {
         transform: translateX(-50%) scale(.95);
         transition: transform .1s linear;
         animation: none; /* Sin pulso en active */
+    }
+    .cvDropdown {
+        max-height: 200px;
+        font-size: 0.8rem;
     }
 }

@@ -12,8 +12,10 @@ export const Works = () => {
 
 	const t = useTranslations("works")
 
-	const works = projects.map((work: ProjectType) => {
-		return <WorkCard work={work} key={work.name} />
+	const works = projects.map((work: ProjectType, index: number) => {
+		// Crear un ID único para cada proyecto basado en su nombre
+		const projectId = work.name.toLowerCase().replace(/[^a-z0-9]/g, '-')
+		return <WorkCard work={work} key={work.name} projectId={projectId} />
 	})
 
 	return (
