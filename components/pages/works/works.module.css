@@ -8,14 +8,22 @@
     margin-top: 75px;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 @media(width <=1096px) {
-
     .worksBox {
         margin-top: 20px;
+        max-width: 900px;
     }
 }
 
 @media(width <=758px) {
+    .worksBox {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
