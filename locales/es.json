@@ -63,6 +63,10 @@
 				"name": "Hybeans App",
 				"description": "En Hybeans, plataforma de gestión de eventos con funcionalidades sociales, diseñé e implementé módulos críticos en iOS y Android: autenticación, perfiles dinámicos, feed en tiempo real, notificaciones push, reservas y venta de productos. Coordiné con diseño, backend y QA para publicar releases en plazos ajustados y asegurar un rendimiento estable durante eventos."
 			},
+			"Push Notify": {
+				"name": "NOUS - Push Notify",
+				"description": "Este proyecto fue desarrollado para NOUS con el objetivo de gestionar y enviar notificaciones masivas a los usuarios de su aplicación. Se implementó una solución que permite autenticar administradores, configurar credenciales de servicio y utilizar la integración con Firebase para distribuir mensajes de manera eficiente y segura a todos los dispositivos registrados."
+			},
 			"Filoweb": {
 				"name": "Filoweb",
 				"description": "Sitio educativo interactivo que recorre la historia de la filosofía occidental. Diseñé una interfaz visual atractiva y cronogramas navegables que facilitan la exploración de corrientes y autores, acercando la filosofía a nuevos públicos."

@@ -63,6 +63,10 @@
 				"name": "Hybeans App",
 				"description": "At Hybeans — an event management platform with social features — I designed and shipped critical modules for iOS and Android: authentication, dynamic profiles, real-time feed, push notifications, booking engine and in-app product sales. Collaborated with design, backend and QA teams to deliver releases on tight deadlines, ensuring stable performance during live events."
 			},
+			"Push Notify": {
+				"name": "NOUS - Push Notify",
+				"description": "This project was developed for NOUS to manage and send mass notifications to users of their application. It provides a solution for authenticating administrators, configuring service credentials, and integrating with Firebase to efficiently and securely distribute messages to all registered devices"
+			},
 			"Filoweb": {
 				"name": "Filoweb",
 				"description": "Interactive educational site that guides users through the history of western philosophy. Designed an engaging UI with navigable timelines, making complex ideas accessible to a wider audience."

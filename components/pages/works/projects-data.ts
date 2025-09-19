@@ -55,6 +55,17 @@ export const projects: ProjectType[] = [
 		],
 		"urls": ["https://play.google.com/store/apps/details?id=com.hybeans", "https://apps.apple.com/ar/app/hybeans/id1588248966"]
 	},
+		{
+		"name": "Push Notify",
+		"icons": ["typescript", "next", "css3", "html5", "firebase", "netlify"],
+		"images": [
+			"/projects/push-notify/0.png",
+			"/projects/push-notify/1.png",
+			"/projects/push-notify/2.png",
+			"/projects/push-notify/3.png",
+		],
+		urls: []
+	},
 	{
 		"name": "Filoweb",
 		"icons": ["javascript", "react", "css3", "html5"],
