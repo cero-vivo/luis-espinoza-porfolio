@@ -63,6 +63,10 @@
 				"name": "Hybeans App",
 				"description": "At Hybeans — an event management platform with social features — I designed and shipped critical modules for iOS and Android: authentication, dynamic profiles, real-time feed, push notifications, booking engine and in-app product sales. Collaborated with design, backend and QA teams to deliver releases on tight deadlines, ensuring stable performance during live events."
 			},
+			"FastForm": {
+				"name": "Fast Form",
+				"description": "FastForm is a SaaS web application that automates the creation of Google Forms through a set of tools: an AI-powered chat that guides and optimizes form generation, the ability to automatically import from Excel/CSV files, and an intuitive manual builder with options to save drafts and combine different creation methods, saving time and eliminating repetitive tasks. Built with Next.js 15 and TypeScript, it features intelligent question detection, a metrics dashboard, a modern drag-and-drop interface, secure authentication with Google Workspace, a credit system integrated with MercadoPago, and seamless integrations with Google Forms API, OAuth 2.0, OpenAI, and MercadoPago, delivering a complete and professional solution for teams, educators, and professionals."
+			},
 			"Push Notify": {
 				"name": "NOUS - Push Notify",
 				"description": "This project was developed for NOUS to manage and send mass notifications to users of their application. It provides a solution for authenticating administrators, configuring service credentials, and integrating with Firebase to efficiently and securely distribute messages to all registered devices"

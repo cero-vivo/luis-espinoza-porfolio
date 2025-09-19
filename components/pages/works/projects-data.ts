@@ -55,7 +55,25 @@ export const projects: ProjectType[] = [
 		],
 		"urls": ["https://play.google.com/store/apps/details?id=com.hybeans", "https://apps.apple.com/ar/app/hybeans/id1588248966"]
 	},
-		{
+	{
+		"name": "FastForm",
+		"icons": ["typescript", "css3", "html5", "tailwind", "netlify", "react", "next", "firebase"],
+		"images": [
+			"/projects/fastform/1.png",
+			"/projects/fastform/2.png",
+			"/projects/fastform/3.png",
+			"/projects/fastform/4.png",
+			"/projects/fastform/5.png",
+			"/projects/fastform/52.png",
+			"/projects/fastform/6.png",
+			"/projects/fastform/7.png",
+			"/projects/fastform/8.png",
+			"/projects/fastform/9.png",
+			"/projects/fastform/10.png",
+		],
+		"urls": ["https://fastform.pro/"]
+	},
+	{
 		"name": "Push Notify",
 		"icons": ["typescript", "next", "css3", "html5", "firebase", "netlify"],
 		"images": [
@@ -112,17 +130,6 @@ export const projects: ProjectType[] = [
 			"/projects/hornos-aeg/4.png"
 		],
 		"urls": ["https://hornos-aeg.netlify.app/"]
-	},
-	{
-		"name": "Digital Consultora - Retail Spark Grow",
-		"icons": ["javascript", "css3", "html5", "tailwind", "netlify", "react"],
-		"images": [
-			"/projects/retail-spark-grow/1.png",
-			"/projects/retail-spark-grow/2.png",
-			"/projects/retail-spark-grow/3.png",
-			"/projects/retail-spark-grow/4.png"
-		],
-		"urls": ["https://retail-spark-grow.netlify.app/"]
 	}
 	/* {
 		"name": "Jardin Management CPanel",

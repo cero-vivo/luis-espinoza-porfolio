@@ -67,6 +67,10 @@
 				"name": "NOUS - Push Notify",
 				"description": "Este proyecto fue desarrollado para NOUS con el objetivo de gestionar y enviar notificaciones masivas a los usuarios de su aplicación. Se implementó una solución que permite autenticar administradores, configurar credenciales de servicio y utilizar la integración con Firebase para distribuir mensajes de manera eficiente y segura a todos los dispositivos registrados."
 			},
+			"FastForm": {
+				"name": "Fast Form",
+				"description": "FastForm es una aplicación web SaaS que automatiza la creación de formularios de Google mediante un conjunto de herramientas: un chat con IA que guía y optimiza la generación de formularios, la posibilidad de importar automáticamente desde archivos Excel/CSV, y un builder manual intuitivo, con opciones para guardar borradores y combinar distintos métodos de creación, eliminando tareas repetitivas y ahorrando tiempo. Desarrollada con Next.js 15 y TypeScript, incluye detección inteligente de preguntas, un dashboard con métricas, diseño moderno con drag & drop, autenticación segura con Google Workspace, sistema de créditos con MercadoPago, e integraciones con Google Forms API, OAuth 2.0, OpenAI y MercadoPago, ofreciendo una solución integral y profesional para equipos, educadores y profesionales."
+			},
 			"Filoweb": {
 				"name": "Filoweb",
 				"description": "Sitio educativo interactivo que recorre la historia de la filosofía occidental. Diseñé una interfaz visual atractiva y cronogramas navegables que facilitan la exploración de corrientes y autores, acercando la filosofía a nuevos públicos."
