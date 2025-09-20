@@ -11,9 +11,10 @@ interface FrameProps {
 	classes?: string
 	id?: string
 	threshold?: number
+	horizontal?: boolean
 }
 export const Frame: FC<FrameProps> = (props) => {
-	const { threshold = 0.015 } = props
+	const { threshold = 0.015, horizontal = true } = props
 	const ref = useRef<HTMLElement | null>(null)
     const setActionSection = useLandingStore(s => s.setActionSection)
 	const actionSection = useLandingStore(s => s.actionSection)
@@ -29,6 +30,16 @@ export const Frame: FC<FrameProps> = (props) => {
 	useEffect(() => {
 		const element = ref.current
 		if (!element) return
+
+		// For horizontal layout, immediately show the section
+		if (horizontal) {
+			element.classList.add(styles.inView)
+			if (props.id) {
+				const sectionId = props.id as Sections
+				setActionSection(sectionId)
+			}
+			return
+		}
 
 		const observer = new IntersectionObserver(
 			([entry], obs) => {
@@ -47,10 +58,12 @@ export const Frame: FC<FrameProps> = (props) => {
 		observer.observe(element)
 
 		return () => observer.disconnect()
-	}, [threshold, props.id, setActionSection])
+	}, [threshold, props.id, setActionSection, horizontal])
+
+	const frameClasses = `${styles.frame} ${horizontal ? styles.horizontal : ''} ${props.classes || ''}`
 
 	return (
-		<main ref={ref} className={`${styles.frame} ${props.classes}`} id={props?.id}>
+		<main ref={ref} className={frameClasses} id={props?.id}>
 			{props.children}
 		</main>
 	)

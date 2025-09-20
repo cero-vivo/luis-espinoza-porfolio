@@ -1,0 +1,436 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  margin: 0;
+}
+
+.playButton {
+  background: linear-gradient(135deg, var(--skyBlue), var(--navyBlue));
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(34, 162, 255, 0.3);
+}
+
+.playButton:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(34, 162, 255, 0.4);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  min-height: 600px;
+  perspective: 1200px;
+}
+
+/* Featured Project */
+.featuredProject {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--paleBlue), var(--lightCyan));
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.projectOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    transparent,
+    rgba(6, 50, 95, 0.8),
+    rgba(6, 50, 95, 0.95)
+  );
+  padding: 40px;
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.featuredProject:hover .projectOverlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projectInfo {
+  max-width: 80%;
+}
+
+.projectTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.projectDescription {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.techTag {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.projectActions {
+  display: flex;
+  gap: 16px;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--skyBlue);
+  color: var(--white);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.actionButton:hover {
+  background: transparent;
+  border-color: var(--skyBlue);
+  color: var(--skyBlue);
+  transform: translateY(-2px);
+}
+
+/* Project Grid */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: fit-content;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.gridItem {
+  aspect-ratio: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  background: var(--paleBlue);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.6s ease var(--delay) both;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.gridItem:hover {
+  transform: translateY(-8px) translateZ(20px) !important;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.gridItem.active {
+  border: 3px solid var(--skyBlue);
+  box-shadow: 0 0 30px rgba(34, 162, 255, 0.4);
+}
+
+.gridItemImage {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover .gridItemImage {
+  transform: scale(1.1);
+}
+
+.gridItemOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    transparent,
+    rgba(6, 50, 95, 0.9)
+  );
+  padding: 16px;
+  color: white;
+}
+
+.gridItemTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.gridItemTech {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.miniTechTag {
+  background: rgba(34, 162, 255, 0.3);
+  border: 1px solid rgba(34, 162, 255, 0.5);
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(34, 162, 255, 0.3);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.6s ease;
+}
+
+.gridItem:active .ripple {
+  width: 200%;
+  height: 200%;
+}
+
+/* Progress Indicator */
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.progressBar {
+  width: 200px;
+  height: 4px;
+  background: rgba(34, 162, 255, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--skyBlue), var(--navyBlue));
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.progressText {
+  font-weight: 600;
+  color: var(--navyBlue);
+  font-size: 0.9rem;
+}
+
+/* Navigation Arrows */
+.navArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--skyBlue);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(34, 162, 255, 0.3);
+}
+
+.navArrow:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 15px 35px rgba(34, 162, 255, 0.4);
+}
+
+.prevArrow {
+  left: -25px;
+}
+
+.nextArrow {
+  right: -25px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) translateZ(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .navArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .playButton {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .projectTitle {
+    font-size: 2rem;
+  }
+  
+  .projectInfo {
+    max-width: 100%;
+  }
+  
+  .projectOverlay {
+    padding: 20px;
+  }
+  
+  .featuredProject {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    gap: 20px;
+  }
+  
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .progressContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .actionButton {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark mode adjustments */
+.root-colors.dark .featuredProject {
+  background: linear-gradient(135deg, var(--paleBlue), var(--navyBlue));
+}
+
+.root-colors.dark .gridItem {
+  background: var(--paleBlue);
+  border-color: var(--skyBlue);
+}
+
+.root-colors.dark .progressText {
+  color: var(--skyBlue);
+}
+
+.root-colors.dark .techTag {
+  background: rgba(34, 162, 255, 0.2);
+  border-color: rgba(34, 162, 255, 0.4);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .gridItem,
+  .projectImage,
+  .navArrow,
+  .playButton {
+    transition: none;
+    animation: none;
+  }
+  
+  .projectGrid {
+    transform: none !important;
+  }
+  
+  .projectImage {
+    transform: none !important;
+  }
+}

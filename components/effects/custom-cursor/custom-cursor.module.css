@@ -1,0 +1,324 @@
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: all 0.1s ease;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.cursor.visible {
+  opacity: 1;
+}
+
+.cursorInner {
+  width: 8px;
+  height: 8px;
+  background: var(--skyBlue);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cursorRing {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--skyBlue);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.6;
+}
+
+/* Cursor states */
+.cursor.clicking .cursorInner {
+  transform: scale(0.8);
+  background: var(--navyBlue);
+}
+
+.cursor.clicking .cursorRing {
+  transform: translate(-50%, -50%) scale(0.8);
+  border-color: var(--navyBlue);
+}
+
+/* Cursor types */
+.cursor.button .cursorInner {
+  width: 16px;
+  height: 16px;
+  background: var(--skyBlue);
+}
+
+.cursor.button .cursorRing {
+  width: 48px;
+  height: 48px;
+  border-color: var(--skyBlue);
+  border-width: 3px;
+}
+
+.cursor.link .cursorInner {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2px solid var(--skyBlue);
+}
+
+.cursor.link .cursorRing {
+  width: 40px;
+  height: 40px;
+  animation: pulse 1s infinite;
+}
+
+.cursor.drag .cursorInner {
+  width: 24px;
+  height: 24px;
+  background: var(--navyBlue);
+  border-radius: 8px;
+}
+
+.cursor.drag .cursorRing {
+  width: 56px;
+  height: 56px;
+  border-style: dashed;
+  animation: rotate 2s linear infinite;
+}
+
+.cursor.interactive .cursorInner {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(45deg, var(--skyBlue), var(--navyBlue));
+  box-shadow: 0 0 20px rgba(34, 162, 255, 0.6);
+}
+
+.cursor.interactive .cursorRing {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, transparent 50%, rgba(34, 162, 255, 0.1) 100%);
+  border: none;
+  animation: breathe 2s ease-in-out infinite;
+}
+
+.cursor.text .cursorInner {
+  width: 2px;
+  height: 20px;
+  border-radius: 1px;
+  background: var(--navyBlue);
+}
+
+.cursor.text .cursorRing {
+  display: none;
+}
+
+/* Icons */
+.linkIcon,
+.dragIcon,
+.interactiveIcon,
+.buttonIcon,
+.textIcon {
+  font-size: 12px;
+  color: var(--white);
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.linkIcon {
+  font-size: 10px;
+  top: -2px;
+  right: -2px;
+}
+
+.dragIcon {
+  font-size: 14px;
+}
+
+.interactiveIcon {
+  font-size: 8px;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.textIcon {
+  animation: blink 1s infinite;
+}
+
+/* Cursor trail */
+.cursorTrail {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: var(--skyBlue);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Section-specific styles */
+.cursor.landing .cursorInner {
+  background: linear-gradient(45deg, var(--skyBlue), var(--lightCyan));
+}
+
+.cursor.works .cursorInner {
+  background: linear-gradient(45deg, var(--navyBlue), var(--skyBlue));
+}
+
+.cursor.works .cursorTrail {
+  background: var(--navyBlue);
+}
+
+.cursor.skills .cursorInner {
+  background: linear-gradient(45deg, var(--skyBlue), var(--slateGray));
+}
+
+.cursor.skills .cursorTrail {
+  background: var(--slateGray);
+}
+
+.cursor.ethos .cursorInner {
+  background: linear-gradient(45deg, var(--paleBlue), var(--skyBlue));
+}
+
+.cursor.ethos .cursorTrail {
+  background: var(--paleBlue);
+}
+
+/* Particles for interactive state */
+.particles {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9997;
+  transform: translate(-50%, -50%);
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--skyBlue);
+  border-radius: 50%;
+  animation: particleFloat 1s ease-out infinite;
+  animation-delay: var(--delay);
+  transform: rotate(var(--angle)) translateX(25px);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translateX(40px);
+  }
+}
+
+/* Dark mode adjustments */
+.root-colors.dark .cursor {
+  mix-blend-mode: normal;
+}
+
+.root-colors.dark .cursorInner {
+  background: var(--skyBlue);
+}
+
+.root-colors.dark .cursorRing {
+  border-color: var(--skyBlue);
+}
+
+.root-colors.dark .cursorTrail {
+  background: var(--skyBlue);
+}
+
+/* Mobile - hide cursor */
+@media (max-width: 768px) {
+  .cursor,
+  .cursorTrail,
+  .particles {
+    display: none;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .cursor,
+  .cursorRing,
+  .cursorInner {
+    transition: none;
+    animation: none;
+  }
+  
+  .cursorTrail {
+    display: none;
+  }
+  
+  .particles {
+    display: none;
+  }
+}
+
+/* Performance optimizations */
+.cursor,
+.cursorTrail,
+.particles {
+  will-change: transform;
+  backface-visibility: hidden;
+}

@@ -1,0 +1,371 @@
+.portfolioWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: grab;
+  background-color: var(--lightCyan);
+}
+
+.portfolioWrapper:active {
+  cursor: grabbing;
+}
+
+.portfolioContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.portfolioContainer.dragging {
+  cursor: grabbing;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.section {
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Navigation Arrows */
+.navigationArrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  color: var(--navyBlue);
+}
+
+.navigationArrow:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leftArrow {
+  left: 30px;
+}
+
+.rightArrow {
+  right: 30px;
+}
+
+/* Navigation Dots */
+.navigationDots {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigationDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--skyBlue);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+}
+
+.navigationDot:hover {
+  transform: scale(1.2);
+  background: var(--skyBlue);
+  box-shadow: 0 0 10px rgba(34, 162, 255, 0.5);
+}
+
+.navigationDot.active {
+  background: var(--skyBlue);
+  box-shadow: 0 0 15px rgba(34, 162, 255, 0.7);
+  transform: scale(1.3);
+}
+
+.navigationDot:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(34, 162, 255, 0.3);
+}
+
+/* Scroll Hint */
+.scrollHint {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.scrollHintText {
+  font-size: 14px;
+  color: var(--slateGray);
+  font-weight: 500;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.scrollHintIcon {
+  color: var(--skyBlue);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigationDots {
+    bottom: 20px;
+    gap: 8px;
+    padding: 6px 12px;
+  }
+  
+  .navigationDot {
+    width: 10px;
+    height: 10px;
+    border-width: 1.5px;
+  }
+  
+  .navigationArrow {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .leftArrow {
+    left: 20px;
+  }
+  
+  .rightArrow {
+    right: 20px;
+  }
+  
+  .scrollHint {
+    right: 20px;
+    font-size: 12px;
+  }
+  
+  .scrollHintText {
+    display: none;
+  }
+  
+  .scrollHintIcon {
+    font-size: 16px;
+  }
+  
+  /* Hide scroll hint on touch devices after first interaction */
+  .portfolioWrapper.touched .scrollHint {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Optimize touch scrolling */
+  .portfolioContainer {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigationDots {
+    bottom: 15px;
+    gap: 6px;
+    padding: 4px 8px;
+  }
+  
+  .navigationDot {
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+  }
+  
+  .navigationArrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .leftArrow {
+    left: 15px;
+  }
+  
+  .rightArrow {
+    right: 15px;
+  }
+  
+  .scrollHint {
+    right: 15px;
+  }
+  
+  /* Better touch targets */
+  .navigationDot {
+    padding: 8px;
+    width: auto;
+    height: auto;
+    min-width: 32px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigationDot::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    border-radius: 50%;
+    border: 1px solid var(--skyBlue);
+  }
+  
+  .navigationDot.active::before {
+    background: var(--skyBlue);
+  }
+}
+
+/* Dark mode adjustments */
+.root-colors.dark .navigationDots {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.root-colors.dark .navigationDot {
+  border-color: var(--skyBlue);
+}
+
+.root-colors.dark .navigationArrow {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--skyBlue);
+}
+
+.root-colors.dark .navigationArrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.root-colors.dark .scrollHintText {
+  color: var(--slateGray);
+}
+
+/* Animations */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Performance optimizations */
+.portfolioContainer * {
+  transform-style: preserve-3d;
+}
+
+/* Smooth scrolling for individual sections */
+.section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background: var(--skyBlue);
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+.section::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+
+/* Elastic boundary effects */
+.portfolioContainer.elastic-left {
+  transform-origin: left center;
+  animation: elasticLeft 0.3s ease-out;
+}
+
+.portfolioContainer.elastic-right {
+  transform-origin: right center;
+  animation: elasticRight 0.3s ease-out;
+}
+
+@keyframes elasticLeft {
+  0% { transform: scaleX(1); }
+  50% { transform: scaleX(0.98); }
+  100% { transform: scaleX(1); }
+}
+
+@keyframes elasticRight {
+  0% { transform: scaleX(1); }
+  50% { transform: scaleX(0.98); }
+  100% { transform: scaleX(1); }
+}
+
+.portfolioWrapper.touched .scrollHint {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .portfolioContainer,
+  .navigationDot,
+  .scrollHint {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Focus states for keyboard navigation */
+.portfolioWrapper:focus-within .navigationDots {
+  opacity: 1;
+}
+
+.navigationDot:focus-visible {
+  outline: 2px solid var(--skyBlue);
+  outline-offset: 2px;
+}

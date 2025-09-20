@@ -1,0 +1,264 @@
+.parallaxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background 0.5s ease;
+}
+
+.particlesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.particle {
+  position: absolute;
+  background: var(--skyBlue);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float infinite linear;
+  transition: transform 0.1s ease;
+}
+
+.sectionBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+
+/* Tech Icons Float */
+.techIconsFloat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floatingIcon {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: gentleFloat 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.floatingIcon:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+/* Grid Pattern */
+.gridPattern {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gridDot {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--slateGray);
+  border-radius: 50%;
+  opacity: 0;
+  animation: pulseGrid 2s ease-in-out infinite;
+}
+
+/* Code Elements */
+.codeElements {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floatingCode {
+  position: absolute;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  color: var(--skyBlue);
+  opacity: 0.2;
+  animation: codeFloat 8s ease-in-out infinite;
+}
+
+/* Philosophy Elements */
+.philosophyElements {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floatingSymbol {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.25;
+  animation: symbolFloat 10s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes pulseGrid {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes codeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translateY(-20px) rotate(10deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(-30px) rotate(8deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes symbolFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.25;
+  }
+  33% {
+    transform: translateY(-15px) scale(1.1) rotate(120deg);
+    opacity: 0.4;
+  }
+  66% {
+    transform: translateY(-8px) scale(0.9) rotate(240deg);
+    opacity: 0.3;
+  }
+}
+
+/* Section-specific styles */
+.section0 {
+  background: radial-gradient(circle at 30% 70%, rgba(34, 162, 255, 0.05) 0%, transparent 50%);
+}
+
+.section1 {
+  background: radial-gradient(circle at 70% 30%, rgba(96, 113, 130, 0.05) 0%, transparent 50%);
+}
+
+.section2 {
+  background: radial-gradient(circle at 50% 80%, rgba(34, 162, 255, 0.08) 0%, transparent 50%);
+}
+
+.section3 {
+  background: radial-gradient(circle at 80% 20%, rgba(221, 242, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Dark mode adjustments */
+.root-colors.dark .particle {
+  background: var(--skyBlue);
+  opacity: 0.4;
+}
+
+.root-colors.dark .floatingIcon {
+  opacity: 0.2;
+}
+
+.root-colors.dark .floatingCode {
+  color: var(--skyBlue);
+  opacity: 0.15;
+}
+
+.root-colors.dark .floatingSymbol {
+  opacity: 0.15;
+}
+
+.root-colors.dark .gridDot {
+  background: var(--slateGray);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floatingIcon {
+    font-size: 1.5rem;
+  }
+  
+  .floatingCode {
+    font-size: 1rem;
+  }
+  
+  .floatingSymbol {
+    font-size: 1.8rem;
+  }
+  
+  .particle {
+    animation-duration: 8s;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .particle,
+  .floatingIcon,
+  .floatingCode,
+  .floatingSymbol,
+  .gridDot {
+    animation: none;
+  }
+  
+  .gradientOverlay {
+    transition: none;
+  }
+}

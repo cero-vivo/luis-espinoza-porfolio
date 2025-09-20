@@ -1,0 +1,215 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+  mix-blend-mode: difference;
+}
+
+.cursorDot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--navyBlue);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+}
+
+.cursorRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--skyBlue);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.cursorIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--skyBlue);
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+.cursorTrail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--skyBlue);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Estados del cursor */
+.cursor.pointer .cursorRing {
+  width: 30px;
+  height: 30px;
+  border-color: var(--skyBlue);
+  border-width: 2px;
+}
+
+.cursor.pointer .cursorDot {
+  width: 6px;
+  height: 6px;
+  background: var(--skyBlue);
+}
+
+.cursor.view .cursorRing {
+  width: 40px;
+  height: 40px;
+  border-color: var(--navyBlue);
+  border-width: 2px;
+  opacity: 0.8;
+}
+
+.cursor.view .cursorDot {
+  width: 8px;
+  height: 8px;
+  background: var(--navyBlue);
+}
+
+.cursor.view .cursorTrail {
+  opacity: 0.3;
+  animation: ringPulse 1.5s ease-in-out infinite;
+}
+
+.cursor.explore .cursorRing {
+  width: 35px;
+  height: 35px;
+  border-color: var(--slateGray);
+  border-style: dashed;
+  animation: rotate 3s linear infinite;
+}
+
+.cursor.grab .cursorRing {
+  width: 25px;
+  height: 25px;
+  border-color: var(--skyBlue);
+  border-width: 2px;
+}
+
+.cursor.grabbing .cursorRing {
+  width: 15px;
+  height: 15px;
+  border-color: var(--navyBlue);
+  border-width: 3px;
+}
+
+.cursor.grabbing .cursorDot {
+  width: 2px;
+  height: 2px;
+}
+
+.cursor.dragging .cursorRing {
+  animation: dragPulse 0.3s ease-in-out infinite alternate;
+}
+
+/* Efectos especiales */
+.grabbing {
+  transform: rotate(15deg);
+}
+
+/* Animaciones */
+@keyframes iconPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+@keyframes ringPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes dragPulse {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+/* Dark mode */
+.root-colors.dark .cursorDot {
+  background: var(--skyBlue);
+}
+
+.root-colors.dark .cursorRing {
+  border-color: var(--skyBlue);
+}
+
+.root-colors.dark .cursorIcon {
+  color: var(--skyBlue);
+}
+
+.root-colors.dark .cursorTrail {
+  border-color: var(--skyBlue);
+}
+
+/* Estados específicos en dark mode */
+.root-colors.dark .cursor.view .cursorRing,
+.root-colors.dark .cursor.view .cursorDot {
+  border-color: var(--skyBlue);
+  background: var(--skyBlue);
+}
+
+.root-colors.dark .cursor.grabbing .cursorRing {
+  border-color: var(--skyBlue);
+}
+
+/* Responsive - ocultar en dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* Reducir movimiento si es preferido */
+@media (prefers-reduced-motion: reduce) {
+  .cursor,
+  .cursorDot,
+  .cursorRing,
+  .cursorIcon,
+  .cursorTrail {
+    transition: none !important;
+    animation: none !important;
+  }
+}

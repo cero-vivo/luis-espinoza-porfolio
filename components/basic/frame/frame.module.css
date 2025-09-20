@@ -4,10 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 23px 32px 69px 32px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .inView {
@@ -15,14 +19,36 @@
     transform: translateY(0);
 }
 
+/* Horizontal layout specific styles */
+.frame.horizontal {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 @media(width <= 1096px) {
     .frame {
         padding: 23px 37px 69px 37px;
+    }
+    
+    .frame.horizontal {
+        padding: 30px;
     }
 }
 
 @media(width <= 758px) {
     .frame {
         padding: 18px 20px 31px 20px;
+    }
+    
+    .frame.horizontal {
+        padding: 20px;
     }
 }
