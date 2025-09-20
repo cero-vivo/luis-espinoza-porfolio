@@ -88,12 +88,8 @@
 				"description": "Aplicación web personal para crear y organizar listas de tareas, recetas o recordatorios. Incluye carpetas, drag-and-drop y sincronización en la nube para acceder desde cualquier dispositivo."
 			},
 			"AEG Hornos de Cerámica": {
-				"name": "AEG Service - Hornos de Cerámica",
-				"description": "Sitio web profesional para servicio de reparación y mantenimiento de hornos de cerámica. Desarrollado con Bootstrap y desplegado en Netlify, conectado con Firebase Remote Config para actualizar contenido dinámicamente sin necesidad de redeploy. Incluye formularios de contacto, galería de trabajos realizados y información detallada de servicios. Optimizado para SEO y conversión de clientes en la zona de CABA y AMBA."
-			},
-			"Digital Consultora - Retail Spark Grow": {
-				"name": "Digital Consultora - Retail Spark Grow",
-				"description": "Plataforma web para consultora especializada en transformación digital del retail físico. Implementado con Tailwind CSS y Bootstrap, incluye landing page moderna, formularios de contacto y casos de éxito. Diseñado para generar leads y mostrar servicios de consultoría digital."
+				"name": "AEG Hornos de Cerámica",
+				"description": "AEG Hornos de Cerámica es una plataforma web de gestión desarrollada para un servicio técnico especializado en hornos de cerámica, que incluye tanto un sitio landing como un backoffice para administrar el contenido del sitio y la relación con los clientes. La solución permite gestionar clientes, enviar comunicaciones masivas y editar información de servicios desde un panel de administración robusto, con CRUD avanzado, filtros inteligentes y herramientas de comunicación integradas. Construida con Next.js 14, React, TypeScript y Firebase, incorpora un editor WYSIWYG para correos (TinyMCE), envío masivo con Resend API, integración con WhatsApp mediante enlaces dinámicos y librerías como React Hook Form y Lucide Icons. Entre sus funciones principales destacan la gestión de clientes con validaciones y tablas paginadas, el envío de correos y WhatsApps personalizados con plantillas, la edición de precios y servicios, un módulo de sugerencias con estados y prioridades, además de características técnicas como paginación, validaciones JSON, subida de imágenes y diseño responsive."
 			}
 		}
 	},

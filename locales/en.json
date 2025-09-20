@@ -88,12 +88,8 @@
 				"description": "Personal web app to create and organize lists for tasks, recipes or reminders. Features folders, drag-and-drop and cloud sync to access from any device."
 			},
 			"AEG Hornos de Cerámica": {
-				"name": "AEG Service - Hornos de Cerámica",
-				"description": "Professional website for ceramic oven repair and maintenance services. Built with Bootstrap and deployed on Netlify, connected to Firebase Remote Config to update content dynamically without redeployment. Includes contact forms, work gallery and detailed service information. SEO optimized and designed for customer conversion in CABA and AMBA areas."
-			},
-			"Digital Consultora - Retail Spark Grow": {
-				"name": "Digital Consultora - Retail Spark Grow",
-				"description": "Web platform for consultancy specialized in digital transformation of physical retail. Implemented with Tailwind CSS and Bootstrap, features modern landing page, contact forms and success cases. Designed to generate leads and showcase digital consultancy services."
+				"name": "AEG Ceramic Ovens",
+				"description": "AEG Ceramic Ovens is a web management platform developed for a technical service specialized in ceramic ovens, featuring both a landing site and a backoffice to manage website content and customer relationships. The solution enables client management, mass communications, and service updates through a robust admin panel with advanced CRUD operations, smart filters, and integrated communication tools. Built with Next.js 14, React, TypeScript, and Firebase, it includes a WYSIWYG email editor (TinyMCE), bulk messaging via Resend API, WhatsApp integration through dynamic links, and libraries such as React Hook Form and Lucide Icons. Key features include client management with validations and paginated tables, sending personalized emails and WhatsApps with templates, editing services and pricing, a suggestion module with status and priority tracking, as well as technical capabilities like pagination, JSON validations, image uploads, and responsive design."
 			}
 		}
 	},

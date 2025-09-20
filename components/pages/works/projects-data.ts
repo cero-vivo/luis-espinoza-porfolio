@@ -127,7 +127,14 @@ export const projects: ProjectType[] = [
 			"/projects/hornos-aeg/1.png",
 			"/projects/hornos-aeg/2.png",
 			"/projects/hornos-aeg/3.png",
-			"/projects/hornos-aeg/4.png"
+			"/projects/hornos-aeg/4.png",
+			"/projects/hornos-aeg/5.png",
+			"/projects/hornos-aeg/6.png",
+			"/projects/hornos-aeg/7.png",
+			"/projects/hornos-aeg/8.png",
+			"/projects/hornos-aeg/9.png",
+			"/projects/hornos-aeg/10.png",
+			"/projects/hornos-aeg/11.png",
 		],
 		"urls": ["https://hornos-aeg.netlify.app/"]
 	}
