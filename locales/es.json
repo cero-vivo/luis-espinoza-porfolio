@@ -268,7 +268,19 @@
   },
   "footer": {
     "email_short": "Email",
-    "call": "Llamar"
+    "call": "Llamada",
+    "badge": "Portafolio",
+    "title": "Luis Espinoza",
+    "tagline": "Ingeniero de producto fractional que impulsa lanzamientos pulidos en LATAM.",
+    "ctaLabel": "Disponible para nuevas colaboraciones",
+    "ctaTitle": "Cuéntame sobre tu producto",
+    "ctaDescription": "Diseñemos la estrategia, alineemos al equipo y lancemos algo distintivo en pocas semanas.",
+    "ctaButton": "Iniciar proyecto",
+    "availabilityLabel": "Base actual",
+    "availabilityValue": "Buenos Aires · UTC-3",
+    "message": "Mensaje",
+    "profile": "Perfil",
+    "copy": "Todos los derechos reservados."
   },
   "highlights": {
     "overline": "Señales de confianza",

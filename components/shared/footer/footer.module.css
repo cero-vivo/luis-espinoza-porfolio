@@ -1,83 +1,330 @@
 .footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    padding: 32px 16px 40px;
-    background: var(--lightCyan);
-    border-top: 1px solid var(--paleBlue);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 -6px 16px rgba(0,0,0,0.08);
-    color: var(--navyBlue);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 24px 32px;
+	background: var(--surface-strong);
+	color: var(--text-primary);
+	border-top: 1px solid var(--border-subtle);
 }
 
-html.dark .footer {
-    background: var(--paleBlue);
-    border-top: 1px solid var(--slateGray);
-    box-shadow: 0 -6px 20px rgba(0,0,0,0.4);
-    color: var(--white);
+.backdrop {
+	position: absolute;
+	inset: -20%;
+	background:
+		radial-gradient(120% 120% at 0% 0%, rgba(34, 162, 255, 0.28), transparent 55%),
+		radial-gradient(90% 90% at 100% 10%, rgba(6, 50, 95, 0.22), transparent 65%),
+		radial-gradient(60% 60% at 50% 100%, rgba(34, 162, 255, 0.18), transparent 70%);
+	opacity: 0.85;
+	filter: blur(60px);
+	pointer-events: none;
 }
 
-.iconRow {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+html.dark .backdrop {
+	background:
+		radial-gradient(120% 120% at 0% 0%, rgba(139, 233, 253, 0.32), transparent 55%),
+		radial-gradient(90% 90% at 100% 10%, rgba(241, 250, 140, 0.18), transparent 65%),
+		radial-gradient(60% 60% at 50% 100%, rgba(139, 233, 253, 0.22), transparent 70%);
 }
 
-.iconLink {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: currentColor;
-    text-decoration: none;
-    opacity: 0.85;
-    transition: color 0.2s ease, opacity 0.2s ease;
+.content {
+	position: relative;
+	max-width: 1080px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr) minmax(0, 0.8fr);
+	gap: 32px;
+	align-items: start;
 }
 
-.iconLink:hover {
-    opacity: 1;
-    color: var(--skyBlue);
+.identity {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
-html.dark .iconLink:hover {
-    color: var(--skyBlue);
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 6px 16px;
+	border-radius: 999px;
+	border: 1px solid var(--border-subtle);
+	background: var(--surface-glass);
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 0.72rem;
+	color: var(--text-secondary);
 }
 
-.iconLink svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    stroke: currentColor;
+.badge::after {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--skyBlue);
+}
+
+.title {
+	font-size: clamp(1.9rem, 3vw, 2.5rem);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.tagline {
+	max-width: 40ch;
+	color: var(--text-secondary);
+	line-height: 1.45;
+}
+
+.ctaCard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 28px;
+	border-radius: 24px;
+	border: 1px solid rgba(34, 162, 255, 0.18);
+	background: var(--surface-elevated);
+	box-shadow: 0 25px 60px rgba(6, 50, 95, 0.14);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
+}
+
+html.dark .ctaCard {
+	border-color: rgba(139, 233, 253, 0.24);
+	background: rgba(48, 49, 68, 0.88);
+	box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.ctaLabel {
+	font-size: 0.75rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--text-subtle);
+}
+
+.ctaTitle {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--text-primary);
+}
+
+.ctaDescription {
+	color: var(--text-secondary);
+	line-height: 1.5;
+}
+
+.ctaButton {
+	margin-top: 6px;
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 22px;
+	border-radius: 999px;
+	border: none;
+	background: linear-gradient(135deg, var(--navyBlue), var(--skyBlue));
+	color: var(--white);
+	font-size: 0.95rem;
+	font-weight: 600;
+	font-family: inherit;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.ctaButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 15px 35px rgba(34, 162, 255, 0.28);
+	filter: brightness(1.05);
+}
+
+.ctaButton:focus-visible {
+	outline: 2px solid var(--skyBlue);
+	outline-offset: 4px;
+}
+
+html.dark .ctaButton {
+	background: linear-gradient(135deg, var(--skyBlue), rgba(139, 233, 253, 0.85));
+	color: var(--navyBlue);
+}
+
+.meta {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 28px;
+	border-radius: 24px;
+	border: 1px solid var(--border-subtle);
+	background: var(--surface-glass);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+}
+
+.metaLabel {
+	font-size: 0.75rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--text-subtle);
+}
+
+.metaValue {
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--text-primary);
+}
+
+.ribbon {
+	position: relative;
+	max-width: 1080px;
+	margin: 48px auto 32px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
+.chip {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 14px 18px;
+	border-radius: 18px;
+	border: 1px solid var(--border-subtle);
+	background: var(--surface-elevated);
+	color: var(--text-primary);
+	font-family: inherit;
+	cursor: pointer;
+	transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+	min-width: 220px;
+	text-align: left;
+}
+
+.chip:hover {
+	transform: translateY(-4px);
+	border-color: var(--border-strong);
+	box-shadow: 0 14px 32px rgba(6, 50, 95, 0.12);
+	background: var(--surface-card);
+}
+
+.chip:focus-visible {
+	outline: 2px solid var(--skyBlue);
+	outline-offset: 4px;
+}
+
+html.dark .chip {
+	background: rgba(48, 49, 68, 0.92);
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.42);
+}
+
+html.dark .chip:hover {
+	box-shadow: 0 24px 55px rgba(0, 0, 0, 0.55);
+}
+
+.chipIcon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 14px;
+	background: rgba(34, 162, 255, 0.18);
+	color: var(--navyBlue);
+}
+
+html.dark .chipIcon {
+	background: rgba(139, 233, 253, 0.24);
+	color: var(--skyBlue);
+}
+
+.chipText {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.chipLabel {
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.chipHelper {
+	font-size: 0.78rem;
+	color: var(--text-subtle);
+	white-space: nowrap;
+}
+
+.bottomBar {
+	position: relative;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-top: 28px;
+	border-top: 1px solid var(--border-subtle);
+	display: flex;
+	justify-content: center;
 }
 
 .copy {
-    font-size: 0.75rem;
-    opacity: 0.6;
+	font-size: 0.78rem;
+	color: var(--text-subtle);
+	text-align: center;
 }
 
-@media(width <= 758px) {
-    .footer {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: var(--lightCyan);
-        gap: 16px;
-        padding: 24px 16px 32px;
-        justify-content: center;
-        color: var(--navyBlue);
-    }
+@media (width <= 1024px) {
+	.content {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
 
-    html.dark .footer {
-        background: var(--paleBlue);
-        color: var(--white);
-    }
+	.meta {
+		grid-column: span 2;
+	}
+}
 
-    .iconRow {
-        justify-content: center;
-    }
+@media (width <= 768px) {
+	.footer {
+		padding: 48px 20px 28px;
+	}
+
+	.content {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.meta {
+		grid-column: span 1;
+	}
+
+	.badge {
+		font-size: 0.7rem;
+	}
+
+	.ribbon {
+		margin: 40px auto 28px;
+	}
+
+	.chip {
+		min-width: 100%;
+	}
+}
+
+@media (width <= 520px) {
+	.title {
+		font-size: clamp(1.7rem, 5vw, 2.1rem);
+	}
+
+	.ctaCard,
+	.meta {
+		padding: 22px;
+	}
+
+	.chip {
+		padding: 12px 16px;
+	}
+
+	.chipIcon {
+		width: 38px;
+		height: 38px;
+	}
 }

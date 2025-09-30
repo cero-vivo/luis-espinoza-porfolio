@@ -268,7 +268,19 @@
   },
   "footer": {
     "email_short": "Email",
-    "call": "Call"
+    "call": "Call",
+    "badge": "Portfolio",
+    "title": "Luis Espinoza",
+    "tagline": "Fractional product engineer shaping polished launches across LATAM.",
+    "ctaLabel": "Open for new collaborations",
+    "ctaTitle": "Tell me about your product",
+    "ctaDescription": "Let's map the strategy, orchestrate the squad, and ship something distinctive within weeks.",
+    "ctaButton": "Start a project",
+    "availabilityLabel": "Current base",
+    "availabilityValue": "Buenos Aires · UTC-3",
+    "message": "Message",
+    "profile": "Profile",
+    "copy": "All rights reserved."
   },
   "highlights": {
     "overline": "Trust signals",

@@ -15,6 +15,17 @@ const poppins = Poppins({
 export const metadata: Metadata = {
 	title: "Luis Espinoza",
 	description: "Luis Espinoza - Software develop dev react react native mobile app web app argentina chile latam web frontend fullstack",
+	icons: {
+		icon: [
+			{ url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+			{ url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+			{ url: '/favicon.ico', sizes: 'any' }
+		],
+		apple: '/apple-touch-icon.png',
+		other: [
+			{ rel: 'manifest', url: '/site.webmanifest' }
+		]
+	},
 };
 
 // Desactiva el zoom/pinch en dispositivos móviles
