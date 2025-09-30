@@ -1,12 +1,13 @@
 import { Frame } from '@/components/basic/frame/frame'
 import { Heading } from '@/components/basic/heading/heading'
 import { Paragraph } from '@/components/basic/paragraph/paragraph'
-import { TechStack } from '@/components/shared/tech-stack/tech-stack'
-import { TechIcon } from '@/components/shared/tech-stack/tech-index'
 import { Sections } from '@/types/constant'
 import { LetsTalkButton } from './lets-talk-button'
 import styles from "./landing.module.css"
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+import { TechStack } from '@/components/shared/tech-stack/tech-stack'
+import { TechIcon } from '@/components/shared/tech-stack/tech-index'
 
 const iconStack: TechIcon[] = [
 	"react",
@@ -78,12 +79,14 @@ export const Landing = () => {
 					</div>
 				</div>
 				<div className={styles.heroVisual}>
-					<div className={styles.visualGlow} aria-hidden />
-					<div className={styles.visualCard}>
-						<span className={styles.visualLabel}>{t('stack.title')}</span>
-						<TechStack icons={iconStack} boxClasses={styles.techIcons} iconClasses={styles.heroIcon} />
-						<Paragraph text={t('stack.description')} variant='regular' classes={styles.visualCopy} />
-					</div>
+					<Image src="/images/avatar_laptop.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
+				</div>
+			</section>
+			<section className={styles.stackCard}>
+				<div className={styles.visualCard}>
+					<span className={styles.visualLabel}>{t('stack.title')}</span>
+					<TechStack icons={iconStack} boxClasses={styles.techIcons} iconClasses={styles.heroIcon} />
+					<Paragraph text={t('stack.description')} variant='regular' classes={styles.visualCopy} />
 				</div>
 			</section>
 			<section className={styles.trustedRow}>
