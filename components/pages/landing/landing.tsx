@@ -74,7 +74,7 @@ export const Landing = () => {
 					</div>
 				</div>
 				<div className={styles.heroVisual}>
-					<Image src="/images/avatar_laptop.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
+					<Image src="/images/ia-drven.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
 				</div>
 			</section>
 			<section className={styles.stackCard}>

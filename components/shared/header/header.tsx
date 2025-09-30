@@ -185,8 +185,8 @@ export const Header = () => {
 					<Image
 						src="/images/header_photo2.png"
 						alt="Luis Espinoza"
-						width={72}
-						height={72}
+						width={60}
+						height={60}
 						className={styles.brandPhoto}
 					/>
 					<span className={styles.brandCopy}>

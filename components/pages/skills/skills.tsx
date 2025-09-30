@@ -54,7 +54,7 @@ export const Skills = () => {
 				<div className={styles.visualPanel}>
 					<div className={styles.visualGlow} aria-hidden />
 					<Image
-						src='/images/skills_photo1.jpg'
+						src='/images/avatar_laptop.png'
 						alt='Luis Espinoza collaborating with product teams'
 						width={420}
 						height={560}
