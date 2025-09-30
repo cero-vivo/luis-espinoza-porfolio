@@ -23,7 +23,7 @@
     position: absolute;
     inset: -160px -40% auto;
     height: 320px;
-    background: radial-gradient(55% 60% at 20% 40%, rgba(34, 162, 255, 0.25) 0%, rgba(34, 162, 255, 0) 60%),
+    background: radial-gradient(0% 0% at 20% 40%, rgba(34, 162, 255, 0.25) 0%, rgba(34, 162, 255, 0) 60%),
                 radial-gradient(40% 40% at 80% 50%, rgba(6, 50, 95, 0.18) 0%, rgba(6, 50, 95, 0) 70%);
     pointer-events: none;
     z-index: 0;

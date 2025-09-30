@@ -2,7 +2,6 @@
 
 import { LanguageSwitcher } from '@/components/basic/language-switcher/language-switcher'
 import { ThemeToggle } from '@/components/basic/theme-toggle/theme-toggle'
-import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import React, { useState, useEffect, useRef, FC } from 'react'
 import styles from "./header.module.css"
 import { Sections } from '@/types/constant'
@@ -36,8 +35,11 @@ const CVLink: FC<CVLinkProps> = ({ link, isSelected }) => {
 
     return (
         <span key={link.sectionId} className={styles.cvWrapper} ref={wrapperRef}>
-            <span onClick={() => setOpen(v => !v)} className={`${styles.option}`}> 
-                <Paragraph text={t(link.text)} variant="bold" classes={`${isSelected ? styles.activeSection : undefined} ${styles.option}`} />
+            <span 
+                onClick={() => setOpen(v => !v)} 
+                className={`${styles.option} ${isSelected ? styles.activeSection : ''}`}
+            > 
+                <span className={styles.optionText}>{t(link.text)}</span>
             </span>
             <div className={`${styles.cvDropdown} ${open ? styles.cvDropdownOpen : ''}`}>
                 <a href={cvPath} download={cvPath} className={styles.cvLink}>{t('download_cv', { defaultMessage: 'Descargar CV' })}</a>
@@ -122,9 +124,9 @@ const WorksLink: FC<WorksLinkProps> = ({ link, isSelected }) => {
         >
             <span 
                 onClick={() => setOpen(v => !v)} 
-                className={`${styles.option}`}
+                className={`${styles.option} ${isSelected ? styles.activeSection : ''}`}
             > 
-                <Paragraph text={t(link.text)} variant="bold" classes={`${isSelected ? styles.activeSection : undefined} ${styles.option}`} />
+                <span className={styles.optionText}>{t(link.text)}</span>
             </span>
             <div className={`${styles.cvDropdown} ${isDropdownOpen ? styles.cvDropdownOpen : ''}`}>
                 {projects.map((project, index) => (
@@ -181,7 +183,7 @@ export const Header = () => {
 			<div className={styles.inner}>
 				<a href={`#${Sections.HOME}`} onClick={goToHome} className={styles.brand}>
 					<Image
-						src="/images/header_photo1.png"
+						src="/images/header_photo2.png"
 						alt="Luis Espinoza"
 						width={72}
 						height={72}
