@@ -40,11 +40,6 @@ export const Landing = () => {
 		value: t(`status.${key}.value`),
 	}))
 
-	const pillarCards = pillarKeys.map((key) => ({
-		title: t(`pillars.${key}.title`),
-		description: t(`pillars.${key}.description`),
-	}))
-
 	const trustedClients = t('trusted.list').split('|').map((client) => client.trim()).filter(Boolean)
 
 	return (
@@ -96,14 +91,6 @@ export const Landing = () => {
 						<li key={client} className={styles.trustedItem}>{client}</li>
 					))}
 				</ul>
-			</section>
-			<section className={styles.pillarGrid}>
-				{pillarCards.map((card) => (
-					<article key={card.title} className={styles.pillarCard}>
-						<h3 className={styles.pillarTitle}>{card.title}</h3>
-						<Paragraph text={card.description} variant='regular' classes={styles.pillarDescription} />
-					</article>
-				))}
 			</section>
 		</Frame>
 	)

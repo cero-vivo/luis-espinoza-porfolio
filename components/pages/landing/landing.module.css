@@ -48,7 +48,7 @@
 
 .title {
     max-width: 620px;
-    line-height: clamp(2.5rem, 1.8rem + 2.4vw, 3.9rem);
+    line-height: clamp(5.1rem, 2.4rem + 1.2vw, 3.4rem);
     background: linear-gradient(120deg, var(--navyBlue) 35%, rgba(34, 162, 255, 0.9) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -318,10 +318,6 @@ html.dark .trustedLabel {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .pillarGrid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .stackCard {
         order: 2;
         flex-direction: column;
@@ -371,11 +367,4 @@ html.dark .trustedLabel {
         padding: 24px;
     }
 
-    .pillarGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .pillarCard {
-        padding: 24px;
-    }
 }
