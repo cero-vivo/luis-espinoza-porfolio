@@ -2,48 +2,48 @@
   "landing": {
     "overline": "Liderazgo de producto en acción",
     "title": "Luis Espinoza\nIA-Driven Product Engineer",
-    "message": "Colaboro con scaleups y marcas globales para orquestar lanzamientos de alto impacto. Desde super apps FinTech con compliance hasta SaaS colaborativos, alineo estrategia, squads y excelencia de entrega mientras aprovecho copilotos de IA para código, testing y diseño, acelerando sin perder calidad.",
+    "message": "Desarrollador de productos impulsado por IA con 4+ años creando aplicaciones móviles y web escalables. Especializado en React, React Native y TypeScript, potencio mi desarrollo con herramientas de IA como Cursor para entregar soluciones innovadoras en FinTech, EventTech y automatización.",
     "button": "Hablemos",
     "actions": {
       "view_cases": "Explorar casos destacados"
     },
     "metrics": {
       "impact": {
-        "value": "1M+",
-        "label": "Usuarios que confían en mis productos",
-        "description": "Escalé la billetera Pago Fácil + Western Union con arquitectura resiliente y experiencias memorables."
+        "value": "1.5M+",
+        "label": "Descargas en apps desarrolladas",
+        "description": "Contribuí al desarrollo de Pago Fácil con 1.5M+ descargas y 500K usuarios activos mensuales."
       },
       "launches": {
-        "value": "15",
-        "label": "Lanzamientos 0→1 liderados",
-        "description": "Entregué suites SaaS, motores de comercio y plataformas EventTech con ROI medible."
+        "value": "3+",
+        "label": "Años en FinTech y EventTech",
+        "description": "Experiencia desarrollando en sectores de alta demanda técnica como finanzas y eventos."
       },
       "leadership": {
-        "value": "6 años",
-        "label": "Liderando squads cross-funcionales",
-        "description": "Mentoreé equipos en design systems, analítica y rituales orientados a resultados."
+        "value": "React Native",
+        "label": "Especialidad principal",
+        "description": "Desarrollo móvil nativo para iOS y Android con arquitectura limpia y rendimiento optimizado."
       }
     },
     "stack": {
-      "title": "Stack preferido",
-      "description": "Next.js, React Native, TypeScript, Firebase, PostgreSQL, AWS y copilotos de IA para código, pruebas y prototipado de diseño: el toolkit que mantiene rápidos y rigurosos a los equipos de producto."
+      "title": "Stack & herramientas IA",
+      "description": "React, React Native, TypeScript, Firebase, AWS, Redux y Cursor AI para desarrollo acelerado. Clean Architecture y herramientas de IA para código, testing y optimización de productos escalables."
     },
     "trusted": {
-      "label": "Equipos que confían",
-      "list": "Western Union|Pago Fácil|Hybeans|NOUS|FastForm"
+      "label": "Experiencia en",
+      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|Freelance"
     },
     "pillars": {
       "product": {
-        "title": "Socio estratégico de producto",
-        "description": "Cocrear roadmaps con research, compliance y métricas de éxito para entregar lo que importa."
+        "title": "Desarrollo móvil especializado",
+        "description": "Crear aplicaciones React Native robustas con integración de APIs, autenticación y bases de datos en tiempo real."
       },
       "delivery": {
-        "title": "Excelencia operativa",
-        "description": "Diseñar arquitecturas modulares, automatizar QA y observabilidad, y lanzar seguro incluso bajo presión."
+        "title": "Desarrollo acelerado con IA",
+        "description": "Utilizar Cursor AI y herramientas modernas para optimizar productividad, debugging y calidad del código."
       },
       "partnership": {
-        "title": "Craft & comunicación",
-        "description": "Liderar rituales, mantener documentación viva y alinear stakeholders con storytelling transparente."
+        "title": "Colaboración técnica",
+        "description": "Trabajar eficientemente en equipos multidisciplinarios, mantener código limpio y documentación clara."
       }
     },
     "status": {
@@ -56,8 +56,8 @@
         "value": "Buenos Aires · Remote-first"
       },
       "collaboration": {
-        "label": "Modelo de partnership",
-        "value": "Discovery → liderazgo de delivery"
+        "label": "Modalidad de trabajo",
+        "value": "Desarrollo end-to-end → entrega ágil"
       }
     }
   },
@@ -74,47 +74,47 @@
   "skills": {
     "overline": "Sistema operativo",
     "title": "SKILLS",
-    "intro": "Opero la estrategia, la ingeniería y al equipo en sincronía. Así es como genero momentum.",
+    "intro": "Desarrollador Full Stack especializado en productos móviles y web, potenciado por herramientas de IA. Así creo soluciones escalables y eficientes.",
     "metrics": {
       "experience": {
-        "value": "8 años",
-        "label": "construyendo ecosistemas web & mobile"
+        "value": "4+ años",
+        "label": "desarrollando aplicaciones escalables"
       },
       "delivery": {
-        "value": "35+",
-        "label": "features enviadas a producción"
+        "value": "8+",
+        "label": "productos entregados end-to-end"
       },
       "mentoring": {
-        "value": "5 squads",
-        "label": "mentoreados hacia la autonomía"
+        "value": "IA-Driven",
+        "label": "desarrollo acelerado con Cursor AI"
       }
     },
     "areas": {
       "product": {
-        "title": "Discovery & estrategia de producto",
-        "description": "Aporto claridad al roadmap antes de escribir código.",
-        "bullets": "Enmarco hipótesis con stakeholders y traduzco research en apuestas priorizadas.|Defino árboles de KPIs, planes de analítica y loops de experimentación para cada release.|Brindo visibilidad con storytelling conciso y decision docs para liderazgo."
+        "title": "Desarrollo Mobile & Web",
+        "description": "Creo aplicaciones escalables con React, React Native y TypeScript.",
+        "bullets": "Desarrollo apps móviles nativas para iOS y Android con React Native.|Implemento aplicaciones web modernas con Next.js, React y TypeScript.|Integro APIs complejas, autenticación y bases de datos en tiempo real."
       },
       "engineering": {
-        "title": "Ingeniería full-stack de alto nivel",
-        "description": "Arquitecto experiencias resilientes y elegantes en todas las plataformas.",
-        "bullets": "Diseño design systems modulares y librerías reutilizables.|Aplico clean architecture con TypeScript, React, React Native y servicios cloud.|Integro testing, observabilidad y CI/CD para iterar con previsibilidad."
+        "title": "Arquitectura & herramientas IA",
+        "description": "Aplico Clean Architecture y acelero desarrollo con IA.",
+        "bullets": "Utilizo Cursor AI para optimizar código, testing y debugging.|Implemento patrones MVVM y MVCP para código mantenible.|Trabajo con Firebase, AWS, PostgreSQL y servicios cloud escalables."
       },
       "enablement": {
-        "title": "Enablement & operaciones de equipo",
-        "description": "Construyo los rituales que mantienen al squad entregando rápido.",
-        "bullets": "Mentoreo engineers con pairing, reviews y prácticas de guild.|Optimizo ceremonias ágiles, salud del backlog y mitigación de riesgos.|Mantengo documentación viva y playbooks para equipos distribuidos."
+        "title": "Colaboración & entrega continua",
+        "description": "Trabajo eficientemente en equipos ágiles multidisciplinarios.",
+        "bullets": "Colaboro estrechamente con equipos de diseño, QA y backend.|Participo en metodologías ágiles y entregas bajo presión.|Mantengo código de calidad con Git, testing y documentación clara."
       }
     },
     "quote": {
-      "text": "Luis orquestó un lanzamiento FinTech impecable: visión, ejecución y mentoring en un solo partner.",
-      "author": "Head of Product — Pago Fácil"
+      "text": "Especializado en desarrollo móvil y web con React Native, TypeScript y herramientas de IA como Cursor para optimizar productividad.",
+      "author": "Perfil técnico"
     }
   },
   "ethos": {
     "overline": "Principios",
     "title": "ETHOS",
-    "intro": "Empatía desde la filosofía, precisión desde la ingeniería y resultados desde la iteración constante.",
+    "intro": "Empatía desde la filosofía, precisión desde la ingeniería y eficiencia desde la inteligencia artificial aplicada al desarrollo.",
     "media": {
       "label": "Curiosidad en práctica",
       "caption": "Siempre aprendiendo: filosofía, sistemas y craft para unir ambición con entrega.",
@@ -124,37 +124,37 @@
     "timeline": {
       "title": "Trayectoria",
       "0": {
-        "period": "2023—Hoy",
-        "role": "Principal Product Engineer · Independiente",
-        "description": "Acompaño equipos FinTech, SaaS y creativos para lanzar productos que generan revenue end-to-end."
+        "period": "2024—Hoy",
+        "role": "Mobile Developer FinTech · Bizland Tech",
+        "description": "Desarrollo la solución PSP integrando múltiples billeteras digitales y mejorando la app Pago Fácil con 1.5M+ descargas."
       },
       "1": {
-        "period": "2020—2023",
-        "role": "Lead Frontend Engineer · Hybeans",
-        "description": "Lideré squads mobile y web para plataformas de eventos, programas de monetización y analytics."
+        "period": "2022—2024",
+        "role": "Web & Mobile Developer · Hybeans",
+        "description": "Desarrollé plataforma de eventos con funcionalidades end-to-end, calendario en tiempo real y sistema de tickets digitales."
       },
       "2": {
-        "period": "2017—2020",
-        "role": "Full-stack Engineer · Pago Fácil & Western Union",
-        "description": "Entregué features core, integraciones de pago y experimentos de crecimiento durante la hiperescala."
+        "period": "2020—2022",
+        "role": "Full Stack Developer · Freelance",
+        "description": "Creé sistemas de gestión personalizados con Spring Boot, PostgreSQL y sitios web responsivos para organizaciones."
       }
     },
     "testimonials": {
-      "title": "Testimonios de partners",
+      "title": "Enfoque profesional",
       "0": {
-        "quote": "Conecta estrategia y ejecución sin esfuerzo: mantuvimos un roadmap ambicioso con releases tranquilos.",
-        "author": "Director de Producto — Hybeans"
+        "quote": "Desarrollador especializado en crear aplicaciones móviles y web usando tecnologías modernas y herramientas de IA.",
+        "author": "Enfoque técnico"
       },
       "1": {
-        "quote": "Luis construyó los rituales, las herramientas y la confianza para escalar sin perder calidad.",
-        "author": "CTO — FastForm"
+        "quote": "Experiencia sólida en React, React Native, TypeScript y desarrollo acelerado con Cursor AI.",
+        "author": "Stack tecnológico"
       }
     }
   },
   "works": {
     "overline": "Casos de estudio",
     "title": "TRABAJOS",
-    "intro": "Colaboraciones clave donde combiné estrategia de producto, liderazgo técnico e impacto de negocio medible.",
+    "intro": "Proyectos donde he aplicado mis habilidades técnicas en React, React Native y TypeScript, contribuyendo al desarrollo de aplicaciones escalables.",
     "stack_label": "Stack clave",
     "links": {
       "visit": "Ver proyecto",
@@ -169,13 +169,13 @@
     "projects": {
       "Pago Fácil & Western Union": {
         "name": "Pago Fácil & Western Union",
-        "description": "Ingeniero principal React Native escalando la super app Pago Fácil junto a Western Union. Lideré squads que entregan movimientos de dinero, compliance, rewards y flujos offline para millones de usuarios manteniendo estabilidad en producción.",
-        "badge": "FINTECH · SUPER APP",
-        "highlights": "Orquesté squads para lanzar flujos de alto impacto en Argentina y Paraguay.|Refactoricé módulos legacy hacia arquitectura componible, mejorando sesiones libres de fallos y cadencia de releases.|Alineé producto, compliance y diseño para coordinar journeys, regulaciones y analítica.",
-        "result": "Impacto: 1M+ descargas, 300K+ usuarios mensuales y releases más veloces.",
+        "description": "Mobile Developer en Bizland Tech trabajando en la solución PSP y mejoras clave de la app Pago Fácil. Implementé nuevas funcionalidades, optimicé rendimiento y resolví incidentes críticos en producción para esta FinTech con 1.5M+ descargas.",
+        "badge": "FINTECH · MOBILE",
+        "highlights": "Participé en el desarrollo de la solución PSP integrando múltiples billeteras digitales.|Implementé nuevas funcionalidades en React Native con TypeScript, Redux y Firebase.|Optimicé rendimiento y calidad del código, reduciendo errores y mejorando estabilidad.|Resolví incidentes críticos en producción con tiempos de respuesta ágiles.",
+        "result": "Impacto: 1.5M+ descargas, 500K usuarios activos mensuales y mayor estabilidad.",
         "meta": {
-          "role": "Principal engineer React Native & socio de producto",
-          "timeline": "2021 — Hoy"
+          "role": "Mobile Developer - FinTech",
+          "timeline": "Agosto 2024 — Actualidad"
         }
       },
       "0-Registros": {
@@ -185,29 +185,29 @@
         "highlights": "Diseñé narrativa inmersiva con layouts adaptativos y tipografía curada.|Implementé motor creativo en tiempo real combinando escenas p5.js con escritura original.|Desplegué monorepo bilingüe con authoring tipo CMS y staging para muestras.",
         "result": "Impacto: Exhibido en festivales de arte digital con uptime perfecto en lecturas en vivo.",
         "meta": {
-          "role": "Product designer & full-stack engineer",
+          "role": "Full-stack developer",
           "timeline": "2022"
         }
       },
       "Hybeans App": {
         "name": "Hybeans App",
-        "description": "Lancé la experiencia mobile de Hybeans, plataforma EventTech que conecta comunidades antes, durante y después de los eventos.",
+        "description": "Desarrollé funcionalidades end-to-end para la plataforma mobile de Hybeans, EventTech que conecta comunidades en eventos presenciales con interacción social en tiempo real.",
         "badge": "EVENTTECH · MOBILE",
-        "highlights": "Implementé autenticación, feed social, reservas y comercio in-app en iOS y Android.|Integré push notifications, deep links y analytics para todo el journey del asistente.|Coordiné diseño, backend y QA para releases de alto tráfico en plazos ajustados.",
-        "result": "Impacto: 15K+ asistentes gestionaron tickets, networking y compras durante eventos.",
+        "highlights": "Desarrollé sistema de ventas y seguimiento de pedidos para compradores y vendedores.|Implementé calendario de eventos con reservas en tiempo real y sistema de tickets digitales.|Integré módulos sociales como feeds dinámicos, chat en vivo y notificaciones push.|Trabajé en colaboración estrecha con equipos de diseño, QA y backend bajo metodologías ágiles.",
+        "result": "Impacto: Plataforma utilizada en múltiples eventos con miles de usuarios activos.",
         "meta": {
-          "role": "Lead mobile engineer",
-          "timeline": "2020 — 2023"
+          "role": "Web y Mobile Developer",
+          "timeline": "Mayo 2022 — Agosto 2024"
         }
       },
       "FastForm": {
-        "name": "Fast Form",
-        "description": "Co-creé FastForm, plataforma SaaS que automatiza la producción de Google Forms con IA, importadores y builders manuales para equipos enterprise.",
-        "badge": "SAAS · AUTOMATIZACIÓN",
-        "highlights": "Definí arquitectura de producto abarcando chat IA, importador CSV, builder manual y drafts.|Desarrollé app Next.js 15 con drag-and-drop, dashboard de métricas y auth con Google Workspace.|Integré OpenAI, Google Forms API y MercadoPago en flujos unificados.",
-        "result": "Impacto: Equipos redujeron de horas a minutos la creación de formularios auditables.",
+        "name": "FastForm",
+        "description": "Desarrollé FastForm, plataforma web que automatiza la creación de Google Forms utilizando IA, importadores CSV y builders manuales para equipos y educadores.",
+        "badge": "WEB · AUTOMATIZACIÓN",
+        "highlights": "Implementé chat con IA para generar formularios automáticamente.|Desarrollé interfaz con Next.js, TypeScript y componentes drag-and-drop.|Integré APIs de OpenAI, Google Forms y sistemas de autenticación.|Creé dashboard de métricas y manejo de drafts para usuarios.",
+        "result": "Impacto: Herramienta que reduce significativamente el tiempo de creación de formularios.",
         "meta": {
-          "role": "Co-founder & principal engineer",
+          "role": "Full Stack Developer",
           "timeline": "2023"
         }
       },
@@ -271,7 +271,7 @@
     "call": "Llamada",
     "badge": "Portafolio",
     "title": "Luis Espinoza",
-    "tagline": "Ingeniero de producto fractional que impulsa lanzamientos pulidos en LATAM.",
+    "tagline": "AI-Driven Product Engineer especializado en desarrollo móvil y web escalable.",
     "ctaLabel": "Disponible para nuevas colaboraciones",
     "ctaTitle": "Cuéntame sobre tu producto",
     "ctaDescription": "Diseñemos la estrategia, alineemos al equipo y lancemos algo distintivo en pocas semanas.",
@@ -285,37 +285,37 @@
   "highlights": {
     "overline": "Señales de confianza",
     "title": "Pruebas de impacto",
-    "intro": "Partners confían en mí para ejecutar lanzamientos complejos. Un vistazo a clientes, programas y reconocimientos en el camino.",
+    "intro": "Experiencia técnica en desarrollo de aplicaciones móviles y web. Un vistazo a empresas, proyectos y logros técnicos en mi carrera.",
     "clients": {
-      "title": "Clientes destacados",
-      "subtitle": "Colaboraciones actuales y pasadas en FinTech, SaaS y tecnología creativa.",
-      "list": "Western Union|Pago Fácil|Hybeans|NOUS|FastForm|AEG Hornos"
+      "title": "Experiencia en empresas",
+      "subtitle": "Empresas donde he contribuido como desarrollador en FinTech, EventTech y proyectos web.",
+      "list": "Bizland Tech|Pago Fácil|Hybeans|Freelance|Proyectos personales"
     },
     "recognitions": {
-      "title": "Reconocimientos",
-      "subtitle": "Momentos que reflejan impacto de producto y liderazgo.",
+      "title": "Logros técnicos",
+      "subtitle": "Contribuciones técnicas destacadas en proyectos reales.",
       "items": {
         "0": {
           "year": "2024",
-          "title": "Pago Fácil super-app sostiene calificación 4.7★",
-          "description": "Lideré squads y refactors que mejoraron la confiabilidad mientras lanzábamos nuevas fuentes de revenue."
+          "title": "Desarrollo en Pago Fácil con 1.5M+ descargas",
+          "description": "Contribuyo al desarrollo de funcionalidades clave en la solución PSP y mejoras de la app FinTech."
         },
         "1": {
-          "year": "2023",
-          "title": "FastForm destacado por partners de Google Workspace",
-          "description": "Cofundé y desarrollé el SaaS que automatiza la creación de formularios para educadores y equipos en LATAM."
+          "year": "2022-2024",
+          "title": "Plataforma EventTech Hybeans",
+          "description": "Desarrollé funcionalidades end-to-end para gestión de eventos, calendario en tiempo real y sistema de tickets."
         },
         "2": {
-          "year": "2022",
-          "title": "Hybeans potenció festivales regionales",
-          "description": "Entregué booking en tiempo real, pagos y experiencias sociales para miles de asistentes en LATAM."
+          "year": "2020-2022",
+          "title": "Proyectos freelance con Spring Boot",
+          "description": "Creé sistemas de gestión personalizados y sitios web responsivos para organizaciones."
         }
       }
     },
     "cta": {
-      "title": "Construyamos algo memorable",
-      "body": "Lidero proyectos de discovery a lanzamiento, integrándome a tu equipo o formando un strike squad para entregar rápido.",
-      "button": "Agendar una estrategia"
+      "title": "Desarrollemos tu próximo proyecto",
+      "body": "Especializado en desarrollo móvil y web con React Native, TypeScript y herramientas de IA. Listo para contribuir a tu equipo técnico.",
+      "button": "Contactar"
     }
   }
 }

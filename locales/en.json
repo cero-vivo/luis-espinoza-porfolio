@@ -2,48 +2,48 @@
   "landing": {
     "overline": "Product leadership in motion",
     "title": "Luis Espinoza\nIA-Driven Product Engineer",
-    "message": "I partner with venture-backed scaleups and global brands to orchestrate high-stakes launches. From compliant FinTech super apps to collaborative SaaS, I align strategy, squads and shipping excellence while wielding AI copilots for code, testing and design so velocity never sacrifices craft.",
+    "message": "AI-Driven Product Engineer with 4+ years creating scalable mobile and web applications. Specialized in React, React Native, and TypeScript, I leverage AI tools like Cursor to deliver innovative solutions in FinTech, EventTech, and automation.",
     "button": "Let's talk",
     "actions": {
       "view_cases": "Explore signature work"
     },
     "metrics": {
       "impact": {
-        "value": "1M+",
-        "label": "Users trusting shipped platforms",
-        "description": "Scaled the Pago Fácil + Western Union wallet with resilient architecture and joyful flows."
+        "value": "1.5M+",
+        "label": "Downloads on developed apps",
+        "description": "Contributed to Pago Fácil development with 1.5M+ downloads and 500K monthly active users."
       },
       "launches": {
-        "value": "15",
-        "label": "Zero-to-one launches stewarded",
-        "description": "Delivered SaaS automation suites, commerce engines and event platforms with measurable ROI."
+        "value": "3+",
+        "label": "Years in FinTech and EventTech",
+        "description": "Experience developing in high-demand technical sectors like finance and events."
       },
       "leadership": {
-        "value": "6 yrs",
-        "label": "Leading cross-functional squads",
-        "description": "Coached engineers and designers on design systems, analytics and outcome-driven rituals."
+        "value": "React Native",
+        "label": "Main specialty",
+        "description": "Native mobile development for iOS and Android with clean architecture and optimized performance."
       }
     },
     "stack": {
-      "title": "Stack I reach for",
-      "description": "Next.js, React Native, TypeScript, Firebase, PostgreSQL, AWS and AI-driven copilots for code, testing and design prototyping—the toolkit that keeps product squads honest and fast."
+      "title": "Stack & AI Tools",
+      "description": "React, React Native, TypeScript, Firebase, AWS, Redux, and Cursor AI for accelerated development. Clean Architecture and AI tools for code, testing, and scalable product optimization."
     },
     "trusted": {
-      "label": "Trusted by teams at",
-      "list": "Western Union|Pago Fácil|Hybeans|NOUS|FastForm"
+      "label": "Experience at",
+      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|Freelance"
     },
     "pillars": {
       "product": {
-        "title": "Strategic product partner",
-        "description": "Co-create roadmaps with research, compliance and success metrics so the team ships what matters."
+        "title": "Specialized mobile development",
+        "description": "Create robust React Native applications with API integration, authentication, and real-time databases."
       },
       "delivery": {
-        "title": "Operational excellence",
-        "description": "Design modular architectures, automate QA and observability, and keep releases safe even under pressure."
+        "title": "AI-accelerated development",
+        "description": "Leverage Cursor AI and modern tools to optimize productivity, debugging, and code quality."
       },
       "partnership": {
-        "title": "Craft & communication",
-        "description": "Lead rituals, maintain living documentation and align stakeholders with transparent storytelling."
+        "title": "Technical collaboration",
+        "description": "Work efficiently in multidisciplinary teams, maintain clean code and clear documentation."
       }
     },
     "status": {
@@ -285,37 +285,37 @@
   "highlights": {
     "overline": "Trust signals",
     "title": "Proof points",
-    "intro": "Partners rely on me to land complex launches. A snapshot of clients, programs and recognitions along the way.",
+    "intro": "Technical experience in mobile and web application development. A snapshot of companies, projects, and technical achievements in my career.",
     "clients": {
-      "title": "Selected clients",
-      "subtitle": "Current and past collaborations across FinTech, SaaS and creative tech.",
-      "list": "Western Union|Pago Fácil|Hybeans|NOUS|FastForm|AEG Hornos"
+      "title": "Company experience",
+      "subtitle": "Companies where I've contributed as a developer in FinTech, EventTech, and web projects.",
+      "list": "Bizland Tech|Pago Fácil|Hybeans|Freelance|Personal projects"
     },
     "recognitions": {
-      "title": "Recognitions",
-      "subtitle": "Moments that highlight product impact and leadership.",
+      "title": "Technical achievements",
+      "subtitle": "Notable technical contributions in real projects.",
       "items": {
         "0": {
           "year": "2024",
-          "title": "Pago Fácil super-app maintains 4.7★ rating",
-          "description": "Led feature squads and refactors that improved reliability while shipping new revenue streams."
+          "title": "Development in Pago Fácil with 1.5M+ downloads",
+          "description": "Contributing to key functionality development in PSP solution and FinTech app improvements."
         },
         "1": {
-          "year": "2023",
-          "title": "FastForm showcased by Google Workspace partners",
-          "description": "Co-founded and engineered the SaaS to automate form creation for LATAM educators and teams."
+          "year": "2022-2024",
+          "title": "Hybeans EventTech platform",
+          "description": "Developed end-to-end functionalities for event management, real-time calendar, and ticketing system."
         },
         "2": {
-          "year": "2022",
-          "title": "Hybeans platform powered regional festivals",
-          "description": "Delivered real-time booking, payments and social experiences for thousands of attendees across LATAM."
+          "year": "2020-2022",
+          "title": "Freelance projects with Spring Boot",
+          "description": "Created custom management systems and responsive websites for organizations."
         }
       }
     },
     "cta": {
-      "title": "Let's build something memorable",
-      "body": "I lead engagements from discovery to launch, plugging into your team or assembling a strike squad to deliver fast.",
-      "button": "Schedule a strategy call"
+      "title": "Let's develop your next project",
+      "body": "Specialized in mobile and web development with React Native, TypeScript, and AI tools. Ready to contribute to your technical team.",
+      "button": "Get in touch"
     }
   }
 }
