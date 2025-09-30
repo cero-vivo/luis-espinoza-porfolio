@@ -62,7 +62,7 @@ export const Ethos = () => {
 					<div className={styles.storyMedia}>
 						<span className={styles.mediaLabel}>{media.label}</span>
 						<div className={styles.mediaVisual}>
-							<Image width={360} height={360} src='/images/ethos.png' alt={media.alt} className={styles.mediaImage} loading='lazy' />
+							<Image width={360} height={360} src='/images/ethos2.png' alt={media.alt} className={styles.mediaImage} loading='lazy' />
 							<span className={styles.mediaGlow} aria-hidden='true' />
 						</div>
 						<Paragraph text={media.caption} variant='regular' classes={styles.mediaCaption} />
