@@ -30,6 +30,10 @@ export const useLandingStore = create<LandingUIState>()((set, get) => ({
 			text: "works"
 		},
 		{
+			sectionId: Sections.HIGHLIGHTS,
+			text: "highlights"
+		},
+		{
 			sectionId: Sections.SKILLS,
 			text: "skills"
 		},

@@ -17,8 +17,22 @@ export const initFirebase = async () => {
       messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
       appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
       measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
-    };
-    
+    } as const;
+
+    const requiredKeys: Array<keyof typeof firebaseConfig> = [
+      "apiKey",
+      "authDomain",
+      "projectId",
+      "appId",
+    ];
+
+    const isConfigValid = requiredKeys.every((key) => Boolean(firebaseConfig[key]));
+
+    if (!isConfigValid) {
+      console.warn('Firebase skipped: missing NEXT_PUBLIC firebase configuration.');
+      return;
+    }
+
     const app = initializeApp(firebaseConfig);
 
     // getAnalytics solo está disponible en navegadores compatibles (no en SSR ni en Safari iOS sin cookies)

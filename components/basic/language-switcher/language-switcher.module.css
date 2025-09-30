@@ -1,20 +1,31 @@
 .switcherBox {
-    display: flex;
-    align-self: start;
-    position: fixed;
-    z-index: 10000;
-    top: 10px;
-    left: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--surface-glass);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 6px 14px var(--shadow-soft);
 }
+
 .text {
-    font-size: 18px;
-    color: var(--slateGray);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-subtle);
     cursor: pointer;
+    transition: color 0.2s ease;
 }
+
 .selectedText {
-    color: var(--navyBlue)
+    color: var(--text-primary);
 }
+
+.option {
+    color: inherit;
+}
+
 .option:hover {
-    transition: color .3s ease-in-out;
-    color: var(--navyBlue)
+    color: var(--text-primary);
 }

@@ -1,5 +1,5 @@
 .paragraph {
-    color: var(--slateGray);
+    color: var(--text-secondary);
     font-size: clamp(1rem, 0.9322rem + 0.3012vw, 1.125rem);
     line-height: 27px;
 }

@@ -1,105 +1,304 @@
 {
-	"landing": {
-		"title": "Luis Espinoza\nMobile & Web Engineer",
-		"message": "Impulso experiencias digitales de alto rendimiento con React, React Native y Node.js. Desarrollo apps FinTech y EventTech que llegan a miles de usuarios cada mes.",
-		"button": "Hablemos"
-	},
-	"header": {
-		"skills": "Skills",
-		"works": "Trabajos",
-		"ethos": "Ethos",
-		"contact": "Contacto",
-		"cv": "CV",
-		"download_cv": "Descargar"
-	},
-	"skills": {
-		"title": "SKILLS",
-		"sections": {
-			"0": {
-				"title": "Desarrollo Frontend & Mobile",
-				"item_0": "React & React Native: Desarrollo de interfaces modulares y de alto rendimiento para web y mobile, aplicando mejores prácticas de accesibilidad y SEO.",
-				"item_1": "HTML, CSS, JavaScript: Código semántico, responsive y optimizado que garantiza una experiencia consistente en cualquier dispositivo.",
-				"item_2": "UI/UX & Prototipado: Diseño de flujos y prototipos en Figma trasladados a componentes escalables con TypeScript y CSS Modules.",
-				"item_3": "Control de Versiones: Fluidez con Git (GitFlow, PR reviews, CI/CD) y colaboración en equipos distribuidos."
-			},
-			"1": {
-				"title": "Arquitectura & Diseño de Aplicaciones",
-				"item_0": "Clean Architecture & SOLID: Estructuración de proyectos React/React Native escalables y fáciles de mantener.",
-				"item_1": "Diseño Responsivo & Accesible: Adopción de WCAG y Mobile-First para llegar al 100 % de la audiencia.",
-				"item_2": "Backend-as-a-Service: Firebase (Auth, Firestore, Cloud Functions) y AWS Serverless para acelerar el time-to-market."
-			},
-			"2": {
-				"title": "Gestión de Proyectos & Colaboración",
-				"item_0": "Metodologías ágiles (Scrum, Kanban) y herramientas como Jira o Linear para entregas iterativas.",
-				"item_1": "Comunicación puente entre negocio y tecnología, facilitando decisiones informadas y eficiencia del equipo."
-			},
-			"3": {
-				"title": "Resolución de Problemas & Aprendizaje Continuo",
-				"item_0": "Debugging & Tuning: Identificación de cuellos de botella con herramientas de profiling y observabilidad.",
-				"item_1": "Aprendizaje continuo: Investigación autodirigida y adaptación rápida a nuevas tecnologías.",
-				"item_2": "Innovación: Propuesta de mejoras y automatizaciones que reducen tiempo de desarrollo y errores."
-			}
-		}
-	},
-	"ethos": {
-		"title": "ETHOS",
-		"content_1": "Explorador de ideas: de la Filosofía a la Ingeniería, combino pensamiento crítico y creatividad para diseñar tecnología que mejore la vida de las personas.",
-		"content_2": "Creo experiencias digitales, impulsado por una mentalidad de aprendizaje continuo y pasión por la excelencia.",
-		"content_3": "Mi curiosidad se alimenta de la lectura, la escritura y el arte; estas disciplinas amplían mi perspectiva y nutren mi capacidad para resolver problemas de manera innovadora.",
-		"content_4": "Trabajo bajo valores de confianza, comunicación transparente y colaboración; pilares que me permiten liderar equipos hacia productos sostenibles y memorables."
-	},
-	"works": {
-		"title": "TRABAJOS",
-		"projects": {
-			"Pago Fácil & Western Union": {
-				"name": " Pago Fácil & Western Union",
-				"description": "Colaboro en la evolución de la billetera digital Pago Fácil, desarrollada junto a Western Union. Con más de un millón de descargas y cientos de miles de usuarios activos, lidero la incorporación de nuevas funcionalidades y refactorizaciones que mejoran la performance y la experiencia de usuario, manteniendo la estabilidad en producción. Stack: React Native, TypeScript, Redux, REST APIs y Clean Architecture."
-			},
-			"0-Registros": {
-				"name": "0-Registros",
-				"description": "Proyecto experimental que fusiona poesía, arte generativo y tecnología para explorar preguntas existenciales. Desarrollado con Next.js y TypeScript en monorepo, emplea p5.js para visuales dinámicos, Firebase como backend y traducción i18n. Creé una experiencia inmersiva minimalista que combina texto y gráficos en tiempo real."
-			},
-			"Hybeans App": {
-				"name": "Hybeans App",
-				"description": "En Hybeans, plataforma de gestión de eventos con funcionalidades sociales, diseñé e implementé módulos críticos en iOS y Android: autenticación, perfiles dinámicos, feed en tiempo real, notificaciones push, reservas y venta de productos. Coordiné con diseño, backend y QA para publicar releases en plazos ajustados y asegurar un rendimiento estable durante eventos."
-			},
-			"Push Notify": {
-				"name": "NOUS - Push Notify",
-				"description": "Este proyecto fue desarrollado para NOUS con el objetivo de gestionar y enviar notificaciones masivas a los usuarios de su aplicación. Se implementó una solución que permite autenticar administradores, configurar credenciales de servicio y utilizar la integración con Firebase para distribuir mensajes de manera eficiente y segura a todos los dispositivos registrados."
-			},
-			"FastForm": {
-				"name": "Fast Form",
-				"description": "FastForm es una aplicación web SaaS que automatiza la creación de formularios de Google mediante un conjunto de herramientas: un chat con IA que guía y optimiza la generación de formularios, la posibilidad de importar automáticamente desde archivos Excel/CSV, y un builder manual intuitivo, con opciones para guardar borradores y combinar distintos métodos de creación, eliminando tareas repetitivas y ahorrando tiempo. Desarrollada con Next.js 15 y TypeScript, incluye detección inteligente de preguntas, un dashboard con métricas, diseño moderno con drag & drop, autenticación segura con Google Workspace, sistema de créditos con MercadoPago, e integraciones con Google Forms API, OAuth 2.0, OpenAI y MercadoPago, ofreciendo una solución integral y profesional para equipos, educadores y profesionales."
-			},
-			"Filoweb": {
-				"name": "Filoweb",
-				"description": "Sitio educativo interactivo que recorre la historia de la filosofía occidental. Diseñé una interfaz visual atractiva y cronogramas navegables que facilitan la exploración de corrientes y autores, acercando la filosofía a nuevos públicos."
-			},
-			"Hybeans Web": {
-				"name": "Hybeans Web",
-				"description": "En la versión web de Hybeans implementé perfiles personalizables, sistema de reservas con confirmación en tiempo real, checkout de pagos y landing pages optimizadas para conversión. Optimicé el rendimiento de React mediante code-splitting y lazy loading, reduciendo el tiempo de carga inicial."
-			},
-			"Jardin Management CPanel": {
-				"name": "Jardin Management CPanel",
-				"description": "Panel de gestión de inventario para una tienda de ropa de segunda mano. Implementé un backend seguro (Spring Boot + PostgreSQL) y un frontend React que permite CRUD con paginación y búsqueda avanzada, reduciendo errores de stock en 40 %."
-			},
-			"Your Lists App": {
-				"name": "Your Lists App",
-				"description": "Aplicación web personal para crear y organizar listas de tareas, recetas o recordatorios. Incluye carpetas, drag-and-drop y sincronización en la nube para acceder desde cualquier dispositivo."
-			},
-			"AEG Hornos de Cerámica": {
-				"name": "AEG Hornos de Cerámica",
-				"description": "AEG Hornos de Cerámica es una plataforma web de gestión desarrollada para un servicio técnico especializado en hornos de cerámica, que incluye tanto un sitio landing como un backoffice para administrar el contenido del sitio y la relación con los clientes. La solución permite gestionar clientes, enviar comunicaciones masivas y editar información de servicios desde un panel de administración robusto, con CRUD avanzado, filtros inteligentes y herramientas de comunicación integradas. Construida con Next.js 14, React, TypeScript y Firebase, incorpora un editor WYSIWYG para correos (TinyMCE), envío masivo con Resend API, integración con WhatsApp mediante enlaces dinámicos y librerías como React Hook Form y Lucide Icons. Entre sus funciones principales destacan la gestión de clientes con validaciones y tablas paginadas, el envío de correos y WhatsApps personalizados con plantillas, la edición de precios y servicios, un módulo de sugerencias con estados y prioridades, además de características técnicas como paginación, validaciones JSON, subida de imágenes y diseño responsive."
-			}
-		}
-	},
-	"contact": {
-		"my_email": "luis.espinoza.nav@outlook.com",
-		"my_phone_number": "+54 9 11 2388-1314",
-		"linkedin_label": "Linkedin"
-	},
-	"footer": {
-		"email_short": "Email",
-		"call": "Llamar"
-	}
+  "landing": {
+    "overline": "Liderazgo de producto en acción",
+    "title": "Luis Espinoza\nPrincipal Engineer para lanzamientos insignia",
+    "message": "Colaboro con scaleups y marcas globales para orquestar lanzamientos de alto impacto. Desde super apps FinTech con compliance hasta SaaS colaborativos, alineo estrategia, squads y excelencia de entrega mientras aprovecho copilotos de IA para código, testing y diseño, acelerando sin perder calidad.",
+    "button": "Hablemos",
+    "actions": {
+      "view_cases": "Explorar casos destacados"
+    },
+    "metrics": {
+      "impact": {
+        "value": "1M+",
+        "label": "Usuarios que confían en mis productos",
+        "description": "Escalé la billetera Pago Fácil + Western Union con arquitectura resiliente y experiencias memorables."
+      },
+      "launches": {
+        "value": "15",
+        "label": "Lanzamientos 0→1 liderados",
+        "description": "Entregué suites SaaS, motores de comercio y plataformas EventTech con ROI medible."
+      },
+      "leadership": {
+        "value": "6 años",
+        "label": "Liderando squads cross-funcionales",
+        "description": "Mentoreé equipos en design systems, analítica y rituales orientados a resultados."
+      }
+    },
+    "stack": {
+      "title": "Stack preferido",
+      "description": "Next.js, React Native, TypeScript, Firebase, PostgreSQL, AWS y copilotos de IA para código, pruebas y prototipado de diseño: el toolkit que mantiene rápidos y rigurosos a los equipos de producto."
+    },
+    "trusted": {
+      "label": "Equipos que confían",
+      "list": "Western Union|Pago Fácil|Hybeans|NOUS|FastForm"
+    },
+    "pillars": {
+      "product": {
+        "title": "Socio estratégico de producto",
+        "description": "Cocrear roadmaps con research, compliance y métricas de éxito para entregar lo que importa."
+      },
+      "delivery": {
+        "title": "Excelencia operativa",
+        "description": "Diseñar arquitecturas modulares, automatizar QA y observabilidad, y lanzar seguro incluso bajo presión."
+      },
+      "partnership": {
+        "title": "Craft & comunicación",
+        "description": "Liderar rituales, mantener documentación viva y alinear stakeholders con storytelling transparente."
+      }
+    },
+    "status": {
+      "availability": {
+        "label": "Disponibilidad",
+        "value": "Reservando colaboraciones para Q3 2024"
+      },
+      "location": {
+        "label": "Con base en",
+        "value": "Buenos Aires · Remote-first"
+      },
+      "collaboration": {
+        "label": "Modelo de partnership",
+        "value": "Discovery → liderazgo de delivery"
+      }
+    }
+  },
+  "header": {
+    "skills": "Skills",
+    "works": "Trabajos",
+    "ethos": "Ethos",
+    "contact": "Contacto",
+    "cv": "CV",
+    "download_cv": "Descargar",
+    "tagline": "Ingeniero enfocado en producto",
+    "highlights": "Highlights"
+  },
+  "skills": {
+    "overline": "Sistema operativo",
+    "title": "SKILLS",
+    "intro": "Opero la estrategia, la ingeniería y al equipo en sincronía. Así es como genero momentum.",
+    "metrics": {
+      "experience": {
+        "value": "8 años",
+        "label": "construyendo ecosistemas web & mobile"
+      },
+      "delivery": {
+        "value": "35+",
+        "label": "features enviadas a producción"
+      },
+      "mentoring": {
+        "value": "5 squads",
+        "label": "mentoreados hacia la autonomía"
+      }
+    },
+    "areas": {
+      "product": {
+        "title": "Discovery & estrategia de producto",
+        "description": "Aporto claridad al roadmap antes de escribir código.",
+        "bullets": "Enmarco hipótesis con stakeholders y traduzco research en apuestas priorizadas.|Defino árboles de KPIs, planes de analítica y loops de experimentación para cada release.|Brindo visibilidad con storytelling conciso y decision docs para liderazgo."
+      },
+      "engineering": {
+        "title": "Ingeniería full-stack de alto nivel",
+        "description": "Arquitecto experiencias resilientes y elegantes en todas las plataformas.",
+        "bullets": "Diseño design systems modulares y librerías reutilizables.|Aplico clean architecture con TypeScript, React, React Native y servicios cloud.|Integro testing, observabilidad y CI/CD para iterar con previsibilidad."
+      },
+      "enablement": {
+        "title": "Enablement & operaciones de equipo",
+        "description": "Construyo los rituales que mantienen al squad entregando rápido.",
+        "bullets": "Mentoreo engineers con pairing, reviews y prácticas de guild.|Optimizo ceremonias ágiles, salud del backlog y mitigación de riesgos.|Mantengo documentación viva y playbooks para equipos distribuidos."
+      }
+    },
+    "quote": {
+      "text": "Luis orquestó un lanzamiento FinTech impecable: visión, ejecución y mentoring en un solo partner.",
+      "author": "Head of Product — Pago Fácil"
+    }
+  },
+  "ethos": {
+    "overline": "Principios",
+    "title": "ETHOS",
+    "intro": "Empatía desde la filosofía, precisión desde la ingeniería y resultados desde la iteración constante.",
+    "story": "La filosofía me enseñó a cuestionar antes de proponer soluciones.|Diseño con empatía: escribo, boceto y testeo para anclar decisiones en el contexto humano.|Cuido el craft y la entrega creando rituales transparentes, instrumentación robusta y confianza.",
+    "timeline": {
+      "title": "Trayectoria",
+      "0": {
+        "period": "2023—Hoy",
+        "role": "Principal Product Engineer · Independiente",
+        "description": "Acompaño equipos FinTech, SaaS y creativos para lanzar productos que generan revenue end-to-end."
+      },
+      "1": {
+        "period": "2020—2023",
+        "role": "Lead Frontend Engineer · Hybeans",
+        "description": "Lideré squads mobile y web para plataformas de eventos, programas de monetización y analytics."
+      },
+      "2": {
+        "period": "2017—2020",
+        "role": "Full-stack Engineer · Pago Fácil & Western Union",
+        "description": "Entregué features core, integraciones de pago y experimentos de crecimiento durante la hiperescala."
+      }
+    },
+    "testimonials": {
+      "title": "Testimonios de partners",
+      "0": {
+        "quote": "Conecta estrategia y ejecución sin esfuerzo: mantuvimos un roadmap ambicioso con releases tranquilos.",
+        "author": "Director de Producto — Hybeans"
+      },
+      "1": {
+        "quote": "Luis construyó los rituales, las herramientas y la confianza para escalar sin perder calidad.",
+        "author": "CTO — FastForm"
+      }
+    }
+  },
+  "works": {
+    "overline": "Casos de estudio",
+    "title": "TRABAJOS",
+    "intro": "Colaboraciones clave donde combiné estrategia de producto, liderazgo técnico e impacto de negocio medible.",
+    "stack_label": "Stack clave",
+    "links": {
+      "visit": "Ver proyecto",
+      "app_store": "App Store",
+      "play_store": "Google Play",
+      "github": "GitHub"
+    },
+    "gallery": {
+      "prev": "Imagen anterior",
+      "next": "Imagen siguiente"
+    },
+    "projects": {
+      "Pago Fácil & Western Union": {
+        "name": "Pago Fácil & Western Union",
+        "description": "Ingeniero principal React Native escalando la super app Pago Fácil junto a Western Union. Lideré squads que entregan movimientos de dinero, compliance, rewards y flujos offline para millones de usuarios manteniendo estabilidad en producción.",
+        "badge": "FINTECH · SUPER APP",
+        "highlights": "Orquesté squads para lanzar flujos de alto impacto en Argentina y Paraguay.|Refactoricé módulos legacy hacia arquitectura componible, mejorando sesiones libres de fallos y cadencia de releases.|Alineé producto, compliance y diseño para coordinar journeys, regulaciones y analítica.",
+        "result": "Impacto: 1M+ descargas, 300K+ usuarios mensuales y releases más veloces.",
+        "meta": {
+          "role": "Principal engineer React Native & socio de producto",
+          "timeline": "2021 — Hoy"
+        }
+      },
+      "0-Registros": {
+        "name": "0-Registros",
+        "description": "Plataforma experimental 0→1 que fusiona poesía, visuales generativos y tecnología. Construí experiencia Next.js bilingüe con animaciones p5.js y Firebase para soportar performances en vivo.",
+        "badge": "ARTE · EXPERIMENTAL",
+        "highlights": "Diseñé narrativa inmersiva con layouts adaptativos y tipografía curada.|Implementé motor creativo en tiempo real combinando escenas p5.js con escritura original.|Desplegué monorepo bilingüe con authoring tipo CMS y staging para muestras.",
+        "result": "Impacto: Exhibido en festivales de arte digital con uptime perfecto en lecturas en vivo.",
+        "meta": {
+          "role": "Product designer & full-stack engineer",
+          "timeline": "2022"
+        }
+      },
+      "Hybeans App": {
+        "name": "Hybeans App",
+        "description": "Lancé la experiencia mobile de Hybeans, plataforma EventTech que conecta comunidades antes, durante y después de los eventos.",
+        "badge": "EVENTTECH · MOBILE",
+        "highlights": "Implementé autenticación, feed social, reservas y comercio in-app en iOS y Android.|Integré push notifications, deep links y analytics para todo el journey del asistente.|Coordiné diseño, backend y QA para releases de alto tráfico en plazos ajustados.",
+        "result": "Impacto: 15K+ asistentes gestionaron tickets, networking y compras durante eventos.",
+        "meta": {
+          "role": "Lead mobile engineer",
+          "timeline": "2020 — 2023"
+        }
+      },
+      "FastForm": {
+        "name": "Fast Form",
+        "description": "Co-creé FastForm, plataforma SaaS que automatiza la producción de Google Forms con IA, importadores y builders manuales para equipos enterprise.",
+        "badge": "SAAS · AUTOMATIZACIÓN",
+        "highlights": "Definí arquitectura de producto abarcando chat IA, importador CSV, builder manual y drafts.|Desarrollé app Next.js 15 con drag-and-drop, dashboard de métricas y auth con Google Workspace.|Integré OpenAI, Google Forms API y MercadoPago en flujos unificados.",
+        "result": "Impacto: Equipos redujeron de horas a minutos la creación de formularios auditables.",
+        "meta": {
+          "role": "Co-founder & principal engineer",
+          "timeline": "2023"
+        }
+      },
+      "Push Notify": {
+        "name": "NOUS - Push Notify",
+        "description": "Construí una consola segura para que NOUS orqueste notificaciones push masivas en todo su ecosistema mobile.",
+        "badge": "OPS · NOTIFICACIONES",
+        "highlights": "Implementé onboarding admin con gestión de credenciales y permisos por rol.|Sumé segmentación, scheduling y telemetría en vivo para campañas.|Fortalecí pipelines de Firebase Cloud Messaging con logging y monitoreo auditables.",
+        "result": "Impacto: Menos operación manual manteniendo mensajería compliant.",
+        "meta": {
+          "role": "Staff frontend engineer",
+          "timeline": "2022"
+        }
+      },
+      "Filoweb": {
+        "name": "Filoweb",
+        "description": "Diseñé Filoweb, experiencia educativa que guía a nuevos públicos por la historia de la filosofía con storytelling interactivo.",
+        "badge": "EDTECH · WEB",
+        "highlights": "Creé UX narrativa con timelines, recorridos de autores y layouts responsivos.|Optimicé accesibilidad y performance para uso en aula en cualquier dispositivo.|Estructuré contenido modular para publicar capítulos sin tocar código.",
+        "result": "Impacto: El programa de filosofía alcanzó a 5K+ lectores al año.",
+        "meta": {
+          "role": "Diseñador de experiencia & developer",
+          "timeline": "2019"
+        }
+      },
+      "Hybeans Web": {
+        "name": "Hybeans Web",
+        "description": "Extendí Hybeans al canal web con landing pages orientadas a conversión, flujos de reserva y personalización.",
+        "badge": "EVENTTECH · WEB",
+        "highlights": "Construí motor de reservas con disponibilidad en tiempo real, checkout y confirmaciones.|Generé perfiles personalizables con features sociales y dashboards de equipos.|Optimicé bundles React con lazy loading y code-splitting reduciendo el load inicial 40%.",
+        "result": "Impacto: Crecieron reservas y conversiones de sponsors en LATAM.",
+        "meta": {
+          "role": "Lead frontend engineer",
+          "timeline": "2021 — 2023"
+        }
+      },
+      "AEG Hornos de Cerámica": {
+        "name": "AEG Hornos de Cerámica",
+        "description": "Entregué plataforma operativa para AEG Hornos de Cerámica, unificando sitio comercial y backoffice CRM para técnicos especializados.",
+        "badge": "SERVICIOS · OPERACIONES",
+        "highlights": "Desarrollé CRM con segmentación de clientes, gestión de precios y pipeline de sugerencias.|Integré editor TinyMCE, Resend API y automatizaciones de WhatsApp en un solo panel.|Implementé validaciones, paginación y manejo de medios para preservar la calidad de datos.",
+        "result": "Impacto: Operaciones centralizadas y 60% menos seguimiento manual.",
+        "meta": {
+          "role": "Principal full-stack engineer",
+          "timeline": "2022 — 2023"
+        }
+      }
+    },
+    "meta_labels": {
+      "role": "Rol",
+      "timeline": "Cronograma"
+    }
+  },
+  "contact": {
+    "my_email": "luis.espinoza.nav@outlook.com",
+    "my_phone_number": "+54 9 11 2388-1314",
+    "linkedin_label": "Linkedin"
+  },
+  "footer": {
+    "email_short": "Email",
+    "call": "Llamar"
+  },
+  "highlights": {
+    "overline": "Señales de confianza",
+    "title": "Pruebas de impacto",
+    "intro": "Partners confían en mí para ejecutar lanzamientos complejos. Un vistazo a clientes, programas y reconocimientos en el camino.",
+    "clients": {
+      "title": "Clientes destacados",
+      "subtitle": "Colaboraciones actuales y pasadas en FinTech, SaaS y tecnología creativa.",
+      "list": "Western Union|Pago Fácil|Hybeans|NOUS|FastForm|AEG Hornos"
+    },
+    "recognitions": {
+      "title": "Reconocimientos",
+      "subtitle": "Momentos que reflejan impacto de producto y liderazgo.",
+      "items": {
+        "0": {
+          "year": "2024",
+          "title": "Pago Fácil super-app sostiene calificación 4.7★",
+          "description": "Lideré squads y refactors que mejoraron la confiabilidad mientras lanzábamos nuevas fuentes de revenue."
+        },
+        "1": {
+          "year": "2023",
+          "title": "FastForm destacado por partners de Google Workspace",
+          "description": "Cofundé y desarrollé el SaaS que automatiza la creación de formularios para educadores y equipos en LATAM."
+        },
+        "2": {
+          "year": "2022",
+          "title": "Hybeans potenció festivales regionales",
+          "description": "Entregué booking en tiempo real, pagos y experiencias sociales para miles de asistentes en LATAM."
+        }
+      }
+    },
+    "cta": {
+      "title": "Construyamos algo memorable",
+      "body": "Lidero proyectos de discovery a lanzamiento, integrándome a tu equipo o formando un strike squad para entregar rápido.",
+      "button": "Agendar una estrategia"
+    }
+  }
 }

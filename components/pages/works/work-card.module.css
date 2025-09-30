@@ -1,162 +1,295 @@
 .cardBox {
     width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 33px;
-    transition: all 0.3s ease;
 }
 
-.stickyContent {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: var(--lightCyan);
-    padding: 20px 0;
+.cardInner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+    gap: 36px;
+    padding: 36px;
+    border-radius: 28px;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 24px 46px var(--shadow-soft);
+}
+
+.caseContent {
     display: flex;
     flex-direction: column;
-    gap: 33px;
-    opacity: 0.9;
+    gap: 18px;
 }
-.titleBox {
+
+.caseBadge {
+    align-self: flex-start;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(34, 162, 255, 0.12);
+    color: var(--text-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.caseTitle {
+    letter-spacing: -0.01em;
+}
+
+.caseDescription {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+    color: var(--text-secondary) !important;
+}
+
+.highlightList {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.highlightItem {
+    display: flex;
+    align-items: flex-start;
     gap: 10px;
-}
-.externalLinkIcon {
-    transition: all .5s ease;
-    cursor: pointer;
-}
-.externalLinkIcon:hover {
-    transform: scale(1.05);
-    opacity: 0.7;
-    transition: all .5s ease;
-}
-.paragraph {
-    line-height: 36px !important;
-    text-align: left;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
 }
 
-/* Contenedor del párrafo con transición de opacidad */
-.paragraphContainer {
-    transition: opacity 0.6s ease-in-out;
+.highlightDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(34, 162, 255, 0.7);
+    margin-top: 6px;
 }
 
-@media(width <= 768px) {
-    .paragraphContainer {
-        transition: opacity 0.3s ease-in-out; /* el doble de rápido en mobile */
-    }
-}
-.slideBox {
+.metaRow {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.metaBadge {
+    display: inline-flex;
     align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: var(--surface-glass);
+    border: 1px solid var(--border-subtle);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.slideImagesBox {
+
+.metaLabel {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+}
+
+.metaValue {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.metaBadge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px var(--shadow-soft);
+}
+
+.caseFooter {
     display: flex;
-    flex-direction: row;
-
-    max-width: 1000px;
-    height: 390px;
-    border-radius: 19px;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    align-items: flex-end;
+    justify-content: space-between;
     gap: 20px;
-    will-change: transform;
-    transition: transform 0.3s ease-out;
+    flex-wrap: wrap;
 }
-.slideImage {
-    width: fit-content;
-    height: auto;
-    min-height: 390px;
-    border-radius: 19px;
-    object-fit: contain;
-}
-.techStack {
-    margin: 0 auto;
-}
-.leftButton {
-    rotate: -90deg;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.rightButton {
-    rotate: 90deg;
-    border-radius: 50%;
-    cursor: pointer;
 
+.stackGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
 }
-.rightButton:active {
-    transform: translateY(-1px);
+
+.stackLabel {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
 }
-.leftButton:active {
-    transform: translateY(-1px);
+
+.techStack {
+    justify-content: flex-start;
+    gap: 16px;
 }
+
+.techIcon {
+    width: 38px !important;
+    height: auto !important;
+}
+
 .linksBox {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-/* Animaciones fade in / fade out para el párrafo */
-.fadeIn {
-    opacity: 1;
-    transition: opacity 0.8s ease-in-out;
+.linkPill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: rgba(34, 162, 255, 0.14);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.fadeOut {
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+.linkPill:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px var(--shadow-soft);
+    border-color: rgba(34, 162, 255, 0.2);
 }
-@media(width <=1096px) {
-    .cardBox {
-        width: 70%;
-        display: flex;
+
+.caseResult {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-subtle);
+    margin-top: 4px;
+}
+
+.caseGallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.galleryButton {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--border-subtle);
+    background: var(--surface-glass);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.galleryButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px var(--shadow-soft);
+}
+
+
+.galleryButton img {
+    transform: rotate(-90deg);
+}
+
+.buttonRotate {
+    transform: rotate(90deg) !important;
+}
+
+.galleryStrip {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 14px 18px;
+    border-radius: 22px;
+    background: var(--surface-glass);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 16px 34px var(--shadow-soft);
+    flex: 1;
+}
+
+.galleryStrip::-webkit-scrollbar {
+    height: 6px;
+}
+
+.galleryStrip::-webkit-scrollbar-thumb {
+    background: rgba(34, 162, 255, 0.3);
+    border-radius: 100px;
+}
+
+.galleryImage {
+    inline-size: clamp(240px, 52vw, 360px);
+    max-height: 520px;
+    border-radius: 20px;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--surface-card);
+    scroll-snap-align: center;
+    box-shadow: 0 16px 30px var(--shadow-soft);
+    border: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 1024px) {
+    .cardInner {
+        grid-template-columns: 1fr;
+    }
+
+    .caseGallery {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cardInner {
+        padding: 28px;
+        gap: 28px;
+    }
+
+    .caseBadge {
+        font-size: 0.7rem;
+    }
+
+    .highlightItem {
+        font-size: 0.92rem;
+    }
+
+    .caseGallery {
         flex-direction: column;
-        gap: 33px;
+        align-items: stretch;
     }
-    .slideImagesBox {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width: 700px;
-        height: 390px;
-        border-radius: 19px;
-    }
-    .slideImage {
-        height: auto;
-        min-height: 390px;
-        border-radius: 19px;
-        object-fit: cover;
-    }
-}
-@media(width <=758px) {
-    .cardBox {
-        width: 40%;
-        max-width: 40%;
-        display: flex;
-        flex-direction: column;
-        gap: 33px;
-    }
-    .slideImagesBox {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 390px;
-        border-radius: 19px;
-    }
-    .slideImage {
-        height: auto;
-        min-height: 390px;
-        border-radius: 19px;
-        object-fit: cover;
-    }
-}
 
-/* Deshabilitar sticky en dispositivos móviles y tablets */
-@media(width <= 768px) {
-    .stickyContent {
-        position: static;
-        top: auto;
+    .galleryButton {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+
+    .galleryButton img {
+        transform: rotate(-90deg);
+    }
+
+    .buttonRotate {
+        transform: rotate(90deg) !important;
+    }
+
+    .galleryStrip {
+        width: 100%;
+    }
+
+    .galleryImage {
+        inline-size: clamp(200px, 80vw, 320px);
+        max-height: 420px;
     }
 }

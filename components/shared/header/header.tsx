@@ -1,13 +1,14 @@
 "use client"
 
+import { LanguageSwitcher } from '@/components/basic/language-switcher/language-switcher'
+import { ThemeToggle } from '@/components/basic/theme-toggle/theme-toggle'
 import { Paragraph } from '@/components/basic/paragraph/paragraph'
 import React, { useState, useEffect, useRef, FC } from 'react'
 import styles from "./header.module.css"
 import { Sections } from '@/types/constant'
 import { useLandingStore, useContactActions } from '@/model/landing-store'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import Image from 'next/image'
-import { useLocale } from 'next-intl'
 import { projects } from '@/components/pages/works/projects-data'
 
 // Componente separado para el enlace del CV, así los hooks no violan las reglas
@@ -141,23 +142,20 @@ const WorksLink: FC<WorksLinkProps> = ({ link, isSelected }) => {
 }
 
 export const Header = () => {
-
 	const { links, actionSection, setActionSection } = useLandingStore()
 	const { openContactModal } = useContactActions()
-
 	const t = useTranslations("header")
 
 	const goToHome = () => setActionSection(Sections.HOME)
 
-	const sections = links.map((link) => {
-
+	const navItems = links.map((link) => {
 		const isSelected = actionSection === link.sectionId
 
-		if (link.sectionId === 'cv') {
+		if (link.sectionId === Sections.CV) {
 			return <CVLink key={link.sectionId} link={link} isSelected={isSelected} />
 		}
 
-		if (link.sectionId === 'works') {
+		if (link.sectionId === Sections.WORKS) {
 			return <WorksLink key={link.sectionId} link={link} isSelected={isSelected} />
 		}
 
@@ -167,19 +165,39 @@ export const Header = () => {
 		}
 
 		return (
-			<a key={link.sectionId} href={`#${link.sectionId}`} onClick={onClick} className={`${styles.option}`}>
-				<Paragraph text={t(link.text)} variant="bold" classes={`${isSelected ? styles.activeSection : undefined} ${styles.option}`} />
+			<a
+				key={link.sectionId}
+				href={`#${link.sectionId}`}
+				onClick={onClick}
+				className={`${styles.option} ${isSelected ? styles.activeSection : ''}`}
+			>
+				{t(link.text)}
 			</a>
 		)
-
 	})
 
 	return (
 		<header className={styles.headerBox}>
-			{sections}
-			<a href={`#${Sections.HOME}`} onClick={goToHome} className={styles.headerPhoto}>
-				<Image width={103} height={103} layout='responsive' src='/images/header_photo1.png' alt="header_photo" className={styles.headerPhoto} />
-			</a>
+			<div className={styles.inner}>
+				<a href={`#${Sections.HOME}`} onClick={goToHome} className={styles.brand}>
+					<Image
+						src="/images/header_photo1.png"
+						alt="Luis Espinoza"
+						width={72}
+						height={72}
+						className={styles.brandPhoto}
+					/>
+					<span className={styles.brandCopy}>
+						<span className={styles.brandName}>Luis Espinoza</span>
+						<span className={styles.brandRole}>{t('tagline')}</span>
+					</span>
+				</a>
+				<nav className={styles.nav}>{navItems}</nav>
+				<div className={styles.controls}>
+					<LanguageSwitcher />
+					<ThemeToggle />
+				</div>
+			</div>
 		</header>
 	)
 }

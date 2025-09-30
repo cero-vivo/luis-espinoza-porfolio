@@ -1,0 +1,195 @@
+.highlightsFrame {
+    width: 100%;
+    align-items: stretch;
+    gap: 56px;
+}
+
+.sectionHeader {
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.overline {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+}
+
+.subtitle {
+    max-width: 720px;
+    font-size: 1.02rem !important;
+    line-height: 1.8 !important;
+    color: var(--text-secondary) !important;
+}
+
+.clientSection,
+.recognitionSection {
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.clientHeader,
+.recognitionHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sectionTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+}
+
+.sectionSubtitle {
+    color: var(--text-secondary) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+}
+
+.clientGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    list-style: none;
+}
+
+.clientBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 20px;
+    background: var(--surface-card);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 12px 26px var(--shadow-soft);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    min-height: 72px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.clientBadge:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px var(--shadow-soft);
+    border-color: rgba(34, 162, 255, 0.25);
+}
+
+.recognitionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.recognitionCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 24px;
+    background: var(--surface-card);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 18px 34px var(--shadow-soft);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.recognitionCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 42px var(--shadow-soft);
+    border-color: rgba(34, 162, 255, 0.22);
+}
+
+.recognitionYear {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+}
+
+.recognitionTitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.recognitionDescription {
+    color: var(--text-secondary) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+}
+
+.ctaCard {
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 24px;
+    padding: 32px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(34, 162, 255, 0.14) 0%, rgba(34, 162, 255, 0.06) 100%);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 24px 46px var(--shadow-soft);
+}
+
+.ctaCopy {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ctaTitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.ctaDescription {
+    color: var(--text-secondary) !important;
+    font-size: 1rem !important;
+    line-height: 1.75 !important;
+}
+
+.ctaButton {
+    min-width: 0 !important;
+    height: 48px !important;
+    border-radius: 16px !important;
+    padding-inline: 28px !important;
+    background: linear-gradient(135deg, rgba(34, 162, 255, 1) 0%, rgba(6, 50, 95, 1) 100%) !important;
+    box-shadow: 0 16px 26px rgba(34, 162, 255, 0.25) !important;
+}
+
+.ctaButton :global(.primaryText) {
+    color: var(--white) !important;
+}
+
+@media (max-width: 900px) {
+    .ctaCard {
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .highlightsFrame {
+        gap: 44px;
+    }
+
+    .ctaCard {
+        padding: 24px;
+    }
+}
