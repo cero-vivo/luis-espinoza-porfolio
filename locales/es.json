@@ -115,6 +115,11 @@
     "overline": "Principios",
     "title": "ETHOS",
     "intro": "Empatía desde la filosofía, precisión desde la ingeniería y resultados desde la iteración constante.",
+    "media": {
+      "label": "Curiosidad en práctica",
+      "caption": "Siempre aprendiendo: filosofía, sistemas y craft para unir ambición con entrega.",
+      "alt": "Ilustración de Luis leyendo un libro"
+    },
     "story": "La filosofía me enseñó a cuestionar antes de proponer soluciones.|Diseño con empatía: escribo, boceto y testeo para anclar decisiones en el contexto humano.|Cuido el craft y la entrega creando rituales transparentes, instrumentación robusta y confianza.",
     "timeline": {
       "title": "Trayectoria",

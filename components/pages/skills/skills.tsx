@@ -52,7 +52,6 @@ export const Skills = () => {
 					{areaCards}
 				</div>
 				<div className={styles.visualPanel}>
-					<div className={styles.visualGlow} aria-hidden />
 					<Image
 						src='/images/avatar_laptop.png'
 						alt='Luis Espinoza collaborating with product teams'
@@ -60,6 +59,7 @@ export const Skills = () => {
 						height={560}
 						className={styles.mainImage}
 						loading='lazy'
+						objectFit='contain'
 					/>
 					<div className={styles.quoteBox}>
 						<span className={styles.quoteSymbol}>“</span>

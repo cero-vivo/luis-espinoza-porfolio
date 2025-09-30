@@ -115,6 +115,11 @@
     "overline": "Principles",
     "title": "ETHOS",
     "intro": "Empathy from philosophy, precision from engineering, and outcomes from relentless iteration.",
+    "media": {
+      "label": "Curiosity in practice",
+      "caption": "Always learning—philosophy, systems and craft to match ambition with delivery.",
+      "alt": "Illustration of Luis reading a book"
+    },
     "story": "Philosophy taught me to interrogate problems before reaching for solutions.|I design with empathy—writing, sketching and testing to ground product decisions in human context.|I protect craft and delivery by creating transparent rituals, robust instrumentation and trust.",
     "timeline": {
       "title": "Trajectory",
