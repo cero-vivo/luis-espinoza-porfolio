@@ -17,6 +17,7 @@
     max-width: 1180px;
     align-self: center;
     align-items: flex-start;
+    min-width: 0;
 }
 
 .heroBackground {
@@ -176,11 +177,14 @@ html.dark .title {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    min-width: 0;
 }
 
 .avatarImage {
-    width: clamp(540px, 28vw, 360px);
+    width: clamp(220px, 28vw, 360px);
+    max-width: 100%;
     height: auto;
+    display: block;
     filter: drop-shadow(0 24px 36px rgba(6, 50, 95, 0.22));
 }
 
@@ -312,6 +316,12 @@ html.dark .trustedLabel {
 
     .heroVisual {
         order: -1;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .avatarImage {
+        width: clamp(240px, 52vw, 360px);
     }
 
     .metricsRow {
@@ -339,10 +349,15 @@ html.dark .trustedLabel {
 
     .heroLayout {
         gap: 28px;
+        justify-items: center;
     }
 
     .visualAvatar {
         max-width: 240px;
+    }
+
+    .avatarImage {
+        width: clamp(220px, 72vw, 320px);
     }
 
     .message {
