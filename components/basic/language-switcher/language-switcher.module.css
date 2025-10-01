@@ -14,18 +14,22 @@
     font-weight: 600;
     letter-spacing: 0.06em;
     color: var(--text-subtle);
-    cursor: pointer;
     transition: color 0.2s ease;
 }
 
 .selectedText {
-    color: var(--text-primary);
+    color: var(--skyBlue);
 }
 
 .option {
-    color: inherit;
+    cursor: pointer;
 }
 
-.option:hover {
-    color: var(--text-primary);
+.option:hover:not(.selectedText) {
+    color: var(--skyBlue);
+}
+
+.selectedText:hover {
+    color: var(--skyBlue);
+    cursor: default;
 }

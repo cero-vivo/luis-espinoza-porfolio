@@ -14,7 +14,7 @@
         "description": "Contribuí al desarrollo de Pago Fácil con 1.5M+ descargas y 500K usuarios activos mensuales."
       },
       "launches": {
-        "value": "3+",
+        "value": "4+",
         "label": "Años en FinTech y EventTech",
         "description": "Experiencia desarrollando en sectores de alta demanda técnica como finanzas y eventos."
       },
@@ -69,7 +69,9 @@
     "cv": "CV",
     "download_cv": "Descargar",
     "tagline": "IA-Driven Product Engineer",
-    "highlights": "Highlights"
+    "highlights": "Highlights",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú"
   },
   "skills": {
     "overline": "Sistema operativo",

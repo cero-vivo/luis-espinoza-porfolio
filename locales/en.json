@@ -14,7 +14,7 @@
         "description": "Contributed to Pago Fácil development with 1.5M+ downloads and 500K monthly active users."
       },
       "launches": {
-        "value": "3+",
+        "value": "4+",
         "label": "Years in FinTech and EventTech",
         "description": "Experience developing in high-demand technical sectors like finance and events."
       },
@@ -69,7 +69,9 @@
     "cv": "CV",
     "download_cv": "Download",
     "tagline": "IA-Driven Product Engineer",
-    "highlights": "Highlights"
+    "highlights": "Highlights",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
   },
   "skills": {
     "overline": "Operating system",

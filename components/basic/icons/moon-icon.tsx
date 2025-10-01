@@ -6,7 +6,7 @@ export const MoonIcon: FC<SvgIconProps> = ({ color, width = 24, height = 24, cla
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
-    viewBox="0 0 24 24"
+    viewBox="2 -2 24 24"
     fill={color}
     className={classes}
     onClick={onClick}

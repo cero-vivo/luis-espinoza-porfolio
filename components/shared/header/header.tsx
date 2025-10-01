@@ -14,9 +14,10 @@ import { projects } from '@/components/pages/works/projects-data'
 interface CVLinkProps {
     link: { sectionId: string; text: string }
     isSelected: boolean
+    onNavigate?: () => void
 }
 
-const CVLink: FC<CVLinkProps> = ({ link, isSelected }) => {
+const CVLink: FC<CVLinkProps> = ({ link, isSelected, onNavigate }) => {
     const [open, setOpen] = useState(false)
     const wrapperRef = useRef<HTMLSpanElement | null>(null)
     const t = useTranslations("header")
@@ -42,7 +43,17 @@ const CVLink: FC<CVLinkProps> = ({ link, isSelected }) => {
                 <span className={styles.optionText}>{t(link.text)}</span>
             </span>
             <div className={`${styles.cvDropdown} ${open ? styles.cvDropdownOpen : ''}`}>
-                <a href={cvPath} download={cvPath} className={styles.cvLink}>{t('download_cv', { defaultMessage: 'Descargar CV' })}</a>
+                <a 
+                    href={cvPath} 
+                    download={cvPath} 
+                    className={styles.cvLink}
+                    onClick={() => {
+                        setOpen(false)
+                        onNavigate?.()
+                    }}
+                >
+                    {t('download_cv', { defaultMessage: 'Descargar CV' })}
+                </a>
             </div>
         </span>
     )
@@ -52,9 +63,10 @@ const CVLink: FC<CVLinkProps> = ({ link, isSelected }) => {
 interface WorksLinkProps {
     link: { sectionId: string; text: string }
     isSelected: boolean
+    onNavigate?: () => void
 }
 
-const WorksLink: FC<WorksLinkProps> = ({ link, isSelected }) => {
+const WorksLink: FC<WorksLinkProps> = ({ link, isSelected, onNavigate }) => {
     const [open, setOpen] = useState(false)
     const [isHovered, setIsHovered] = useState(false)
     const wrapperRef = useRef<HTMLSpanElement | null>(null)
@@ -110,6 +122,8 @@ const WorksLink: FC<WorksLinkProps> = ({ link, isSelected }) => {
                 worksSection.scrollIntoView({ behavior: 'smooth' })
             }
         }
+
+        onNavigate?.()
     }
 
     const isDropdownOpen = open || isHovered
@@ -147,23 +161,66 @@ export const Header = () => {
 	const { links, actionSection, setActionSection } = useLandingStore()
 	const { openContactModal } = useContactActions()
 	const t = useTranslations("header")
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const [isCompact, setIsCompact] = useState(false)
 
-	const goToHome = () => setActionSection(Sections.HOME)
+	useEffect(() => {
+		const handleResize = () => {
+			const compact = window.innerWidth < 768
+			setIsCompact(compact)
+			if (!compact) {
+				setIsMenuOpen(false)
+			}
+		}
+
+		handleResize()
+		window.addEventListener('resize', handleResize)
+		return () => window.removeEventListener('resize', handleResize)
+	}, [])
+
+	const goToHome = () => {
+		setActionSection(Sections.HOME)
+		if (isCompact) setIsMenuOpen(false)
+	}
+
+	const handleNavigate = () => {
+		if (isCompact) setIsMenuOpen(false)
+	}
+	const toggleMenu = () => setIsMenuOpen((value) => !value)
+	const navigationId = 'primary-navigation'
+	const toggleLabel = isMenuOpen
+		? t('close_menu', { defaultMessage: 'Cerrar menú' })
+		: t('open_menu', { defaultMessage: 'Abrir menú' })
 
 	const navItems = links.map((link) => {
 		const isSelected = actionSection === link.sectionId
 
 		if (link.sectionId === Sections.CV) {
-			return <CVLink key={link.sectionId} link={link} isSelected={isSelected} />
+			return (
+				<CVLink
+					key={link.sectionId}
+					link={link}
+					isSelected={isSelected}
+					onNavigate={handleNavigate}
+				/>
+			)
 		}
 
 		if (link.sectionId === Sections.WORKS) {
-			return <WorksLink key={link.sectionId} link={link} isSelected={isSelected} />
+			return (
+				<WorksLink
+					key={link.sectionId}
+					link={link}
+					isSelected={isSelected}
+					onNavigate={handleNavigate}
+				/>
+			)
 		}
 
 		const onClick = () => {
 			if (link.sectionId === Sections.CONTACT) openContactModal()
 			else setActionSection(link.sectionId as Sections)
+			handleNavigate()
 		}
 
 		return (
@@ -180,22 +237,51 @@ export const Header = () => {
 
 	return (
 		<header className={styles.headerBox}>
-			<div className={styles.inner}>
-				<a href={`#${Sections.HOME}`} onClick={goToHome} className={styles.brand}>
-					<Image
-						src="/images/header_photo2.png"
-						alt="Luis Espinoza"
-						width={60}
-						height={60}
-						className={styles.brandPhoto}
-					/>
-					<span className={styles.brandCopy}>
-						<span className={styles.brandName}>Luis Espinoza</span>
-						<span className={styles.brandRole}>{t('tagline')}</span>
-					</span>
-				</a>
-				<nav className={styles.nav}>{navItems}</nav>
-				<div className={styles.controls}>
+			<div className={`${styles.inner} ${isMenuOpen ? styles.menuOpen : ''}`}>
+				<div className={styles.topBar}>
+					<a
+						href={`#${Sections.HOME}`}
+						onClick={goToHome}
+						className={styles.brand}
+					>
+						<Image
+							src="/images/header_photo2.png"
+							alt="Luis Espinoza"
+							width={60}
+							height={60}
+							className={styles.brandPhoto}
+						/>
+						<span className={styles.brandCopy}>
+							<span className={styles.brandName}>Luis Espinoza</span>
+							<span className={styles.brandRole}>{t('tagline')}</span>
+						</span>
+					</a>
+					<button
+						type="button"
+						className={`${styles.mobileToggle} ${isMenuOpen ? styles.mobileToggleActive : ''}`}
+						onClick={toggleMenu}
+						aria-expanded={isMenuOpen}
+						aria-controls={navigationId}
+						aria-label={toggleLabel}
+					>
+						<span className={styles.mobileToggleLine} />
+						<span className={styles.mobileToggleLine} />
+						<span className={styles.mobileToggleLine} />
+					</button>
+				</div>
+				<nav
+					id={navigationId}
+					className={`${styles.nav} ${isMenuOpen && isCompact ? styles.navOpen : ''}`}
+					hidden={isCompact && !isMenuOpen}
+					aria-hidden={isCompact && !isMenuOpen}
+				>
+					{navItems}
+				</nav>
+				<div
+					className={`${styles.controls} ${isMenuOpen && isCompact ? styles.controlsOpen : ''}`}
+					hidden={isCompact && !isMenuOpen}
+					aria-hidden={isCompact && !isMenuOpen}
+				>
 					<LanguageSwitcher />
 					<ThemeToggle />
 				</div>
