@@ -7,10 +7,16 @@
     grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
     gap: 36px;
     padding: 36px;
+    max-width: 100%;
     border-radius: 28px;
     background: var(--surface-elevated);
     border: 1px solid var(--border-subtle);
     box-shadow: 0 24px 46px var(--shadow-soft);
+}
+
+.caseContent,
+.caseGallery {
+    min-width: 0;
 }
 
 .caseContent {
@@ -138,6 +144,7 @@
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+    min-width: 0;
 }
 
 .linkPill {
@@ -176,6 +183,7 @@
     align-items: center;
     gap: 14px;
     width: 100%;
+    min-width: 0;
 }
 
 .galleryButton {
@@ -217,7 +225,9 @@
     background: var(--surface-glass);
     border: 1px solid var(--border-subtle);
     box-shadow: 0 16px 34px var(--shadow-soft);
-    flex: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .galleryStrip::-webkit-scrollbar {
@@ -244,17 +254,43 @@
 @media (max-width: 1024px) {
     .cardInner {
         grid-template-columns: 1fr;
+        padding: 32px;
+        gap: 32px;
     }
 
     .caseGallery {
-        gap: 10px;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galleryButton {
+        flex: 0 0 44px;
+    }
+
+    .galleryStrip {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 820px) {
+    .caseGallery {
+        gap: 12px;
+    }
+
+    .galleryStrip {
+        padding: 14px 16px;
+    }
+
+    .galleryImage {
+        inline-size: clamp(220px, 70vw, 340px);
     }
 }
 
 @media (max-width: 640px) {
     .cardInner {
-        padding: 28px;
-        gap: 28px;
+        padding: 24px;
+        gap: 24px;
     }
 
     .caseBadge {
@@ -274,6 +310,7 @@
         width: 40px;
         height: 40px;
         align-self: center;
+        display: none;
     }
 
     .galleryButton img {
@@ -286,10 +323,43 @@
 
     .galleryStrip {
         width: 100%;
+        padding: 12px 14px;
+        max-width: 100%;
     }
 
     .galleryImage {
-        inline-size: clamp(200px, 80vw, 320px);
+        inline-size: clamp(200px, 92vw, 320px);
         max-height: 420px;
+    }
+
+    .caseFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .stackGroup {
+        min-width: 0;
+        align-items: center;
+    }
+
+    .linksBox {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardInner {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .galleryStrip {
+        padding: 12px;
+    }
+
+    .caseFooter {
+        gap: 20px;
     }
 }
