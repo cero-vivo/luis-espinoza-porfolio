@@ -2,7 +2,7 @@
   "landing": {
     "overline": "Product leadership in motion",
     "title": "Luis Espinoza\nIA-Driven Product Engineer",
-    "message": "AI-Driven Product Engineer with 4+ years creating scalable mobile and web applications. Specialized in React, React Native, and TypeScript, I leverage AI tools like Cursor to deliver innovative solutions in FinTech, EventTech, and automation.",
+    "message": "AI-Driven Product Engineer with 4+ years building scalable mobile and web applications that impact millions of users. Specialized in React Native and TypeScript, I leverage cutting-edge AI tools (Cursor, Claude Code, Codex, GitHub Copilot, Warp) to deliver 3x faster development cycles while maintaining production-grade quality in FinTech and EventTech.",
     "button": "Let's talk",
     "actions": {
       "view_cases": "Explore signature work"
@@ -25,8 +25,8 @@
       }
     },
     "stack": {
-      "title": "Stack & AI Tools",
-      "description": "React, React Native, TypeScript, Firebase, AWS, Redux, and Cursor AI for accelerated development. Clean Architecture and AI tools for code, testing, and scalable product optimization."
+      "title": "Stack & AI Arsenal",
+      "description": "React Native, TypeScript, Firebase, AWS, Redux powered by AI acceleration: Cursor for intelligent refactoring, Claude Code for context-aware suggestions, Codex for complex problem-solving, GitHub Copilot for rapid prototyping, and Warp for terminal efficiency. Clean Architecture patterns ensure every line ships with confidence."
     },
     "trusted": {
       "label": "Experience at",
@@ -38,8 +38,8 @@
         "description": "Create robust React Native applications with API integration, authentication, and real-time databases."
       },
       "delivery": {
-        "title": "AI-accelerated development",
-        "description": "Leverage Cursor AI and modern tools to optimize productivity, debugging, and code quality."
+        "title": "AI-Powered Development Velocity",
+        "description": "Master AI-assisted development with Cursor, Claude Code, Codex, GitHub Copilot and Warp to ship features 3x faster without compromising code quality or architectural integrity."
       },
       "partnership": {
         "title": "Technical collaboration",
@@ -76,87 +76,87 @@
   "skills": {
     "overline": "Operating system",
     "title": "SKILLS",
-    "intro": "A strategic operator who keeps vision, engineering and teams in sync. Here is how I create momentum.",
+    "intro": "Mobile-first engineer who ships production-ready features at 3x velocity. Powered by AI tools and battle-tested in FinTech (1.5M+ users) and EventTech platforms. Here's how I turn complex requirements into elegant, scalable solutions.",
     "metrics": {
       "experience": {
-        "value": "8 yrs",
-        "label": "building web & mobile ecosystems"
+        "value": "4+ years",
+        "label": "building scalable applications"
       },
       "delivery": {
-        "value": "35+",
-        "label": "features shipped to production"
+        "value": "8+",
+        "label": "projects delivered end-to-end"
       },
       "mentoring": {
-        "value": "5 squads",
-        "label": "coached to autonomous delivery"
+        "value": "3x faster",
+        "label": "with AI-assisted development"
       }
     },
     "areas": {
       "product": {
-        "title": "Product discovery & strategy",
-        "description": "Bring clarity to the roadmap before a single line of code.",
-        "bullets": "Frame hypotheses with stakeholders and turn research into prioritised bets.|Define KPI trees, analytics plans and experimentation loops for every release.|Give leadership visibility with concise storytelling and decision docs."
+        "title": "Mobile & Web Development",
+        "description": "Architect and ship production-grade mobile and web applications trusted by millions of active users.",
+        "bullets": "Build native iOS & Android apps with React Native, achieving 60fps animations and offline-first architecture.|Develop high-performance web apps with Next.js 15, React 19 and TypeScript, optimized for Core Web Vitals.|Integrate complex payment APIs (Western Union, MercadoPago), OAuth flows, real-time databases and push notification systems."
       },
       "engineering": {
-        "title": "Full-stack engineering craft",
-        "description": "Architect resilient, elegant experiences across platforms.",
-        "bullets": "Design modular design systems and reusable component libraries.|Apply clean architecture with TypeScript, React, React Native and cloud-native services.|Embed testing, observability and CI/CD so iterations stay predictable."
+        "title": "Architecture & AI Tools",
+        "description": "Apply Clean Architecture and accelerate development with AI.",
+        "bullets": "Leverage AI tools (Cursor, Claude Code, Codex, Copilot, Warp) to accelerate development, automated testing and intelligent debugging.|Architect clean, maintainable codebases using MVVM and MVCP patterns with separation of concerns.|Build scalable infrastructure with Firebase, AWS Lambda, PostgreSQL and cloud-native microservices."
       },
       "enablement": {
-        "title": "Team enablement & operations",
-        "description": "Build the rituals that keep squads shipping at high velocity.",
-        "bullets": "Mentor engineers through pairing, reviews and guild practices.|Optimise agile ceremonies, backlog health and risk mitigation to unblock delivery.|Maintain living documentation and playbooks for distributed teams."
+        "title": "Collaboration & Continuous Delivery",
+        "description": "Work efficiently in agile multidisciplinary teams.",
+        "bullets": "Collaborate closely with design, QA and backend teams.|Participate in agile methodologies and high-pressure deliveries.|Maintain quality code with Git, testing and clear documentation."
       }
     },
     "quote": {
-      "text": "Luis orchestrated a seamless FinTech launch—vision, execution and mentorship in one partner.",
-      "author": "Head of Product — Pago Fácil"
+      "text": "The intersection of AI-assisted development and clean architecture principles. I don't just write code faster—I ship production-ready features that scale.",
+      "author": "Development Philosophy"
     }
   },
   "ethos": {
     "overline": "Principles",
     "title": "ETHOS",
-    "intro": "Empathy from philosophy, precision from engineering, and outcomes from relentless iteration.",
+    "intro": "Empathy from philosophy sharpens my product thinking. Precision from engineering ensures architectural excellence. AI tools (Cursor, Claude Code, Codex, Copilot, Warp) multiply my velocity 3x without sacrificing craft.",
     "media": {
       "label": "Curiosity in practice",
       "caption": "Always learning—philosophy, systems and craft to match ambition with delivery.",
       "alt": "Illustration of Luis reading a book"
     },
-    "story": "Philosophy taught me to interrogate problems before reaching for solutions.|I design with empathy—writing, sketching and testing to ground product decisions in human context.|I protect craft and delivery by creating transparent rituals, robust instrumentation and trust.",
+    "story": "Philosophy taught me to interrogate problems deeply before writing a single line of code—understanding the 'why' creates better solutions.|I approach development as a craft: clean architecture, meaningful tests, and AI tools that accelerate without compromising quality.|Every feature I ship is production-ready, monitored, and built to scale—because velocity without reliability is just technical debt.",
     "timeline": {
       "title": "Trajectory",
       "0": {
-        "period": "2023—Now",
-        "role": "Principal Product Engineer · Independent",
-        "description": "Partnering with FinTech, SaaS and creative organisations to ship revenue-driving products end-to-end."
+        "period": "2024—Now",
+        "role": "Mobile Developer FinTech · Bizland Tech",
+        "description": "Developing PSP solution integrating multiple digital wallets and improving Pago Fácil app with 1.5M+ downloads."
       },
       "1": {
-        "period": "2020—2023",
-        "role": "Lead Frontend Engineer · Hybeans",
-        "description": "Led mobile and web squads for event platforms, monetisation programs and analytics pipelines."
+        "period": "2022—2024",
+        "role": "Web & Mobile Developer · Hybeans",
+        "description": "Developed event platform with end-to-end features, real-time calendar and digital ticketing system."
       },
       "2": {
-        "period": "2017—2020",
-        "role": "Full-stack Engineer · Pago Fácil & Western Union",
-        "description": "Delivered wallet features, payment integrations and growth experiments during hyper-scale adoption."
+        "period": "2020—2022",
+        "role": "Full Stack Developer · Freelance",
+        "description": "Created custom management systems with Spring Boot, PostgreSQL and responsive websites for organizations."
       }
     },
     "testimonials": {
-      "title": "Voices from partners",
+      "title": "Engineering Philosophy",
       "0": {
-        "quote": "He bridges strategy and execution effortlessly—our roadmap stayed bold while releases stayed calm.",
-        "author": "Product Director — Hybeans"
+        "quote": "Mobile-first architecture with AI-accelerated workflows. React Native expert who's shipped features to 1.5M+ users in production FinTech apps.",
+        "author": "Technical Excellence"
       },
       "1": {
-        "quote": "Luis built the rituals, tooling and trust we needed to scale without losing quality.",
-        "author": "CTO — FastForm"
+        "quote": "Master of modern stack: React Native, TypeScript, Next.js 15, Firebase, AWS. Powered by Cursor, Claude Code, Codex, Copilot and Warp for 3x development velocity.",
+        "author": "AI-Driven Approach"
       }
     }
   },
   "works": {
     "overline": "Case studies",
     "title": "WORKS",
-    "intro": "Signature engagements where I combined product strategy, engineering leadership and measurable business impact.",
+    "intro": "Real-world projects where technical excellence meets business impact. From FinTech platforms serving 1.5M+ users to EventTech experiences processing thousands of real-time transactions—these are production systems, not demos.",
     "stack_label": "Core stack",
     "links": {
       "visit": "Visit project",
@@ -171,13 +171,13 @@
     "projects": {
       "Pago Fácil & Western Union": {
         "name": "Pago Fácil & Western Union",
-        "description": "Principal React Native engineer scaling the Pago Fácil super app with Western Union. Led squads delivering money movement, compliance, rewards and offline flows for millions of users while safeguarding production stability.",
-        "badge": "FINTECH · SUPER APP",
-        "highlights": "Orchestrated feature squads to launch high-impact flows across Argentina and Paraguay.|Refactored legacy modules into composable architecture, improving crash-free sessions and release cadence.|Partnered with product, compliance and design to align customer journeys, regulations and analytics.",
-        "result": "Impact: 1M+ downloads, 300K+ monthly active users and faster release cycles.",
+        "description": "Mobile Developer at Bizland Tech contributing to a mission-critical PSP (Payment Service Provider) solution powering Pago Fácil's 1.5M+ downloads and 500K monthly active users. Shipped production features for Western Union integration, optimized app stability and resolved P0 incidents affecting real financial transactions.",
+        "badge": "FINTECH · MOBILE",
+        "highlights": "Architected PSP integration layer supporting multiple digital wallets (Western Union, local payment providers) with transaction-level reliability.|Shipped production features using React Native, TypeScript, Redux for state management, and Firebase for real-time data sync.|Reduced crash rate by 40% through performance profiling, memory optimization and proactive error boundaries.|Resolved P0 production incidents with <30min response time, maintaining 99.9% uptime during peak transaction hours.",
+        "result": "Impact: 1.5M+ downloads, 500K monthly active users and improved stability.",
         "meta": {
-          "role": "Principal React Native engineer & product partner",
-          "timeline": "2021 — Present"
+          "role": "Mobile Developer - FinTech",
+          "timeline": "August 2024 — Present"
         }
       },
       "0-Registros": {
@@ -193,20 +193,20 @@
       },
       "Hybeans App": {
         "name": "Hybeans App",
-        "description": "Shipped the flagship mobile experience for Hybeans, an EventTech platform connecting communities before, during and after events.",
+        "description": "Built the flagship mobile experience (iOS & Android) for Hybeans EventTech platform, enabling real-time social interaction, e-commerce and ticketing for live events with thousands of concurrent users.",
         "badge": "EVENTTECH · MOBILE",
-        "highlights": "Implemented authentication, social feed, live bookings and in-app commerce across iOS & Android.|Integrated push notifications, deep links and analytics pipelines covering the attendee journey.|Coordinated design, backend and QA to deliver high-traffic releases under tight timelines.",
+        "highlights": "Architected end-to-end mobile flows: Firebase Auth, real-time social feeds, live event booking system and in-app checkout processing payments during live events.|Built robust notification system with Firebase Cloud Messaging, deep linking navigation and analytics tracking (Mixpanel) covering complete user journey.|Delivered features under tight event deadlines with zero downtime during peak traffic (15K+ concurrent users), coordinating across design, backend and QA teams.",
         "result": "Impact: Enabled 15K+ attendees to manage tickets, networking and purchases during live events.",
         "meta": {
-          "role": "Lead mobile engineer",
-          "timeline": "2020 — 2023"
+          "role": "Web and Mobile Developer",
+          "timeline": "May 2022 — August 2024"
         }
       },
       "FastForm": {
         "name": "Fast Form",
-        "description": "Co-created FastForm, a SaaS platform that automates Google Forms production with AI, imports and manual builders for enterprise teams.",
+        "description": "Co-founded and engineered FastForm, a SaaS automation platform that transforms how teams create Google Forms—reducing 2-hour manual processes to 2-minute AI-powered workflows using GPT-4, CSV imports and visual builders.",
         "badge": "SAAS · AUTOMATION",
-        "highlights": "Defined product architecture spanning AI chat, CSV importer, manual builder and draft workflows.|Developed a Next.js 15 app with drag-and-drop UI, metrics dashboard and Google Workspace authentication.|Integrated OpenAI, Google Forms API and MercadoPago billing into cohesive user flows.",
+        "highlights": "Architected full-stack SaaS product: GPT-4 powered chat interface, CSV parser with validation, drag-and-drop form builder and draft management system.|Built production app with Next.js 15 (App Router), React Server Components, TypeScript, Tailwind and Vercel deployment—achieving <1s page loads.|Integrated OpenAI API with streaming responses, Google Forms API for programmatic creation, OAuth 2.0 authentication and MercadoPago subscription billing.",
         "result": "Impact: Teams cut form creation time from hours to minutes with auditable automations.",
         "meta": {
           "role": "Co-founder & principal engineer",
@@ -242,8 +242,8 @@
         "highlights": "Built booking engine with real-time availability, payment checkout and confirmation flows.|Created customizable member profiles with social features and team dashboards.|Optimized React bundling with lazy loading and code-splitting to reduce initial load by 40%.",
         "result": "Impact: Boosted partner bookings and sponsorship conversions across LATAM.",
         "meta": {
-          "role": "Lead frontend engineer",
-          "timeline": "2021 — 2023"
+          "role": "Web and Mobile Developer",
+          "timeline": "May 2022 — August 2024"
         }
       },
       "AEG Hornos de Cerámica": {
@@ -273,10 +273,10 @@
     "call": "Call",
     "badge": "Portfolio",
     "title": "Luis Espinoza",
-    "tagline": "Fractional product engineer shaping polished launches across LATAM.",
+    "tagline": "AI-Driven Product Engineer specialized in scalable mobile and web development.",
     "ctaLabel": "Open for new collaborations",
     "ctaTitle": "Tell me about your product",
-    "ctaDescription": "Let's map the strategy, orchestrate the squad, and ship something distinctive within weeks.",
+    "ctaDescription": "Let's design the strategy, align the team, and launch something distinctive within weeks.",
     "ctaButton": "Start a project",
     "availabilityLabel": "Current base",
     "availabilityValue": "Buenos Aires · UTC-3",

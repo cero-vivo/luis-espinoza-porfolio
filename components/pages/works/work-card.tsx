@@ -133,7 +133,6 @@ export const WorkCard: FC<WorkCardProps> = ({ work, projectId }) => {
                             </div>
                         )}
                     </div>
-                    <span className={styles.caseResult}>{result}</span>
                 </div>
                 <div className={styles.caseGallery}>
                     <button type="button" className={styles.galleryButton} onClick={() => scrollGallery('left')} aria-label={t('gallery.prev')}>
