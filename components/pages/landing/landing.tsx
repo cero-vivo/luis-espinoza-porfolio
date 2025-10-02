@@ -11,18 +11,22 @@ import { TechIcon } from '@/components/shared/tech-stack/tech-index'
 
 const iconStack: TechIcon[] = [
 	"react",
-	"next",
 	"typescript",
+	"next",
 	"firebase",
-	"postgres",
-	"tailwind",
+	"figma",
 	"redux",
-	"amazon",
-	"zustand",
+	"cursor",
+	"claude",
+	"codex",
+	"copilot",
+	"warp",
+	"postgres",
+	"notebooklm",
 ]
 
 const metricKeys = ["impact", "launches", "leadership"] as const
-const statusKeys = ["availability", "location", "collaboration"] as const
+const statusKeys = ["location"] as const
 const pillarKeys = ["product", "delivery", "partnership"] as const
 
 export const Landing = () => {
@@ -77,13 +81,6 @@ export const Landing = () => {
 					<Image src="/images/ia-drven.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
 				</div>
 			</section>
-			<section className={styles.stackCard}>
-				<div className={styles.visualCard}>
-					<span className={styles.visualLabel}>{t('stack.title')}</span>
-					<TechStack icons={iconStack} boxClasses={styles.techIcons} iconClasses={styles.heroIcon} />
-					<Paragraph text={t('stack.description')} variant='regular' classes={styles.visualCopy} />
-				</div>
-			</section>
 			<section className={styles.trustedRow}>
 				<span className={styles.trustedLabel}>{t('trusted.label')}</span>
 				<ul className={styles.trustedList}>
@@ -91,6 +88,12 @@ export const Landing = () => {
 						<li key={client} className={styles.trustedItem}>{client}</li>
 					))}
 				</ul>
+			</section>
+			<section className={styles.stackCard}>
+				<div className={styles.visualCard}>
+					<span className={styles.visualLabel}>{t('stack.title')}</span>
+					<TechStack icons={iconStack} boxClasses={styles.techIcons} iconClasses={styles.heroIcon} />
+				</div>
 			</section>
 		</Frame>
 	)

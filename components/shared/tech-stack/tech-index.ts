@@ -21,6 +21,14 @@ export const techIcons = {
     "p5js": "/icons/p5js.png",
     "bootstrap": "/icons/bootstrap.png",
     "tailwind": "/icons/tailwind.png",
+    "cursor": "/icons/cursor.png",
+    "claude": "/icons/claude.png",
+    "codex": "/icons/codex.png",
+    "copilot": "/icons/copilot.png",
+    "warp": "/icons/warp.png",
+    "trae": "/icons/trae.png",
+    "notebooklm": "/icons/notebooklm.png",
+    "figma": "/icons/figma.png"
 }
 
 export type TechIcon = keyof typeof techIcons
