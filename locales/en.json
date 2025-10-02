@@ -2,7 +2,7 @@
   "landing": {
     "overline": "Product leadership in motion",
     "title": "Luis Espinoza\nIA-Driven Product Engineer",
-    "message": "AI-Driven Product Engineer with 4+ years building scalable mobile and web applications that impact millions of users. Specialized in React Native and TypeScript, I leverage cutting-edge AI tools (Cursor, Claude Code, Codex, GitHub Copilot, Warp) to deliver 3x faster development cycles while maintaining production-grade quality in FinTech and EventTech.",
+    "message": "AI-Driven Product Engineer with 4+ years building scalable mobile and web applications that impact millions of users. Specialized in React Native and TypeScript, I leverage cutting-edge AI tools (Cursor, Claude Code, Codex, GitHub Copilot, Warp) to deliver 10x faster development cycles while maintaining production-grade quality in FinTech and EventTech.",
     "button": "Let's talk",
     "actions": {
       "view_cases": "Explore signature work"
@@ -30,7 +30,7 @@
     },
     "trusted": {
       "label": "Experience at",
-      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|Freelance"
+      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|FastForm|Freelance"
     },
     "pillars": {
       "product": {
@@ -39,7 +39,7 @@
       },
       "delivery": {
         "title": "AI-Powered Development Velocity",
-        "description": "Master AI-assisted development with Cursor, Claude Code, Codex, GitHub Copilot and Warp to ship features 3x faster without compromising code quality or architectural integrity."
+        "description": "Master AI-assisted development with Cursor, Claude Code, Codex, GitHub Copilot and Warp to ship features 10x faster without compromising code quality or architectural integrity."
       },
       "partnership": {
         "title": "Technical collaboration",
@@ -76,7 +76,7 @@
   "skills": {
     "overline": "Operating system",
     "title": "SKILLS",
-    "intro": "Mobile-first engineer who ships production-ready features at 3x velocity. Powered by AI tools and battle-tested in FinTech (1.5M+ users) and EventTech platforms. Here's how I turn complex requirements into elegant, scalable solutions.",
+    "intro": "Mobile-first engineer who ships production-ready features at 10x velocity. Powered by AI tools and battle-tested in FinTech (1.5M+ users) and EventTech platforms. Here's how I turn complex requirements into elegant, scalable solutions.",
     "metrics": {
       "experience": {
         "value": "4+ years",
@@ -87,7 +87,7 @@
         "label": "projects delivered end-to-end"
       },
       "mentoring": {
-        "value": "3x faster",
+        "value": "10x faster",
         "label": "with AI-assisted development"
       }
     },
@@ -116,7 +116,7 @@
   "ethos": {
     "overline": "Principles",
     "title": "ETHOS",
-    "intro": "Empathy from philosophy sharpens my product thinking. Precision from engineering ensures architectural excellence. AI tools (Cursor, Claude Code, Codex, Copilot, Warp) multiply my velocity 3x without sacrificing craft.",
+    "intro": "Empathy from philosophy sharpens my product thinking. Precision from engineering ensures architectural excellence. AI tools (Cursor, Claude Code, Codex, Copilot, Warp) multiply my velocity 10x without sacrificing craft.",
     "media": {
       "label": "Curiosity in practice",
       "caption": "Always learning—philosophy, systems and craft to match ambition with delivery.",
@@ -148,7 +148,7 @@
         "author": "Technical Excellence"
       },
       "1": {
-        "quote": "Master of modern stack: React Native, TypeScript, Next.js 15, Firebase, AWS. Powered by Cursor, Claude Code, Codex, Copilot and Warp for 3x development velocity.",
+        "quote": "Master of modern stack: React Native, TypeScript, Next.js 15, Firebase, AWS. Powered by Cursor, Claude Code, Codex, Copilot and Warp for 10x development velocity.",
         "author": "AI-Driven Approach"
       }
     }

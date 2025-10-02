@@ -2,7 +2,7 @@
   "landing": {
     "overline": "Liderazgo de producto en acción",
     "title": "Luis Espinoza\nIA-Driven Product Engineer",
-    "message": "Ingeniero de productos impulsado por IA con 4+ años construyendo aplicaciones móviles y web escalables que impactan a millones de usuarios. Especializado en React Native y TypeScript, aprovecho herramientas de IA de vanguardia (Cursor, Claude Code, Codex, GitHub Copilot, Warp) para entregar ciclos de desarrollo 3x más rápidos manteniendo calidad de producción en FinTech y EventTech.",
+    "message": "Ingeniero de productos impulsado por IA con 4+ años construyendo aplicaciones móviles y web escalables que impactan a millones de usuarios. Especializado en React Native y TypeScript, aprovecho herramientas de IA de vanguardia (Cursor, Claude Code, Codex, GitHub Copilot, Warp) para entregar ciclos de desarrollo 10x más rápidos manteniendo calidad de producción en FinTech y EventTech.",
     "button": "Hablemos",
     "actions": {
       "view_cases": "Explorar casos destacados"
@@ -30,7 +30,7 @@
     },
     "trusted": {
       "label": "Experiencia en",
-      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|Freelance"
+      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|FastForm|Freelance"
     },
     "pillars": {
       "product": {
@@ -39,7 +39,7 @@
       },
       "delivery": {
         "title": "Velocidad de desarrollo potenciada por IA",
-        "description": "Dominio de desarrollo asistido por IA con Cursor, Claude Code, Codex, GitHub Copilot y Warp para entregar features 3x más rápido sin comprometer calidad de código ni integridad arquitectónica."
+        "description": "Dominio de desarrollo asistido por IA con Cursor, Claude Code, Codex, GitHub Copilot y Warp para entregar features 10x más rápido sin comprometer calidad de código ni integridad arquitectónica."
       },
       "partnership": {
         "title": "Colaboración técnica",
@@ -76,7 +76,7 @@
   "skills": {
     "overline": "Sistema operativo",
     "title": "SKILLS",
-    "intro": "Ingeniero mobile-first que envía features listas para producción a velocidad 3x. Potenciado por herramientas IA y probado en batalla en FinTech (1.5M+ usuarios) y plataformas EventTech. Así transformo requisitos complejos en soluciones elegantes y escalables.",
+    "intro": "Ingeniero mobile-first que envía features listas para producción a velocidad 10x. Potenciado por herramientas IA y probado en batalla en FinTech (1.5M+ usuarios) y plataformas EventTech. Así transformo requisitos complejos en soluciones elegantes y escalables.",
     "metrics": {
       "experience": {
         "value": "4+ años",
@@ -87,7 +87,7 @@
         "label": "proyectos entregados end-to-end"
       },
       "mentoring": {
-        "value": "3x más rápido",
+        "value": "10x más rápido",
         "label": "con desarrollo asistido por IA"
       }
     },
@@ -116,7 +116,7 @@
   "ethos": {
     "overline": "Principios",
     "title": "ETHOS",
-    "intro": "La empatía desde la filosofía afina mi pensamiento de producto. La precisión desde la ingeniería asegura excelencia arquitectónica. Las herramientas IA (Cursor, Claude Code, Codex, Copilot, Warp) multiplican mi velocidad 3x sin sacrificar el craft.",
+    "intro": "La empatía desde la filosofía afina mi pensamiento de producto. La precisión desde la ingeniería asegura excelencia arquitectónica. Las herramientas IA (Cursor, Claude Code, Codex, Copilot, Warp) multiplican mi velocidad 10x sin sacrificar el craft.",
     "media": {
       "label": "Curiosidad en práctica",
       "caption": "Siempre aprendiendo: filosofía, sistemas y craft para unir ambición con entrega.",
@@ -148,7 +148,7 @@
         "author": "Excelencia técnica"
       },
       "1": {
-        "quote": "Maestría en stack moderno: React Native, TypeScript, Next.js 15, Firebase, AWS. Potenciado por Cursor, Claude Code, Codex, Copilot y Warp para velocidad de desarrollo 3x.",
+        "quote": "Maestría en stack moderno: React Native, TypeScript, Next.js 15, Firebase, AWS. Potenciado por Cursor, Claude Code, Codex, Copilot y Warp para velocidad de desarrollo 10x.",
         "author": "Enfoque impulsado por IA"
       }
     }
