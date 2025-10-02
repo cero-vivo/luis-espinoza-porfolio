@@ -175,8 +175,8 @@ html.dark .title {
     position: relative;
     z-index: 1;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     min-width: 0;
 }
 
@@ -186,6 +186,83 @@ html.dark .title {
     height: auto;
     display: block;
     filter: drop-shadow(0 24px 36px rgba(6, 50, 95, 0.22));
+    position: relative;
+    z-index: 3;
+}
+
+.avatarOrbit {
+    position: relative;
+    width: clamp(240px, 30vw, 420px);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+
+.avatarGlow {
+    position: absolute;
+    inset: -20%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 40%, rgba(34, 162, 255, 0.35) 0%, rgba(34, 162, 255, 0.07) 54%, rgba(34, 162, 255, 0) 78%);
+    filter: blur(0.5px);
+    z-index: 0;
+}
+
+.haloRing,
+.haloRingSecondary {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px dashed var(--border-subtle);
+    opacity: 0.45;
+    z-index: 1;
+    pointer-events: none;
+    animation: orbitSpin 32s linear infinite;
+}
+
+.haloRing {
+    inset: -36px;
+}
+
+.haloRingSecondary {
+    inset: -70px;
+    opacity: 0.28;
+    animation-duration: 44s;
+    animation-direction: reverse;
+}
+
+.haloIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(var(--translateX), var(--translateY));
+    z-index: 2;
+}
+
+.haloIconInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(48px, 5vw, 64px);
+    height: clamp(48px, 5vw, 64px);
+    border-radius: 18px;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 18px 38px var(--shadow-soft);
+    backdrop-filter: blur(6px);
+    animation: haloFloat 6.5s ease-in-out infinite;
+    animation-delay: var(--floatDelay);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.haloIconInner:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 24px 46px rgba(6, 50, 95, 0.28);
+}
+
+.haloIconImage {
+    width: clamp(28px, 3vw, 40px);
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(6, 50, 95, 0.2));
 }
 
 .visualLabel {
@@ -324,6 +401,14 @@ html.dark .trustedLabel {
         width: clamp(240px, 52vw, 360px);
     }
 
+    .avatarOrbit {
+        width: clamp(260px, 60vw, 360px);
+    }
+
+    .haloRingSecondary {
+        inset: -56px;
+    }
+
     .metricsRow {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -360,6 +445,18 @@ html.dark .trustedLabel {
         width: clamp(220px, 72vw, 320px);
     }
 
+    .avatarOrbit {
+        width: clamp(220px, 80vw, 320px);
+    }
+
+    .haloRing {
+        inset: -28px;
+    }
+
+    .haloRingSecondary {
+        inset: -44px;
+    }
+
     .message {
         font-size: 1rem;
     }
@@ -382,4 +479,22 @@ html.dark .trustedLabel {
         padding: 24px;
     }
 
+}
+
+@keyframes orbitSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes haloFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }

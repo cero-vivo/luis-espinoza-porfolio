@@ -6,8 +6,9 @@ import { LetsTalkButton } from './lets-talk-button'
 import styles from "./landing.module.css"
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import type { CSSProperties } from 'react'
 import { TechStack } from '@/components/shared/tech-stack/tech-stack'
-import { TechIcon } from '@/components/shared/tech-stack/tech-index'
+import { TechIcon, techIcons } from '@/components/shared/tech-stack/tech-index'
 
 const iconStack: TechIcon[] = [
 	"react",
@@ -25,6 +26,12 @@ const iconStack: TechIcon[] = [
 	"notebooklm",
 ]
 
+type OrbitStyle = CSSProperties & {
+	"--translateX": string
+	"--translateY": string
+	"--floatDelay": string
+}
+
 const metricKeys = ["impact", "launches", "leadership"] as const
 const statusKeys = ["location"] as const
 const pillarKeys = ["product", "delivery", "partnership"] as const
@@ -32,6 +39,24 @@ const pillarKeys = ["product", "delivery", "partnership"] as const
 export const Landing = () => {
 
 	const t = useTranslations("landing")
+
+	const orbitIcons = iconStack.map((icon, index) => {
+		const angle = (index / iconStack.length) * Math.PI * 2
+		const radius = 140 + (((index % 4) - 1.5) * 16)
+		const translateX = Math.cos(angle) * radius
+		const translateY = Math.sin(angle) * radius
+
+		const style: OrbitStyle = {
+			"--translateX": `${translateX}px`,
+			"--translateY": `${translateY}px`,
+			"--floatDelay": `${(index % 6) * 0.28}s`,
+		}
+
+		return {
+			icon,
+			style,
+		}
+	})
 
 	const metrics = metricKeys.map((key) => ({
 		value: t(`metrics.${key}.value`),
@@ -78,7 +103,19 @@ export const Landing = () => {
 					</div>
 				</div>
 				<div className={styles.heroVisual}>
-					<Image src="/images/ia-drven.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
+					<div className={styles.avatarOrbit}>
+						<span className={styles.avatarGlow} aria-hidden />
+						<span className={styles.haloRing} aria-hidden />
+						<span className={styles.haloRingSecondary} aria-hidden />
+						{orbitIcons.map(({ icon, style }) => (
+							<span className={styles.haloIcon} style={style} key={`${icon}-${style["--translateX"]}`}>
+								<span className={styles.haloIconInner}>
+									<Image src={techIcons[icon]} alt={`${icon} icon`} width={44} height={44} className={styles.haloIconImage} />
+								</span>
+							</span>
+						))}
+						<Image src="/images/ia-drven.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
+					</div>
 				</div>
 			</section>
 			<section className={styles.trustedRow}>
