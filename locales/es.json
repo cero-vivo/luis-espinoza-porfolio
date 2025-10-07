@@ -195,7 +195,7 @@
         "name": "Hybeans App",
         "description": "Construí la experiencia móvil insignia (iOS y Android) para la plataforma EventTech Hybeans, habilitando interacción social en tiempo real, e-commerce y ticketing para eventos en vivo con miles de usuarios concurrentes.",
         "badge": "EVENTTECH · MOBILE",
-        "highlights": "Arquitecté flujos móviles end-to-end: Firebase Auth, feeds sociales en tiempo real, sistema de reserva de eventos en vivo y checkout in-app procesando pagos durante eventos en vivo.|Construí sistema robusto de notificaciones con Firebase Cloud Messaging, navegación por deep linking y tracking de analytics (Mixpanel) cubriendo el journey completo del usuario.|Entregué features bajo plazos ajustados de eventos con cero downtime durante tráfico pico (15K+ usuarios concurrentes), coordinando entre equipos de diseño, backend y QA.",
+        "highlights": "Arquitecté flujos móviles end-to-end: Firebase Auth, feeds sociales en tiempo real, sistema de reserva de eventos en vivo y checkout in-app procesando pagos durante eventos en vivo.|Construí sistema robusto de notificaciones con Firebase Cloud Messaging, navegación por deep linking y tracking de analytics (Mixpanel) cubriendo el journey completo del usuario.|Entregué features bajo plazos ajustados de eventos con cero downtime durante tráfico pico, coordinando entre equipos de diseño, backend y QA.",
         "result": "Impacto: Plataforma utilizada en múltiples eventos con miles de usuarios activos.",
         "meta": {
           "role": "Web y Mobile Developer",
