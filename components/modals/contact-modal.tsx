@@ -71,7 +71,7 @@ export const ContactModal = () => {
 							</span>
 							<div className={styles.tileCopy}>
 								<span className={styles.tileLabel}>LinkedIn</span>
-								<span className={styles.tileDetail}>/in/luis-espinoza</span>
+								<span className={styles.tileDetail}>/in/luis-espinoza-dev</span>
 							</div>
 						</button>
 					</div>
