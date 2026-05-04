@@ -1,5 +1,3 @@
-"use client"
-
 import { Frame } from '@/components/basic/frame/frame'
 import { Heading } from '@/components/basic/heading/heading'
 import { Paragraph } from '@/components/basic/paragraph/paragraph'

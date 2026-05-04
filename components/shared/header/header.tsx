@@ -249,6 +249,7 @@ export const Header = () => {
 							alt="Luis Espinoza"
 							width={60}
 							height={60}
+							sizes="60px"
 							className={styles.brandPhoto}
 						/>
 						<span className={styles.brandCopy}>

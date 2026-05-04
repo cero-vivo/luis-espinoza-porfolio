@@ -4,12 +4,11 @@ import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import AnalyticsProvider from '@/components/analytics-provider';
-import { CookieBanner } from '@/components/basic/cookie-banner/cookie-banner';
 
 
 const poppins = Poppins({
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-	subsets: ["latin-ext"]
+	weight: ["400", "500", "600", "700", "800"],
+	subsets: ["latin"]
 });
 
 export const metadata: Metadata = {

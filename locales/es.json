@@ -2,26 +2,26 @@
   "landing": {
     "overline": "De la idea a la realidad",
     "title": "Luis Espinoza\nIA-Driven Product Engineer",
-    "message": "Ingeniero de productos impulsado por IA con 4+ años construyendo aplicaciones móviles y web escalables que impactan a millones de usuarios. Especializado en React Native y TypeScript, aprovecho herramientas de IA de vanguardia (Cursor, Claude Code, Codex, GitHub Copilot, Warp) para entregar ciclos de desarrollo 10x más rápidos manteniendo calidad de producción en FinTech y EventTech.",
+    "message": "Ingeniero de productos impulsado por IA con 5+ años construyendo aplicaciones móviles y web escalables que impactan a millones de usuarios finales y equipos financieros de 500+ empresas en LATAM. Especializado en React Native y TypeScript, entrego features de producción para productos FinTech como Mendel y Pago Fácil, y uso Claude Code, Codex, Cursor, Copilot y Warp para crear agentes, skills y workflows que aceleran la entrega sin comprometer calidad.",
     "button": "Hablemos",
     "actions": {
       "view_cases": "Explorar casos destacados"
     },
     "metrics": {
       "impact": {
-        "value": "1.5M+",
-        "label": "Descargas en apps desarrolladas",
-        "description": "Contribuí al desarrollo de Pago Fácil con 1.5M+ descargas y 500K usuarios activos mensuales."
+        "value": "500+",
+        "label": "Empresas operando con Mendel",
+        "description": "Mendel trabaja con más de 500 compañías en Argentina, México, Colombia y Chile."
       },
       "launches": {
-        "value": "4+",
-        "label": "Años en FinTech y EventTech",
-        "description": "Experiencia desarrollando en sectores de alta demanda técnica como finanzas y eventos."
+        "value": "1.5M+",
+        "label": "Descargas en apps FinTech",
+        "description": "Contribuí al desarrollo de Pago Fácil con 500K usuarios activos mensuales en iOS y Android."
       },
       "leadership": {
-        "value": "React Native",
-        "label": "Especialidad principal",
-        "description": "Desarrollo móvil nativo para iOS y Android con arquitectura limpia y rendimiento optimizado."
+        "value": "AI-first",
+        "label": "Developer enablement",
+        "description": "Construyo agentes, skills y comandos con Claude Code para acelerar scaffolding, review, testing y releases."
       }
     },
     "stack": {
@@ -30,26 +30,26 @@
     },
     "trusted": {
       "label": "Experiencia en",
-      "list": "Bizland Tech|Western Union|Pago Fácil|Hybeans|FastForm"
+      "list": "Mendel|Pago Fácil|Western Union|Hybeans|FastForm"
     },
     "pillars": {
       "product": {
-        "title": "Desarrollo móvil especializado",
-        "description": "Crear aplicaciones React Native robustas con integración de APIs, autenticación y bases de datos en tiempo real."
+        "title": "Desarrollo mobile para FinTech",
+        "description": "Creo apps React Native para gastos, tarjetas, presupuestos y viajes corporativos con integraciones complejas y foco en performance."
       },
       "delivery": {
         "title": "Velocidad de desarrollo potenciada por IA",
-        "description": "Dominio de desarrollo asistido por IA con Cursor, Claude Code, Codex, GitHub Copilot y Warp para entregar features 10x más rápido sin comprometer calidad de código ni integridad arquitectónica."
+        "description": "Integro Claude Code, Codex, Copilot y Warp en workflows concretos para que el equipo entregue más rápido sin sacrificar calidad ni arquitectura."
       },
       "partnership": {
         "title": "Colaboración técnica",
-        "description": "Trabajar eficientemente en equipos multidisciplinarios, mantener código limpio y documentación clara."
+        "description": "Trabajo con producto, diseño, backend y QA para aterrizar flujos complejos en experiencias claras, seguras y mantenibles."
       }
     },
     "status": {
       "availability": {
         "label": "Disponibilidad",
-        "value": "Reservando colaboraciones para Q3 2025"
+        "value": "Reservando colaboraciones para Q3 2026"
       },
       "location": {
         "label": "Con base en",
@@ -57,7 +57,7 @@
       },
       "collaboration": {
         "label": "Modalidad de trabajo",
-        "value": "Desarrollo end-to-end → entrega ágil"
+        "value": "Arquitectura mobile → entrega asistida por IA"
       }
     }
   },
@@ -76,14 +76,14 @@
   "skills": {
     "overline": "Sistema operativo",
     "title": "SKILLS",
-    "intro": "Ingeniero mobile-first que envía features listas para producción a velocidad 10x. Potenciado por herramientas IA y probado en batalla en FinTech (1.5M+ usuarios) y plataformas EventTech. Así transformo requisitos complejos en soluciones elegantes y escalables.",
+    "intro": "Ingeniero mobile-first que envía features listas para producción en FinTech B2B, billeteras de consumo y plataformas EventTech. Potenciado por herramientas IA y experiencia real en apps con 1.5M+ descargas y productos usados por 500+ empresas. Así transformo requisitos complejos en soluciones elegantes y escalables.",
     "metrics": {
       "experience": {
-        "value": "4+ años",
+        "value": "5+ años",
         "label": "desarrollando aplicaciones escalables"
       },
       "delivery": {
-        "value": "8+",
+        "value": "9+",
         "label": "proyectos entregados end-to-end"
       },
       "mentoring": {
@@ -94,69 +94,69 @@
     "areas": {
       "product": {
         "title": "Desarrollo Mobile & Web",
-        "description": "Creo aplicaciones escalables con React, React Native y TypeScript.",
-        "bullets": "Desarrollo apps móviles nativas para iOS y Android con React Native.|Implemento aplicaciones web modernas con Next.js, React y TypeScript.|Integro APIs complejas, autenticación y bases de datos en tiempo real."
+        "description": "Creo aplicaciones escalables con React, React Native y TypeScript, desde wallets de consumo hasta gasto corporativo white-label.",
+        "bullets": "Desarrollo apps móviles para iOS y Android con React Native enfocadas en tarjetas corporativas, presupuestos, transacciones y viajes.|Implemento aplicaciones web modernas con Next.js, React y TypeScript, con foco en performance y DX.|Integro APIs complejas, autenticación, flujos de pago, notificaciones push y bases de datos en tiempo real."
       },
       "engineering": {
         "title": "Arquitectura & herramientas IA",
-        "description": "Aplico Clean Architecture y acelero desarrollo con IA.",
-        "bullets": "Aprovecho herramientas IA (Cursor, Claude Code, Codex, Copilot, Warp) para acelerar desarrollo, testing automatizado y debugging inteligente.|Arquitecto código limpio y mantenible usando patrones MVVM y MVCP con separación de responsabilidades.|Construyo infraestructura escalable con Firebase, AWS Lambda, PostgreSQL y microservicios cloud-native."
+        "description": "Aplico Clean Architecture y habilito workflows AI-first para el equipo.",
+        "bullets": "Diseño agentes, skills, slash commands y orquestadores con Claude Code y Codex para estandarizar scaffolding, code review, testing y releases.|Arquitecto código limpio y mantenible usando MVVM, MVCP y separación de responsabilidades en apps multi-brand.|Construyo infraestructura escalable con Firebase, AWS Lambda, PostgreSQL y servicios cloud-native."
       },
       "enablement": {
         "title": "Colaboración & entrega continua",
         "description": "Trabajo eficientemente en equipos ágiles multidisciplinarios.",
-        "bullets": "Colaboro estrechamente con equipos de diseño, QA y backend.|Participo en metodologías ágiles y entregas bajo presión.|Mantengo código de calidad con Git, testing y documentación clara."
+        "bullets": "Colaboro estrechamente con equipos de producto, diseño, QA y backend.|Participo en metodologías ágiles, releases continuos y entregas bajo presión.|Mantengo código de calidad con Git, testing y documentación clara en contextos multi-brand."
       }
     },
     "quote": {
-      "text": "La intersección del desarrollo asistido por IA y principios de arquitectura limpia. No solo escribo código más rápido—envío features listas para producción que escalan.",
+      "text": "La intersección entre arquitectura mobile, productos FinTech y developer enablement asistido por IA. No solo escribo código más rápido: construyo sistemas y workflows para que el equipo envíe mejor.",
       "author": "Filosofía de desarrollo"
     }
   },
   "ethos": {
     "overline": "Principios",
     "title": "ETHOS",
-    "intro": "La empatía desde la filosofía afina mi pensamiento de producto. La precisión desde la ingeniería asegura excelencia arquitectónica. Las herramientas IA (Cursor, Claude Code, Codex, Copilot, Warp) multiplican mi velocidad 10x sin sacrificar el craft.",
+    "intro": "La empatía desde la filosofía afina mi pensamiento de producto. La precisión desde la ingeniería sostiene apps FinTech multi-brand para tarjetas, presupuestos y viajes. Las herramientas IA (Claude Code, Codex, Cursor, Copilot, Warp) multiplican mi velocidad y también la del equipo sin sacrificar el craft.",
     "media": {
       "label": "Curiosidad en práctica",
       "caption": "Siempre aprendiendo: filosofía, sistemas y craft para unir ambición con entrega.",
       "alt": "Ilustración de Luis leyendo un libro"
     },
-    "story": "La filosofía me enseñó a interrogar problemas profundamente antes de escribir una sola línea de código—entender el 'por qué' crea mejores soluciones.|Abordo el desarrollo como un oficio: arquitectura limpia, tests significativos y herramientas IA que aceleran sin comprometer calidad.|Cada feature que envío está lista para producción, monitoreada y construida para escalar—porque velocidad sin confiabilidad es solo deuda técnica.",
+    "story": "Primero entiendo el problema y las reglas del negocio; en FinTech, un flujo claro vale tanto como una buena implementación.|Trabajo con arquitectura limpia y responsabilidades bien separadas para sostener productos mobile compartidos entre marcas, features y entornos.|Uso IA de forma operativa: agentes, skills y comandos que convierten tareas repetitivas en procesos consistentes, auditables y más rápidos.",
     "timeline": {
       "title": "Trayectoria",
       "0": {
-        "period": "2024—Hoy",
-        "role": "Mobile Developer FinTech · Bizland Tech",
-        "description": "Desarrollo la solución PSP integrando múltiples billeteras digitales y mejorando la app Pago Fácil con 1.5M+ descargas."
+        "period": "2025—Hoy",
+        "role": "Mobile & AI Developer · Mendel",
+        "description": "Desarrollo features iOS y Android para gestión de gastos, tarjetas y viajes corporativos en una arquitectura React Native multi-brand."
       },
       "1": {
+        "period": "2024—2025",
+        "role": "Mobile Developer FinTech · Bizland Tech",
+        "description": "Participé en la solución PSP e implementé mejoras clave en Pago Fácil y Western Union para 1.5M+ descargas."
+      },
+      "2": {
         "period": "2022—2024",
         "role": "Web & Mobile Developer · Hybeans",
         "description": "Desarrollé plataforma de eventos con funcionalidades end-to-end, calendario en tiempo real y sistema de tickets digitales."
-      },
-      "2": {
-        "period": "2020—2022",
-        "role": "Full Stack Developer · Freelance",
-        "description": "Creé sistemas de gestión personalizados con Spring Boot, PostgreSQL y sitios web responsivos para organizaciones."
       }
     },
     "testimonials": {
       "title": "Filosofía de ingeniería",
       "0": {
-        "quote": "Arquitectura mobile-first con workflows acelerados por IA. Experto React Native que ha enviado features a 1.5M+ usuarios en apps FinTech de producción.",
-        "author": "Excelencia técnica"
+        "quote": "Arquitectura React Native para FinTech B2B: presupuestos, tarjetas físicas y virtuales, transacciones y experiencias white-label desde un código compartido.",
+        "author": "Delivery de producto"
       },
       "1": {
-        "quote": "Maestría en stack moderno: React Native, TypeScript, Next.js 15, Firebase, AWS. Potenciado por Cursor, Claude Code, Codex, Copilot y Warp para velocidad de desarrollo 10x.",
-        "author": "Enfoque impulsado por IA"
+        "quote": "Claude Code, Codex, Cursor y Copilot no son adornos: los uso para construir agentes y workflows que mejoran review, testing y velocidad de entrega.",
+        "author": "Developer enablement"
       }
     }
   },
   "works": {
     "overline": "Casos de estudio",
     "title": "TRABAJOS",
-    "intro": "Proyectos del mundo real donde la excelencia técnica encuentra el impacto comercial. Desde plataformas FinTech sirviendo 1.5M+ usuarios hasta experiencias EventTech procesando miles de transacciones en tiempo real—estos son sistemas de producción, no demos.",
+    "intro": "Casos reales donde la calidad técnica impacta negocio. Desde plataformas de gasto corporativo usadas por 500+ empresas en LATAM hasta apps FinTech con 1.5M+ descargas y productos EventTech en producción: no son demos, son sistemas vivos.",
     "stack_label": "Stack clave",
     "links": {
       "visit": "Ver proyecto",
@@ -169,15 +169,26 @@
       "next": "Imagen siguiente"
     },
     "projects": {
+      "Mendel": {
+        "name": "Mendel",
+        "description": "Desarrollo y mantengo nuevas funcionalidades para las apps iOS y Android de Mendel, una plataforma regional de gestión de gastos corporativos, tarjetas y viajes. Trabajo sobre una arquitectura React Native multi-brand y white-label que soporta presupuestos, transacciones y flujos operativos para clientes empresariales en LATAM.",
+        "badge": "FINTECH · B2B MOBILE",
+        "highlights": "Entrego features cross-platform para presupuestos, control de transacciones, administración de tarjetas físicas y virtuales, cambio de PIN y pausado de tarjeta desde una sola base React Native.|Contribuyo a una arquitectura multi-brand y white-label que permite derivar experiencias por cliente desde el mismo código compartido, sin forks por marca.|Colaboro con Producto, Diseño y Backend para enviar flujos seguros y performantes en un entorno FinTech B2B de alto tráfico y reglas de negocio variables.|Construyo enablement interno AI-first con Claude Code: agentes, skills y comandos para estandarizar scaffolding, code review, testing y release workflows del equipo mobile.",
+        "result": "Impacto: producto regional usado por 500+ compañías en LATAM para gastos, tarjetas y viajes corporativos.",
+        "meta": {
+          "role": "Mobile & AI Developer - Expense & Travel Tech",
+          "timeline": "Diciembre 2025 — Actualidad"
+        }
+      },
       "Pago Fácil & Western Union": {
         "name": "Pago Fácil & Western Union",
-        "description": "Mobile Developer en Bizland Tech contribuyendo a una solución PSP (Proveedor de Servicios de Pago) de misión crítica que impulsa las 1.5M+ descargas y 500K usuarios activos mensuales de Pago Fácil. Envío features de producción para integración Western Union, optimicé estabilidad de la app y resolví incidentes P0 afectando transacciones financieras reales.",
+        "description": "Como Mobile Developer en Bizland Tech contribuí a una solución PSP (Proveedor de Servicios de Pago) de misión crítica que impulsó las 1.5M+ descargas y 500K usuarios activos mensuales de Pago Fácil. Envié features de producción para integración Western Union, optimicé estabilidad de la app y resolví incidentes P0 afectando transacciones financieras reales.",
         "badge": "FINTECH · MOBILE",
-        "highlights": "Arquitecté capa de integración PSP soportando múltiples billeteras digitales (Western Union, proveedores locales) con confiabilidad a nivel de transacción.|Envío features de producción usando React Native, TypeScript, Redux para manejo de estado y Firebase para sincronización de datos en tiempo real.|Reduje tasa de crashes en 40% mediante profiling de rendimiento, optimización de memoria y error boundaries proactivos.|Resolví incidentes P0 de producción con tiempo de respuesta <30min, manteniendo 99.9% uptime durante horas pico de transacciones.",
+        "highlights": "Arquitecté capa de integración PSP soportando múltiples billeteras digitales (Western Union, proveedores locales) con confiabilidad a nivel de transacción.|Envié features de producción usando React Native, TypeScript, Redux para manejo de estado y Firebase para sincronización de datos en tiempo real.|Reduje tasa de crashes en 40% mediante profiling de rendimiento, optimización de memoria y error boundaries proactivos.|Resolví incidentes P0 de producción con tiempo de respuesta <30min, manteniendo 99.9% uptime durante horas pico de transacciones.",
         "result": "Impacto: 1.5M+ descargas, 500K usuarios activos mensuales y mayor estabilidad.",
         "meta": {
           "role": "Mobile Developer - FinTech",
-          "timeline": "Agosto 2024 — Actualidad"
+          "timeline": "Agosto 2024 — Diciembre 2025"
         }
       },
       "0-Registros": {
@@ -287,36 +298,36 @@
   "highlights": {
     "overline": "Señales de confianza",
     "title": "Pruebas de impacto",
-    "intro": "Experiencia técnica en desarrollo de aplicaciones móviles y web. Un vistazo a empresas, proyectos y logros técnicos en mi carrera.",
+    "intro": "Experiencia técnica en desarrollo mobile y web, desde FinTech B2B regional hasta apps de consumo masivo. Un vistazo a empresas, proyectos y logros concretos en mi carrera.",
     "clients": {
       "title": "Experiencia en empresas",
-      "subtitle": "Empresas donde he contribuido como desarrollador en FinTech, EventTech y proyectos web.",
-      "list": "Bizland Tech|Pago Fácil|Hybeans|FastForm|Freelance"
+      "subtitle": "Empresas y productos donde contribuí en FinTech, EventTech y software orientado a operaciones.",
+      "list": "Mendel|Bizland Tech|Pago Fácil|Hybeans|FastForm"
     },
     "recognitions": {
       "title": "Logros técnicos",
       "subtitle": "Contribuciones técnicas destacadas en proyectos reales.",
       "items": {
         "0": {
-          "year": "2024",
-          "title": "Desarrollo en Pago Fácil con 1.5M+ descargas",
-          "description": "Contribuyo al desarrollo de funcionalidades clave en la solución PSP y mejoras de la app FinTech."
+          "year": "2025-Actualidad",
+          "title": "Mendel: gasto corporativo y arquitectura white-label",
+          "description": "Desarrollo features mobile para presupuestos, tarjetas, transacciones y viajes en una plataforma regional usada por 500+ empresas."
         },
         "1": {
+          "year": "2024-2025",
+          "title": "Pago Fácil con 1.5M+ descargas",
+          "description": "Participé en la solución PSP, integraciones de billeteras y mejoras de estabilidad para una app FinTech masiva."
+        },
+        "2": {
           "year": "2022-2024",
           "title": "Plataforma EventTech Hybeans",
           "description": "Desarrollé funcionalidades end-to-end para gestión de eventos, calendario en tiempo real y sistema de tickets."
-        },
-        "2": {
-          "year": "2020-2022",
-          "title": "Proyectos freelance con Spring Boot",
-          "description": "Creé sistemas de gestión personalizados y sitios web responsivos para organizaciones."
         }
       }
     },
     "cta": {
       "title": "Desarrollemos tu próximo proyecto",
-      "body": "Especializado en desarrollo móvil y web con React Native, TypeScript y herramientas de IA. Listo para contribuir a tu equipo técnico.",
+      "body": "Especializado en React Native, TypeScript y AI-enabled delivery. Listo para aportar producto, arquitectura y velocidad real a tu equipo técnico.",
       "button": "Contactar"
     }
   }

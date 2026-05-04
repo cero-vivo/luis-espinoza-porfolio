@@ -28,6 +28,7 @@ export const ContactModal = () => {
 						alt="Luis Espinoza"
 						width={60}
 						height={60}
+						sizes="60px"
 						className={styles.brandPhoto}
 					/>
 					<h2 className={styles.name}>Luis Espinoza</h2>

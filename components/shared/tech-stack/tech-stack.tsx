@@ -15,7 +15,7 @@ export const TechStack: FC<TechStackProps> = (props) => {
 
 	const iconsList = icons.map((techIcon: TechIcon) => {
 		const icon = techIcons[techIcon]
-		return <Image width={60} height={60} key={techIcon} src={icon} alt={techIcon} className={`${styles.icon} ${iconClasses}`} loading='lazy' />
+		return <Image width={60} height={60} key={techIcon} src={icon} alt={techIcon} className={`${styles.icon} ${iconClasses}`} loading='lazy' sizes='60px' />
 	})
 
 	return (

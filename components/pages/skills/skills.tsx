@@ -59,7 +59,7 @@ export const Skills = () => {
 						height={560}
 						className={styles.mainImage}
 						loading='lazy'
-						objectFit='contain'
+						sizes="(max-width: 1024px) 80vw, 420px"
 					/>
 					<div className={styles.quoteBox}>
 						<span className={styles.quoteSymbol}>“</span>

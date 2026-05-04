@@ -110,11 +110,11 @@ export const Landing = () => {
 						{orbitIcons.map(({ icon, style }) => (
 							<span className={styles.haloIcon} style={style} key={`${icon}-${style["--translateX"]}`}>
 								<span className={styles.haloIconInner}>
-									<Image src={techIcons[icon]} alt={`${icon} icon`} width={44} height={44} className={styles.haloIconImage} />
+									<Image src={techIcons[icon]} alt={`${icon} icon`} width={44} height={44} sizes='44px' className={styles.haloIconImage} />
 								</span>
 							</span>
 						))}
-						<Image src="/images/ia-drven.png" alt="Luis Espinoza" width={360} height={360} priority className={styles.avatarImage} />
+						<Image src="/images/ia-drven.png" alt="Luis Espinoza" width={360} height={360} priority sizes="(max-width: 768px) 72vw, 360px" className={styles.avatarImage} />
 					</div>
 				</div>
 			</section>

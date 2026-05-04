@@ -213,13 +213,11 @@
     transform: rotate(90deg) !important;
 }
 
-.galleryStrip {
+.galleryViewport {
+    position: relative;
     display: flex;
-    gap: 16px;
     align-items: center;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    justify-content: center;
     padding: 14px 18px;
     border-radius: 22px;
     background: var(--surface-glass);
@@ -228,27 +226,36 @@
     flex: 1 1 auto;
     min-width: 0;
     box-sizing: border-box;
-}
-
-.galleryStrip::-webkit-scrollbar {
-    height: 6px;
-}
-
-.galleryStrip::-webkit-scrollbar-thumb {
-    background: rgba(34, 162, 255, 0.3);
-    border-radius: 100px;
+    overflow: hidden;
+    min-height: 100%;
 }
 
 .galleryImage {
-    inline-size: clamp(240px, 52vw, 360px);
+    width: 100%;
+    max-width: 360px;
+    height: auto;
     max-height: 520px;
+    aspect-ratio: 64 / 42;
     border-radius: 20px;
     object-fit: contain;
     object-position: center;
     background-color: var(--surface-card);
-    scroll-snap-align: center;
     box-shadow: 0 16px 30px var(--shadow-soft);
     border: 1px solid var(--border-subtle);
+}
+
+.galleryCounter {
+    position: absolute;
+    left: 18px;
+    bottom: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--surface-elevated) 88%, transparent);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-subtle);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
 @media (max-width: 1024px) {
@@ -268,7 +275,7 @@
         flex: 0 0 44px;
     }
 
-    .galleryStrip {
+    .galleryViewport {
         max-width: 100%;
     }
 }
@@ -278,12 +285,12 @@
         gap: 12px;
     }
 
-    .galleryStrip {
+    .galleryViewport {
         padding: 14px 16px;
     }
 
     .galleryImage {
-        inline-size: clamp(220px, 70vw, 340px);
+        max-width: 340px;
     }
 }
 
@@ -321,15 +328,20 @@
         transform: rotate(90deg) !important;
     }
 
-    .galleryStrip {
+    .galleryViewport {
         width: 100%;
         padding: 12px 14px;
         max-width: 100%;
     }
 
     .galleryImage {
-        inline-size: clamp(200px, 92vw, 320px);
+        max-width: 320px;
         max-height: 420px;
+    }
+
+    .galleryCounter {
+        left: 14px;
+        bottom: 12px;
     }
 
     .caseFooter {
@@ -355,7 +367,7 @@
         gap: 20px;
     }
 
-    .galleryStrip {
+    .galleryViewport {
         padding: 12px;
     }
 

@@ -9,6 +9,22 @@ export interface ProjectType {
 
 export const projects: ProjectType[] = [
 	{
+		"name": "Mendel",
+		"icons": ["react-native", "typescript", "figma", "claude", "codex", "cursor"],
+		"images": [
+			"/projects/mendel/1.png",
+			"/projects/mendel/2.png",
+			"/projects/mendel/3.png",
+			"/projects/mendel/4.png",
+			"/projects/mendel/5.png"
+		],
+		"urls": [
+			"https://mendel.com/es-ar/",
+			"https://play.google.com/store/apps/details?id=com.mendel&hl=es_AR",
+			"https://apps.apple.com/mx/app/mendel/id1557396785"
+		]
+	},
+	{
 		"name": "Pago Fácil & Western Union",
 		"icons": ["typescript", "react", "firebase", "redux", "amazon"],
 		"images": [
@@ -40,7 +56,7 @@ export const projects: ProjectType[] = [
 	},
 	{
 		"name": "Hybeans App",
-		"icons": ["react", "typescript", "mst", "firebase", "css3"],
+		"icons": ["react-native", "typescript", "mst", "firebase", "css3"],
 		"images": [
 			"/projects/hyApp/1.png",
 			"/projects/hyApp/2.png",

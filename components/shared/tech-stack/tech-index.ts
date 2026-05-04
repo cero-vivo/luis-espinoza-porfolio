@@ -1,5 +1,6 @@
 export const techIcons = {
     "react": "/icons/react.png",
+    "react-native": "/icons/react-native.png",
     "css3": "/icons/css3.png",
     "firebase": "/icons/firebase.png",
     "html5": "/icons/html5.png",
