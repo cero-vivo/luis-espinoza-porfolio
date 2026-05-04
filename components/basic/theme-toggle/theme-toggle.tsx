@@ -5,25 +5,24 @@ import styles from "./theme-toggle.module.css"
 import { SunIcon } from "@/components/basic/icons/sun-icon"
 import { MoonIcon } from "@/components/basic/icons/moon-icon"
 
+const applyTheme = (isDark: boolean) => {
+  document.documentElement.classList.remove('light', 'dark')
+  document.documentElement.classList.add(isDark ? 'dark' : 'light')
+}
+
 export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false)
 
-  // Sync with localStorage & prefers-color-scheme
   useEffect(() => {
-    const stored = typeof window !== 'undefined' ? localStorage.getItem('theme') : null
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    const enabled = stored === 'dark' || (!stored && prefersDark)
-    setIsDark(enabled)
-    document.documentElement.classList.remove('light', 'dark')
-    document.documentElement.classList.add(enabled ? 'dark' : 'light')
+    setIsDark(false)
+    applyTheme(false)
+    localStorage.removeItem('theme')
   }, [])
 
   const toggleTheme = () => {
     const newDark = !isDark
     setIsDark(newDark)
-    document.documentElement.classList.remove('light', 'dark')
-    document.documentElement.classList.add(newDark ? 'dark' : 'light')
-    localStorage.setItem('theme', newDark ? 'dark' : 'light')
+    applyTheme(newDark)
   }
 
   return (
