@@ -1,10 +1,13 @@
 import { TechIcon } from "@/components/shared/tech-stack/tech-index";
 
+export type ProjectCategory = "fintech" | "mobile" | "web" | "ai" | "experimental"
+
 export interface ProjectType {
 	name: string;
 	icons: TechIcon[];
 	images: string[];
 	urls: string[]
+	categories: ProjectCategory[]
 }
 
 export const projects: ProjectType[] = [
@@ -22,7 +25,8 @@ export const projects: ProjectType[] = [
 			"https://mendel.com/es-ar/",
 			"https://play.google.com/store/apps/details?id=com.mendel&hl=es_AR",
 			"https://apps.apple.com/mx/app/mendel/id1557396785"
-		]
+		],
+		"categories": ["fintech", "mobile", "ai"]
 	},
 	{
 		"name": "Pago Fácil & Western Union",
@@ -38,7 +42,8 @@ export const projects: ProjectType[] = [
 			"/projects/pagoFacil/7.png",
 			"/projects/pagoFacil/8.png",
 		],
-		"urls": ["https://apps.apple.com/ar/app/app-pago-f%C3%A1cil/id6443566167", "https://play.google.com/store/apps/details?id=com.westernunionwallet&hl=en-US"]
+		"urls": ["https://apps.apple.com/ar/app/app-pago-f%C3%A1cil/id6443566167", "https://play.google.com/store/apps/details?id=com.westernunionwallet&hl=en-US"],
+		"categories": ["fintech", "mobile"]
 	},
 	{
 		"name": "0-Registros",
@@ -52,7 +57,8 @@ export const projects: ProjectType[] = [
 			"/projects/0-registros/7.png",
 			"/projects/0-registros/8.png"
 		],
-		"urls": ["https://www.0-registros.art"]
+		"urls": ["https://www.0-registros.art"],
+		"categories": ["web", "experimental"]
 	},
 	{
 		"name": "Hybeans App",
@@ -69,7 +75,8 @@ export const projects: ProjectType[] = [
 			"/projects/hyApp/9.png",
 			"/projects/hyApp/10.png"
 		],
-		"urls": ["https://play.google.com/store/apps/details?id=com.hybeans", "https://apps.apple.com/ar/app/hybeans/id1588248966"]
+		"urls": ["https://play.google.com/store/apps/details?id=com.hybeans", "https://apps.apple.com/ar/app/hybeans/id1588248966"],
+		"categories": ["mobile"]
 	},
 	{
 		"name": "FastForm",
@@ -87,7 +94,8 @@ export const projects: ProjectType[] = [
 			"/projects/fastform/9.png",
 			"/projects/fastform/10.png",
 		],
-		"urls": ["https://fastform.pro/"]
+		"urls": ["https://fastform.pro/"],
+		"categories": ["web", "ai"]
 	},
 	{
 		"name": "Push Notify",
@@ -98,7 +106,8 @@ export const projects: ProjectType[] = [
 			"/projects/push-notify/2.png",
 			"/projects/push-notify/3.png",
 		],
-		urls: []
+		urls: [],
+		categories: ["mobile"]
 	},
 	{
 		"name": "Filoweb",
@@ -115,7 +124,8 @@ export const projects: ProjectType[] = [
 			"/projects/Webfilo/9.png",
 			"/projects/Webfilo/10.png"
 		],
-		urls: ["https://luisterceroiii.github.io/Web-Filosofia/"]
+		urls: ["https://luisterceroiii.github.io/Web-Filosofia/"],
+		categories: ["web"]
 	},
 	{
 		"name": "Hybeans Web",
@@ -134,7 +144,8 @@ export const projects: ProjectType[] = [
 			"/projects/hyWeb/11.png",
 			"/projects/hyWeb/12.png"
 		],
-		"urls": ["https://www.hybeans.com"]
+		"urls": ["https://www.hybeans.com"],
+		"categories": ["web"]
 	},
 	{
 		"name": "AEG Hornos de Cerámica",
@@ -152,7 +163,8 @@ export const projects: ProjectType[] = [
 			"/projects/hornos-aeg/10.png",
 			"/projects/hornos-aeg/11.png",
 		],
-		"urls": ["https://hornos-aeg.netlify.app/"]
+		"urls": ["https://hornos-aeg.netlify.app/"],
+		"categories": ["web"]
 	}
 	/* {
 		"name": "Jardin Management CPanel",

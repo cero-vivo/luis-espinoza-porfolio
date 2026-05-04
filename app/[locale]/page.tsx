@@ -13,8 +13,8 @@ export default function Home() {
 		<main style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 			<Header />
 			<Landing />
-			<Works/>
 			<Highlights />
+			<Works/>
 			<Skills/>
 			<Ethos />
 			<Footer/>

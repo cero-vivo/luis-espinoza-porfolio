@@ -10,15 +10,18 @@ import { WhatsappIcon } from '../basic/icons/whatsapp-icon'
 import { PhoneIcon } from '../basic/icons/phone-icon'
 import { LinkedinIcon } from '../basic/icons/linkedin-icon'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export const ContactModal = () => {
 
 	const { contactModalVisible, closeContactModal, sendMeEmail, sendMeWhatsapp, callMe, openLinkedin } = useContactActions()
+	const t = useTranslations('contactModal')
+	const tContact = useTranslations('contact')
 
 	return (
 		<Modal isOpen={contactModalVisible}>
 			<article className={styles.modalCard}>
-				<button type="button" className={styles.closeButton} onClick={closeContactModal} aria-label="Cerrar">
+				<button type="button" className={styles.closeButton} onClick={closeContactModal} aria-label={t('close')}>
 					<CloseIcon color={'var(--navyBlue)'} width={24} height={24} />
 				</button>
 
@@ -32,8 +35,8 @@ export const ContactModal = () => {
 						className={styles.brandPhoto}
 					/>
 					<h2 className={styles.name}>Luis Espinoza</h2>
-					<p className={styles.role}>AI-Driven Product Engineer</p>
-					<p className={styles.tagline}>Me enfoco en experiencias web que conectan negocio y personas, con ciclos rápidos y colaboración cercana.</p>
+					<p className={styles.role}>{t('role')}</p>
+					<p className={styles.tagline}>{t('tagline')}</p>
 				</section>
 
 				<section className={styles.actionStack}>
@@ -42,10 +45,10 @@ export const ContactModal = () => {
 							<EmailIcon color={'currentColor'} width={26} height={26} />
 						</span>
 						<div className={styles.tileCopy}>
-							<span className={styles.tileLabel}>Correo electrónico</span>
-							<span className={styles.tileDetail}>luis.espinoza.nav@outlook.com</span>
+							<span className={styles.tileLabel}>{t('emailLabel')}</span>
+							<span className={styles.tileDetail}>{tContact('my_email')}</span>
 						</div>
-						<span className={styles.tileHint}>Tiempo de respuesta &lt; 1 día</span>
+						<span className={styles.tileHint}>{t('emailHint')}</span>
 					</button>
 					<div className={styles.secondaryTiles}>
 						<button className={styles.contactTile} onClick={sendMeWhatsapp}>
@@ -53,8 +56,8 @@ export const ContactModal = () => {
 								<WhatsappIcon color={'currentColor'} width={24} height={24} />
 							</span>
 							<div className={styles.tileCopy}>
-								<span className={styles.tileLabel}>WhatsApp</span>
-								<span className={styles.tileDetail}>+54 9 11 2388 1314</span>
+								<span className={styles.tileLabel}>{t('whatsappLabel')}</span>
+								<span className={styles.tileDetail}>{tContact('my_phone_number')}</span>
 							</div>
 						</button>
 						<button className={styles.contactTile} onClick={callMe}>
@@ -62,8 +65,8 @@ export const ContactModal = () => {
 								<PhoneIcon color={'currentColor'} width={24} height={24} />
 							</span>
 							<div className={styles.tileCopy}>
-								<span className={styles.tileLabel}>Llamada</span>
-								<span className={styles.tileDetail}>+54 9 11 2388 1314</span>
+								<span className={styles.tileLabel}>{t('phoneLabel')}</span>
+								<span className={styles.tileDetail}>{tContact('my_phone_number')}</span>
 							</div>
 						</button>
 						<button className={styles.contactTile} onClick={openLinkedin}>
@@ -71,7 +74,7 @@ export const ContactModal = () => {
 								<LinkedinIcon color={'currentColor'} width={24} height={24} />
 							</span>
 							<div className={styles.tileCopy}>
-								<span className={styles.tileLabel}>LinkedIn</span>
+								<span className={styles.tileLabel}>{t('linkedinLabel')}</span>
 								<span className={styles.tileDetail}>/in/luis-espinoza-dev</span>
 							</div>
 						</button>
@@ -79,7 +82,7 @@ export const ContactModal = () => {
 				</section>
 
 				<footer className={styles.footer}>
-					<p className={styles.footerNote}>¿Quieres coordinar una videollamada? Mandame un mensaje y elegimos un horario.</p>
+					<p className={styles.footerNote}>{t('footerNote')}</p>
 				</footer>
 			</article>
 		</Modal>

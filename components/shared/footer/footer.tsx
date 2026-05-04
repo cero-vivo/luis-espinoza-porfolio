@@ -20,7 +20,7 @@ type ContactChip = {
 }
 
 export const Footer = () => {
-	const { sendMeEmail, callMe, sendMeWhatsapp, openLinkedin } = useContactActions()
+	const { sendMeEmail, callMe, sendMeWhatsapp, openLinkedin, openContactModal } = useContactActions()
 	const tContact = useTranslations('contact')
 	const tFooter = useTranslations('footer')
 	const contactChips: ContactChip[] = [
@@ -57,6 +57,25 @@ export const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.backdrop} aria-hidden='true' />
+			<div className={styles.content}>
+				<div className={styles.identity}>
+					<span className={styles.badge}>{tFooter('badge')}</span>
+					<h2 className={styles.title}>{tFooter('title')}</h2>
+					<p className={styles.tagline}>{tFooter('tagline')}</p>
+				</div>
+				<div className={styles.ctaCard}>
+					<span className={styles.ctaLabel}>{tFooter('ctaLabel')}</span>
+					<h3 className={styles.ctaTitle}>{tFooter('ctaTitle')}</h3>
+					<p className={styles.ctaDescription}>{tFooter('ctaDescription')}</p>
+					<button type='button' className={styles.ctaButton} onClick={openContactModal}>
+						{tFooter('ctaButton')}
+					</button>
+				</div>
+				<div className={styles.meta}>
+					<span className={styles.metaLabel}>{tFooter('availabilityLabel')}</span>
+					<span className={styles.metaValue}>{tFooter('availabilityValue')}</span>
+				</div>
+			</div>
 			<div className={styles.ribbon}>
 				{contactChips.map(({ id, label, helper, Icon, action }) => (
 					<button key={id} type='button' className={styles.chip} onClick={action}>

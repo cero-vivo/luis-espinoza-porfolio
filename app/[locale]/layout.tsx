@@ -11,28 +11,40 @@ const poppins = Poppins({
 	subsets: ["latin"]
 });
 
-export const metadata: Metadata = {
-	title: "Luis Espinoza",
-	description: "Luis Espinoza - Software develop dev react react native mobile app web app argentina chile latam web frontend fullstack",
-	icons: {
-		icon: [
-			{ url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-			{ url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-			{ url: '/favicon.ico', sizes: 'any' }
-		],
-		apple: '/apple-touch-icon.png',
-		other: [
-			{ rel: 'manifest', url: '/site.webmanifest' }
-		]
+const metadataByLocale: Record<string, { title: string; description: string }> = {
+	es: {
+		title: "Luis Espinoza | Senior React Native Engineer",
+		description: "Portfolio de Luis Espinoza: Senior React Native Engineer con experiencia en FinTech, arquitectura mobile y entrega asistida por IA para productos en producción.",
 	},
-};
+	en: {
+		title: "Luis Espinoza | Senior React Native Engineer",
+		description: "Portfolio of Luis Espinoza: Senior React Native Engineer with experience in mobile products, FinTech, architecture and AI-enabled delivery for production systems.",
+	},
+}
 
-// Desactiva el zoom/pinch en dispositivos móviles
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+	const content = metadataByLocale[locale] ?? metadataByLocale.en
+
+	return {
+		title: content.title,
+		description: content.description,
+		icons: {
+			icon: [
+				{ url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+				{ url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+				{ url: '/favicon.ico', sizes: 'any' }
+			],
+			apple: '/apple-touch-icon.png',
+			other: [
+				{ rel: 'manifest', url: '/site.webmanifest' }
+			]
+		},
+	};
+}
+
 export const viewport: Viewport = {
     width: "device-width",
     initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
 };
 
 export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string }; }) {

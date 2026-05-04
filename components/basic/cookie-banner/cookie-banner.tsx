@@ -2,12 +2,14 @@
 
 import { useConsent } from '@/hooks/useConsent';
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './cookie-banner.module.css';
 
 export const CookieBanner = () => {
   const { consent, grant, deny } = useConsent();
   const [closed, setClosed] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const t = useTranslations('cookie');
   
   // Solo renderizar después de montar para evitar hydration mismatch
   useEffect(() => {
@@ -15,13 +17,11 @@ export const CookieBanner = () => {
   }, []);
   
   const handleAccept = () => {
-    console.log("🚀 ~ handleAccept clicked")
     setClosed(true);
     grant();
   };
 
   const handleReject = () => {
-    console.log("🚀 ~ handleReject clicked")
     setClosed(true);
     deny();
   };
@@ -35,15 +35,13 @@ export const CookieBanner = () => {
   
   return (
     <div className={styles.container}>
-      <span className={styles.message}>
-        Este sitio utiliza cookies analíticas para medir el tráfico y mejorar tu experiencia. ¿Aceptas?
-      </span>
+      <span className={styles.message}>{t('message')}</span>
       <div className={styles.buttons}>
         <button type="button" className={styles.acceptButton} onClick={handleAccept}>
-          Aceptar
+          {t('accept')}
         </button>
         <button type="button" className={styles.rejectButton} onClick={handleReject}>
-          Rechazar
+          {t('reject')}
         </button>
       </div>
     </div>

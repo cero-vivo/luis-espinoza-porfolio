@@ -32,6 +32,43 @@
     color: var(--text-secondary) !important;
 }
 
+.filterRow {
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filterPill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border-subtle);
+    background: var(--surface-glass);
+    color: var(--text-subtle);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filterPill:hover {
+    transform: translateY(-1px);
+    color: var(--text-primary);
+    border-color: rgba(34, 162, 255, 0.24);
+}
+
+.filterPillActive {
+    color: var(--white);
+    border-color: transparent;
+    background: linear-gradient(135deg, rgba(34, 162, 255, 1) 0%, rgba(6, 50, 95, 1) 100%);
+    box-shadow: 0 14px 26px rgba(6, 50, 95, 0.18);
+}
+
 .worksBox {
     display: flex;
     flex-direction: column;
@@ -52,5 +89,9 @@
 
     .subtitle {
         font-size: 0.98rem !important;
+    }
+
+    .filterRow {
+        gap: 10px;
     }
 }
